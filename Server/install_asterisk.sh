@@ -37,11 +37,26 @@ cd asterisk-17.0.0/
 sudo ./contrib/scripts/install_prereq install
 update
 ./configure --with-jansson-bundled
+make menuselect
 make
 sudo make install
-make samples
-make config
-make install-logrotate
+sudo make samples
+sudo make config
+sudo make install-logrotate
+
+
+if [ ! -d "/etc/asterisk/../logrotate.d" ]; then \
+        sudo /usr/bin/install -c -d "/etc/asterisk/../logrotate.d" ; \
+fi
+sudo sed 's#__LOGDIR__#/var/log/asterisk#g' < contrib/scripts/asterisk.logrotate | sed 's#__SBINDIR__#/usr/sbin#g' > contrib/scripts/asterisk.logrotate.tmp
+sudo /usr/bin/install -c -m 0644 contrib/scripts/asterisk.logrotate.tmp "/etc/asterisk/../logrotate.d/asterisk"
+sudo rm -fv contrib/scripts/asterisk.logrotate.
+
+# Resoulution Radius Error
+sudo sed -i 's";\[radius\]"\[radius\]"g' /etc/asterisk/cdr.conf
+sudo sed -i 's";radiuscfg => /usr/local/etc/radiusclient-ng/radiusclient.conf"radiuscfg => /etc/radcli/radiusclient.conf"g' /etc/asterisk/cdr.conf
+sudo sed -i 's";radiuscfg => /usr/local/etc/radiusclient-ng/radiusclient.conf"radiuscfg => /etc/radcli/radiusclient.conf"g' /etc/asterisk/cel.conf
+
 
 echo "*----------------------------------------------------------------------*"
 echo "|   I N S T A L L   C O M P L E T E D   S U C E S S F U L L Y          |"
