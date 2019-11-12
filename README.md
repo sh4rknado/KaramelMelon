@@ -1,7 +1,9 @@
-# KaramelMelon
+# KaramelMelon :melon:
+
 KaramelMelon 2019
 
 ## Download & Install Vagrant
-vagrant up <br/>
+
+    vagrant up
 
 Notes: You can make one or 2 coffee and waiting
