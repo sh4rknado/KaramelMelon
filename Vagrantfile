@@ -7,4 +7,9 @@ Vagrant.configure("2") do |config|
     voip.vm.hostname = "Voip"
     voip.vm.network "private_network", ip: "192.168.33.10"
   end
+  config.vm.define "voiptest" do |voiptest|
+    voiptest.vm.box = "debian/stretch64"
+    voiptest.vm.hostname = "VoipTest"
+    voiptest.vm.network "private_network", ip: "192.168.33.10"
+  end
 end
