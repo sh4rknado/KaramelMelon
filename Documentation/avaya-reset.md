@@ -9,3 +9,7 @@ Sur notre téléphone:
 >Quand on doit entrer une lettre il suffit de taper la touche correspondante une seule fois (par exemple: F -> touche 3)
 
     **73639322152529983##
+
+## Mot de passe admin par défaut
+
+26567*738
