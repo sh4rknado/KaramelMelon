@@ -40,3 +40,5 @@ http://support.ubixtechnologies.net/firmware/Polycom/
 ### Avaya Doc.
 
 https://downloads.avaya.com/css/P8/documents/100152910
+
+https://www.tek-tips.com/viewthread.cfm?qid=1696295
