@@ -36,3 +36,7 @@ ftp.tecnoera.com/polycom/4.0.1/
 https://community.polycom.com/t5/VoIP-SIP-Phones/FAQ-How-can-I-check-the-SIP-and-UCS-UC-Software-and-BootROM/td-p/4211
 
 http://support.ubixtechnologies.net/firmware/Polycom/
+
+### Avaya Doc.
+
+https://downloads.avaya.com/css/P8/documents/100152910
