@@ -2,77 +2,87 @@
 
 function update {
   sudo apt-get update
-  sudo apt-get upgrade
-  sudo apt-get dist-upgrade
+  sudo apt-get --yes --force-yes upgrade
+  sudo apt-get --yes --force-yes dist-upgrade
   sudo apt autoremove --purge
 }
 
-echo "*-------------------------------------------*"
-echo "|   M I S E  A  J O U R   D E   L ' O S     |"
-echo "*-------------------------------------------*"
+clear
+echo -e "*-------------------------------------------*"
+echo -e "|   M I S E  A  J O U R   D E   L ' O S     |"
+echo -e "*-------------------------------------------*\n"
 
 # update
 update
+clear
 
-echo "*-------------------------------------------*"
-echo "|   I N S T A L L   D E P E N D A N C Y     |"
-echo "*-------------------------------------------*"
+echo -e "\n*-------------------------------------------*"
+echo -e "|   I N S T A L L   D E P E N D A N C Y     |"
+echo -e "*-------------------------------------------*\n"
 
 # Install dependancy
-sudo apt -y install build-essential
-sudo apt -y install git-core
-sudo apt -y install subversion
-sudo apt -y install libjansson-dev
-sudo apt -y install sqlite
-sudo apt -y install autoconf
-sudo apt -y install automake
-sudo apt -y install libxml2-dev
-sudo apt -y install libncurses5-dev
-sudo apt -y install libtool
-sudo apt -y install git
-sudo apt -y install curl
-sudo apt -y install wget
-sudo apt -y install libnewt-dev
-sudo apt -y install libssl-dev
-sudo apt -y install libncurses5-dev
-sudo apt -y install subversion
-sudo apt -y install libsqlite3-dev
-sudo apt -y install build-essential
-sudo apt -y install libjansson-dev
-sudo apt -y install libxml2-dev
-sudo apt -y install uuid-dev
+sudo apt-get --yes --force-yes install git-core
+sudo apt-get --yes --force-yes install subversion
+sudo apt-get --yes --force-yes install libjansson-dev
+sudo apt-get --yes --force-yes install sqlite
+sudo apt-get --yes --force-yes install autoconf
+sudo apt-get --yes --force-yes install automake
+sudo apt-get --yes --force-yes install libxml2-dev
+sudo apt-get --yes --force-yes install libncurses5-dev
+sudo apt-get --yes --force-yes install libtool
+sudo apt-get --yes --force-yes install git
+sudo apt-get --yes --force-yes install curl
+sudo apt-get --yes --force-yes install wget
+sudo apt-get --yes --force-yes install libnewt-dev
+sudo apt-get --yes --force-yes install libssl-dev
+sudo apt-get --yes --force-yes install libncurses5-dev
+sudo apt-get --yes --force-yes install subversion
+sudo apt-get --yes --force-yes install libsqlite3-dev
+sudo apt-get --yes --force-yes install build-essential
+sudo apt-get --yes --force-yes install libjansson-dev
+sudo apt-get --yes --force-yes install libxml2-dev
+sudo apt-get --yes --force-yes install uuid-dev
 
 # Install zsh
-sudo apt -y install zsh
-sudo apt -y zsh-antigen
-sudo apt -y zsh-common
-sudo apt -y zsh-static
-sudo apt -y zsh-syntax-highlighting
+sudo apt-get --yes --force-yes install zsh
+sudo apt-get --yes --force-yes zsh-antigen
+sudo apt-get --yes --force-yes zsh-common
+sudo apt-get --yes --force-yes zsh-static
+sudo apt-get --yes --force-yes zsh-syntax-highlighting
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 
-
-echo "*-------------------------------------------*"
-echo "| C O M P I L E   T H E    S O U R C E S    |"
-echo "*-------------------------------------------*"
+clear
+echo -e "\n*-------------------------------------------*"
+echo -e "| C O M P I L E   T H E    S O U R C E S    |"
+echo -e "*-------------------------------------------*\n"
 
 # Clone the sources
-cd /opt/asterisk-16.6.1
-sudo chown -Rv vagrant:vagrant /opt/
+cd /opt
 sudo curl -O http://downloads.asterisk.org/pub/telephony/asterisk/asterisk-16-current.tar.gz
 tar -xvf asterisk-16-current.tar.gz
+sudo chown -Rv vagrant:vagrant /opt/
+cd /opt/asterisk-16.6.1
 
 # Compile asterisk
-cd asterisk-16.6.1/
 sudo contrib/scripts/get_mp3_source.sh
 sudo ./contrib/scripts/install_prereq install
 update
 ./configure --with-jansson-bundled
 make menuselect
-make
-sudo make install
-sudo make samples
-sudo make config
-sudo make progdocs
-sudo make install-logrotate
+
+echo -e "\nMake processing ...\n"
+make -j4
+echo -e "\nMake Install processing ...\n"
+sudo make -j4 install
+echo -e "\nMake Samples processing ...\n"
+sudo make -j4 samples
+echo -e "\nMake Config processing ...\n"
+sudo make -j4 config
+echo -e "\nMake doc processing ...\n"
+sudo make -j4 progdocs
+echo -e "\nMake logrotate processing ...\n"
+sudo make -j4 install-logrotate
 sudo ldconfig
 
 if [ ! -d "/etc/asterisk/../logrotate.d" ]; then \
