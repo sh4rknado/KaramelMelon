@@ -42,3 +42,8 @@ http://support.ubixtechnologies.net/firmware/Polycom/
 https://downloads.avaya.com/css/P8/documents/100152910
 
 https://www.tek-tips.com/viewthread.cfm?qid=1696295
+
+### Fonctionnalités Doc 
+
+https://wiki.mdl29.net/lib/exe/fetch.php?media=braveo:01_tp_asterisk_base.pdf ==> Groupe d'appel, Redirection. 
+https://wiki.asterisk.org/wiki/display/AST/SMS ==> SMS 
