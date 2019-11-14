@@ -1,0 +1,458 @@
+000000.250|so   |*|00|---------- Initial log entry ----------
+000000.250|so   |*|00|+++ Note that bootrom log times are in GMT +++
+000000.250|copy |*|00|Initial log entry. Current logging level 3
+000000.250|utilm|*|00|Initial log entry. Current logging level 4
+000000.250|hw   |*|00|Initial log entry. Current logging level 4
+000000.250|ethf |*|00|Initial log entry. Current logging level 4
+000000.250|dns  |*|00|Initial log entry. Current logging level 3
+000000.250|curl |*|00|Initial log entry. Current logging level 3
+000000.255|wdog |*|00|Initial log entry. Current logging level 4
+000000.255|lldp |*|00|Initial log entry. Current logging level 3
+000000.255|lldp |3|00|LLDP is DISABLED.
+000000.255|cdp  |*|00|Initial log entry. Current logging level 3
+000000.255|cdp  |3|00|CDP is DISABLED.
+000000.255|key  |*|00|Initial log entry. Current logging level 4
+000000.270|so   |3|00|Platform: Model=SoundPoint IP 330, Assembly=2345-12200-001 Rev=M Region=
+000000.270|so   |3|00|Platform: Board=2345-12200-001 1 0
+000000.270|so   |3|00|Platform: MAC=0004f225648d, IP=172.16.110.41, Subnet Mask=255.255.255.0
+000000.270|so   |3|00|Platform: BootBlock=2.7.0 (12200_001) 06-Oct-06 15:40
+000000.270|so   |3|00|Application, main: Label=BOOT, Version=Muscovite 4.3.1.0440 30-Jun-11 11:58
+000000.270|so   |3|00|Application, main: P/N=3150-11069-431
+000000.270|app1 |*|00|Initial log entry. Current logging level 3
+000000.285|cfg  |*|00|Initial log entry. Current logging level 2
+000001.255|so   |3|00|Link status is Net up Speed 100 full Duplex, PC down.
+000009.225|lldp |3|00|LLDP received a response from a switch. LLDP enabled.
+000009.225|lldp |*|00|Native VLAN Id is 110
+000009.225|lldp |*|00|No Auxiliary VLAN found
+000009.225|lldp |*|00|LLDP power usage is 4.3 Watts.
+000009.225|app1 |4|00|Could not initialize resolver library with server 0.0.0.0 and domain .
+000009.230|app1 |3|00|Bootline: esw(3,0)bootHost:flash e=172.16.110.41:ffffff00 h=172.16.110.50 g=172.16.110.2 u=**** pw=**** tn=CircaIP
+000009.230|app1 |4|00|Could not load time from  (0.0.0.0).
+000021.605|copy |3|00|'ftp://ftpuser:****@172.16.110.50/2345-12200-001.bootrom.ld' from '172.16.110.50'
+000021.715|cfg  |*|00|Prov|Starting to update 2345-12200-001.bootrom.ld
+000021.740|cfg  |3|00|Image 2345-12200-001.bootrom.ld has not changed
+000021.740|copy |3|00|buffered_write: transfer terminated
+000021.745|copy |3|00|Download of '2345-12200-001.bootrom.ld' succeeded on attempt 1 (addr 1 of 1)
+000021.775|copy |3|00|'ftp://ftpuser:****@172.16.110.50/0004f225648d.cfg' from '172.16.110.50'
+000021.895|copy |3|00|Download of '0004f225648d.cfg' FAILED on attempt 1 (addr 1 of 1)
+000021.895|copy |3|00|transport res: 78 respCode 550
+000021.895|copy |3|00|transport error: Error.
+000021.895|copy |3|00|transport error buffer: Error.
+000021.895|copy |3|00|Update of '/ffs0/init.mac' failed, leaving local copy intact
+000021.905|copy |3|00|'ftp://ftpuser:****@172.16.110.50/000000000000.cfg' from '172.16.110.50'
+000021.915|copy |3|00|Download of '000000000000.cfg' FAILED on attempt 1 (addr 1 of 1)
+000021.915|copy |3|00|transport res: 78 respCode 550
+000021.915|copy |3|00|transport error: Error.
+000021.915|copy |3|00|transport error buffer: Error.
+000021.915|copy |3|00|Update of '/ffs0/init.mac' failed, leaving local copy intact
+000021.935|cfg  |4|00|Prov|Download of master configuration file failed
+000021.935|cfg  |4|00|Prov|Trying to boot from existing configuration
+000021.955|cfg  |4|00|Prov|Provisioning failed
+000026.960|app1 |6|00|Error application is not present.
+000026.960|app1 |6|00|Uploading boot log, time is MON JAN 01 00:00:26 2007
+
+000027.215|copy |3|00|'ftp://ftpuser:****@172.16.110.50/0004f225648d-boot.log' to '172.16.110.50'
+000027.320|copy |3|00|Upload of '0004f225648d-boot.log' succeeded on attempt 1 (addr 1 of 1)
+000032.325|app1 |3|00|Event: Multiple Key Combo 1
+000032.325|app1 |6|00|Manual Reboot
+000036.255|wdog |*|00|Watchdog Expired: tApp1
+000000.225|so   |*|00|---------- Initial log entry ----------
+000000.225|so   |*|00|+++ Note that bootrom log times are in GMT +++
+000000.225|copy |*|00|Initial log entry. Current logging level 3
+000000.225|utilm|*|00|Initial log entry. Current logging level 4
+000000.225|hw   |*|00|Initial log entry. Current logging level 4
+000000.225|ethf |*|00|Initial log entry. Current logging level 4
+000000.225|dns  |*|00|Initial log entry. Current logging level 3
+000000.225|curl |*|00|Initial log entry. Current logging level 3
+000000.230|wdog |*|00|Initial log entry. Current logging level 4
+000000.230|lldp |*|00|Initial log entry. Current logging level 3
+000000.230|lldp |3|00|LLDP is DISABLED.
+000000.230|cdp  |*|00|Initial log entry. Current logging level 3
+000000.230|cdp  |3|00|CDP is DISABLED.
+000000.230|key  |*|00|Initial log entry. Current logging level 4
+000000.245|so   |3|00|Platform: Model=SoundPoint IP 330, Assembly=2345-12200-001 Rev=M Region=
+000000.245|so   |3|00|Platform: Board=2345-12200-001 1 0
+000000.245|so   |3|00|Platform: MAC=0004f225648d, IP=172.16.110.41, Subnet Mask=255.255.255.0
+000000.245|so   |3|00|Platform: BootBlock=2.7.0 (12200_001) 06-Oct-06 15:40
+000000.245|so   |3|00|Application, main: Label=BOOT, Version=Muscovite 4.3.1.0440 30-Jun-11 11:58
+000000.245|so   |3|00|Application, main: P/N=3150-11069-431
+000000.245|app1 |*|00|Initial log entry. Current logging level 3
+000000.260|cfg  |*|00|Initial log entry. Current logging level 2
+000001.230|so   |3|00|Link status is Net up Speed 100 full Duplex, PC down.
+000009.205|lldp |3|00|LLDP received a response from a switch. LLDP enabled.
+000009.205|lldp |*|00|Native VLAN Id is 110
+000009.205|lldp |*|00|No Auxiliary VLAN found
+000009.205|lldp |*|00|LLDP power usage is 4.3 Watts.
+000009.205|app1 |4|00|Could not initialize resolver library with server 0.0.0.0 and domain .
+000009.210|app1 |3|00|Bootline: esw(3,0)bootHost:flash e=172.16.110.41:ffffff00 h=172.16.110.50 g=172.16.110.2 u=**** pw=**** tn=CircaIP
+000009.210|app1 |4|00|Could not load time from  (0.0.0.0).
+000011.325|copy |3|00|'ftp://ftpuser:****@172.16.110.50/2345-12200-001.bootrom.ld' from '172.16.110.50'
+000011.450|cfg  |*|00|Prov|Starting to update 2345-12200-001.bootrom.ld
+000011.470|cfg  |3|00|Image 2345-12200-001.bootrom.ld has not changed
+000011.470|copy |3|00|buffered_write: transfer terminated
+000011.475|copy |3|00|Download of '2345-12200-001.bootrom.ld' succeeded on attempt 1 (addr 1 of 1)
+000011.510|copy |3|00|'ftp://ftpuser:****@172.16.110.50/0004f225648d.cfg' from '172.16.110.50'
+000017.220|copy |3|00|Download of '0004f225648d.cfg' FAILED on attempt 1 (addr 1 of 1)
+000017.220|copy |3|00|transport res: 78 respCode 550
+000017.220|copy |3|00|transport error: Error.
+000017.220|copy |3|00|transport error buffer: Error.
+000017.220|copy |3|00|Update of '/ffs0/init.mac' failed, leaving local copy intact
+000017.230|copy |3|00|'ftp://ftpuser:****@172.16.110.50/000000000000.cfg' from '172.16.110.50'
+000017.235|copy |3|00|Download of '000000000000.cfg' FAILED on attempt 1 (addr 1 of 1)
+000017.235|copy |3|00|transport res: 78 respCode 550
+000017.235|copy |3|00|transport error: Error.
+000017.235|copy |3|00|transport error buffer: Error.
+000017.235|copy |3|00|Update of '/ffs0/init.mac' failed, leaving local copy intact
+000017.265|cfg  |4|00|Prov|Download of master configuration file failed
+000017.265|cfg  |4|00|Prov|Trying to boot from existing configuration
+000017.285|cfg  |4|00|Prov|Provisioning failed
+000022.290|app1 |6|00|Error application is not present.
+000022.290|app1 |6|00|Uploading boot log, time is MON JAN 01 00:00:22 2007
+
+000022.550|copy |3|00|'ftp://ftpuser:****@172.16.110.50/0004f225648d-boot.log' to '172.16.110.50'
+000022.640|copy |3|00|Upload of '0004f225648d-boot.log' succeeded on attempt 1 (addr 1 of 1)
+000027.645|app1 |3|00|Event: Multiple Key Combo 1
+000027.645|app1 |6|00|Manual Reboot
+000031.230|wdog |*|00|Watchdog Expired: tApp1
+000000.225|so   |*|00|---------- Initial log entry ----------
+000000.225|so   |*|00|+++ Note that bootrom log times are in GMT +++
+000000.225|copy |*|00|Initial log entry. Current logging level 3
+000000.225|utilm|*|00|Initial log entry. Current logging level 4
+000000.225|hw   |*|00|Initial log entry. Current logging level 4
+000000.225|ethf |*|00|Initial log entry. Current logging level 4
+000000.225|dns  |*|00|Initial log entry. Current logging level 3
+000000.225|curl |*|00|Initial log entry. Current logging level 3
+000000.230|wdog |*|00|Initial log entry. Current logging level 4
+000000.230|lldp |*|00|Initial log entry. Current logging level 3
+000000.230|lldp |3|00|LLDP is DISABLED.
+000000.230|cdp  |*|00|Initial log entry. Current logging level 3
+000000.230|cdp  |3|00|CDP is DISABLED.
+000000.230|key  |*|00|Initial log entry. Current logging level 4
+000000.245|so   |3|00|Platform: Model=SoundPoint IP 330, Assembly=2345-12200-001 Rev=M Region=
+000000.245|so   |3|00|Platform: Board=2345-12200-001 1 0
+000000.245|so   |3|00|Platform: MAC=0004f225648d, IP=172.16.110.41, Subnet Mask=255.255.255.0
+000000.245|so   |3|00|Platform: BootBlock=2.7.0 (12200_001) 06-Oct-06 15:40
+000000.245|so   |3|00|Application, main: Label=BOOT, Version=Muscovite 4.3.1.0440 30-Jun-11 11:58
+000000.245|so   |3|00|Application, main: P/N=3150-11069-431
+000000.245|app1 |*|00|Initial log entry. Current logging level 3
+000000.260|cfg  |*|00|Initial log entry. Current logging level 2
+000001.230|so   |3|00|Link status is Net up Speed 100 full Duplex, PC down.
+000009.205|lldp |3|00|LLDP received a response from a switch. LLDP enabled.
+000009.205|lldp |*|00|Native VLAN Id is 110
+000009.205|lldp |*|00|No Auxiliary VLAN found
+000009.205|lldp |*|00|LLDP power usage is 4.3 Watts.
+000009.205|app1 |4|00|Could not initialize resolver library with server 0.0.0.0 and domain .
+000009.210|app1 |3|00|Bootline: esw(3,0)bootHost:flash e=172.16.110.41:ffffff00 h=172.16.110.50 g=172.16.110.2 u=**** pw=**** tn=CircaIP
+000009.210|app1 |4|00|Could not load time from  (0.0.0.0).
+000011.325|copy |3|00|'ftp://ftpuser:****@172.16.110.50/2345-12200-001.bootrom.ld' from '172.16.110.50'
+000011.430|cfg  |*|00|Prov|Starting to update 2345-12200-001.bootrom.ld
+000011.455|cfg  |3|00|Image 2345-12200-001.bootrom.ld has not changed
+000011.455|copy |3|00|buffered_write: transfer terminated
+000011.460|copy |3|00|Download of '2345-12200-001.bootrom.ld' succeeded on attempt 1 (addr 1 of 1)
+000011.495|copy |3|00|'ftp://ftpuser:****@172.16.110.50/0004f225648d.cfg' from '172.16.110.50'
+000017.235|copy |3|00|Download of '0004f225648d.cfg' FAILED on attempt 1 (addr 1 of 1)
+000017.235|copy |3|00|transport res: 78 respCode 550
+000017.235|copy |3|00|transport error: Error.
+000017.235|copy |3|00|transport error buffer: Error.
+000017.235|copy |3|00|Update of '/ffs0/init.mac' failed, leaving local copy intact
+000017.245|copy |3|00|'ftp://ftpuser:****@172.16.110.50/000000000000.cfg' from '172.16.110.50'
+000017.250|copy |3|00|Download of '000000000000.cfg' FAILED on attempt 1 (addr 1 of 1)
+000017.255|copy |3|00|transport res: 78 respCode 550
+000017.255|copy |3|00|transport error: Error.
+000017.255|copy |3|00|transport error buffer: Error.
+000017.255|copy |3|00|Update of '/ffs0/init.mac' failed, leaving local copy intact
+000017.285|cfg  |4|00|Prov|Download of master configuration file failed
+000017.285|cfg  |4|00|Prov|Trying to boot from existing configuration
+000017.305|cfg  |4|00|Prov|Provisioning failed
+000022.310|app1 |6|00|Error application is not present.
+000022.310|app1 |6|00|Uploading boot log, time is MON JAN 01 00:00:22 2007
+
+000022.565|copy |3|00|'ftp://ftpuser:****@172.16.110.50/0004f225648d-boot.log' to '172.16.110.50'
+000028.240|copy |3|00|Upload of '0004f225648d-boot.log' succeeded on attempt 1 (addr 1 of 1)
+000033.245|app1 |3|00|Event: Multiple Key Combo 1
+000033.245|app1 |6|00|Manual Reboot
+000037.230|wdog |*|00|Watchdog Expired: tApp1
+000000.225|so   |*|00|---------- Initial log entry ----------
+000000.225|so   |*|00|+++ Note that bootrom log times are in GMT +++
+000000.225|copy |*|00|Initial log entry. Current logging level 3
+000000.225|utilm|*|00|Initial log entry. Current logging level 4
+000000.225|hw   |*|00|Initial log entry. Current logging level 4
+000000.225|ethf |*|00|Initial log entry. Current logging level 4
+000000.225|dns  |*|00|Initial log entry. Current logging level 3
+000000.225|curl |*|00|Initial log entry. Current logging level 3
+000000.230|wdog |*|00|Initial log entry. Current logging level 4
+000000.230|lldp |*|00|Initial log entry. Current logging level 3
+000000.230|lldp |3|00|LLDP is DISABLED.
+000000.230|cdp  |*|00|Initial log entry. Current logging level 3
+000000.230|cdp  |3|00|CDP is DISABLED.
+000000.230|key  |*|00|Initial log entry. Current logging level 4
+000000.245|so   |3|00|Platform: Model=SoundPoint IP 330, Assembly=2345-12200-001 Rev=M Region=
+000000.245|so   |3|00|Platform: Board=2345-12200-001 1 0
+000000.245|so   |3|00|Platform: MAC=0004f225648d, IP=172.16.110.41, Subnet Mask=255.255.255.0
+000000.245|so   |3|00|Platform: BootBlock=2.7.0 (12200_001) 06-Oct-06 15:40
+000000.245|so   |3|00|Application, main: Label=BOOT, Version=Muscovite 4.3.1.0440 30-Jun-11 11:58
+000000.245|so   |3|00|Application, main: P/N=3150-11069-431
+000000.245|app1 |*|00|Initial log entry. Current logging level 3
+000000.260|cfg  |*|00|Initial log entry. Current logging level 2
+000001.230|so   |3|00|Link status is Net up Speed 100 full Duplex, PC down.
+000009.205|lldp |3|00|LLDP received a response from a switch. LLDP enabled.
+000009.205|lldp |*|00|Native VLAN Id is 110
+000009.205|lldp |*|00|No Auxiliary VLAN found
+000009.205|lldp |*|00|LLDP power usage is 4.3 Watts.
+000009.205|app1 |4|00|Could not initialize resolver library with server 0.0.0.0 and domain .
+000009.210|app1 |3|00|Bootline: esw(3,0)bootHost:flash e=172.16.110.41:ffffff00 h=172.16.110.50 g=172.16.110.2 u=**** pw=**** tn=CircaIP
+000009.210|app1 |4|00|Could not load time from  (0.0.0.0).
+000011.325|copy |3|00|'ftp://ftpuser:****@172.16.110.50/2345-12200-001.bootrom.ld' from '172.16.110.50'
+000011.440|cfg  |*|00|Prov|Starting to update 2345-12200-001.bootrom.ld
+000011.465|cfg  |3|00|Image 2345-12200-001.bootrom.ld has not changed
+000011.465|copy |3|00|buffered_write: transfer terminated
+000011.470|copy |3|00|Download of '2345-12200-001.bootrom.ld' succeeded on attempt 1 (addr 1 of 1)
+000011.500|copy |3|00|'ftp://ftpuser:****@172.16.110.50/0004f225648d.cfg' from '172.16.110.50'
+000017.230|copy |3|00|Download of '0004f225648d.cfg' succeeded on attempt 1 (addr 1 of 1)
+000017.260|cfg  |*|00|Prov|Starting to update 2345-12200-001.sip.ld
+000017.280|copy |3|00|'ftp://ftpuser:****@172.16.110.50/2345-12200-001.sip.ld' from '172.16.110.50'
+000017.370|cfg  |3|00|New load header information:
+000017.370|cfg  |3|00|Code length:         0x002ACA19
+000017.370|cfg  |3|00|Header check Sum:    0x282ECC45
+000017.370|cfg  |3|00|Code check Sum:      0x16A5ABDF
+000017.370|cfg  |3|00|Options:             0x00000003
+000017.370|cfg  |3|00|Could not open application file for checking
+000017.370|cfg  |3|00|Recognized application
+000017.495|cfg  |*|00|Prov|Updating Application
+000017.500|cfg  |3|00|Using compatible image 0
+000018.980|copy |3|00|Download of '2345-12200-001.sip.ld' succeeded on attempt 1 (addr 1 of 1)
+000019.405|sig  |*|00|Initial log entry. Current logging level 3
+000019.405|sig  |3|00|hwSigParseRemove: found key Sig_3.
+000020.105|cfg  |3|00|Good image signature
+000020.250|cfg  |3|00|Programming 2804805 bytes into tffs in 4K blocks
+000038.540|cfg  |*|00|Prov|Succeeded updating file 2345-12200-001.sip.ld
+000038.580|cfg  |*|00|Prov|Image has been changed
+000038.600|cfg  |3|00|Prov|Provisioning succeeded
+000038.610|app1 |3|00|Application, load: Type=SIP, Version=3.3.3.0069 02-Nov-11 13:03
+000041.670|app1 |4|00|Loaded application sip.ld from local system successfully.
+000041.670|app1 |6|00|Uploading boot log, time is MON JAN 01 00:00:41 2007
+
+000041.930|copy |3|00|'ftp://ftpuser:****@172.16.110.50/0004f225648d-boot.log' to '172.16.110.50'
+000042.085|copy |3|00|Upload of '0004f225648d-boot.log' succeeded on attempt 1 (addr 1 of 1)
+000000.230|so   |*|00|---------- Initial log entry ----------
+000000.230|so   |*|00|+++ Note that bootrom log times are in GMT +++
+000000.230|copy |*|00|Initial log entry. Current logging level 3
+000000.230|utilm|*|00|Initial log entry. Current logging level 4
+000000.230|hw   |*|00|Initial log entry. Current logging level 4
+000000.230|ethf |*|00|Initial log entry. Current logging level 4
+000000.230|dns  |*|00|Initial log entry. Current logging level 3
+000000.230|curl |*|00|Initial log entry. Current logging level 3
+000000.240|wdog |*|00|Initial log entry. Current logging level 4
+000000.240|lldp |*|00|Initial log entry. Current logging level 3
+000000.240|lldp |3|00|LLDP is DISABLED.
+000000.240|cdp  |*|00|Initial log entry. Current logging level 3
+000000.240|cdp  |3|00|CDP is DISABLED.
+000000.240|key  |*|00|Initial log entry. Current logging level 4
+000000.250|so   |3|00|Platform: Model=SoundPoint IP 330, Assembly=2345-12200-001 Rev=M Region=
+000000.250|so   |3|00|Platform: Board=2345-12200-001 1 0
+000000.250|so   |3|00|Platform: MAC=0004f225648d, IP=172.16.110.41, Subnet Mask=255.255.255.0
+000000.250|so   |3|00|Platform: BootBlock=2.7.0 (12200_001) 06-Oct-06 15:40
+000000.250|so   |3|00|Application, main: Label=BOOT, Version=Muscovite 4.3.1.0440 30-Jun-11 11:58
+000000.250|so   |3|00|Application, main: P/N=3150-11069-431
+000000.255|app1 |*|00|Initial log entry. Current logging level 3
+000000.275|cfg  |*|00|Initial log entry. Current logging level 2
+000001.235|so   |3|00|Link status is Net down, PC down.
+000002.235|so   |3|00|Link status is Net up Speed 100 full Duplex, PC down.
+000009.215|lldp |3|00|LLDP received a response from a switch. LLDP enabled.
+000009.215|lldp |*|00|Native VLAN Id is 110
+000009.215|lldp |*|00|No Auxiliary VLAN found
+000009.215|lldp |*|00|LLDP power usage is 4.3 Watts.
+000009.215|app1 |4|00|Could not initialize resolver library with server 0.0.0.0 and domain .
+000009.220|app1 |3|00|Bootline: esw(3,0)bootHost:flash e=172.16.110.41:ffffff00 h=172.16.110.50 g=172.16.110.2 u=**** pw=**** tn=CircaIP
+000009.220|app1 |4|00|Could not load time from  (0.0.0.0).
+000011.335|copy |3|00|'ftp://ftpuser:****@172.16.110.50/2345-12200-001.bootrom.ld' from '172.16.110.50'
+000028.340|copy |3|00|Download of '2345-12200-001.bootrom.ld' FAILED on attempt 1 (addr 1 of 1)
+000028.340|copy |3|00|transport res: 28 respCode 0
+000028.340|copy |3|00|transport error: Error.
+000028.340|copy |3|00|transport error buffer: connect() timed out!.
+000028.340|copy |3|00|Making further download attempts for '2345-12200-001.bootrom.ld'
+000028.340|copy |3|00|'ftp://ftpuser:****@172.16.110.50/2345-12200-001.bootrom.ld' from '172.16.110.50'
+000034.240|cfg  |*|00|Prov|Starting to update 2345-12200-001.bootrom.ld
+000034.260|cfg  |3|00|Image 2345-12200-001.bootrom.ld has not changed
+000034.260|copy |3|00|buffered_write: transfer terminated
+000034.265|copy |3|00|Download of '2345-12200-001.bootrom.ld' succeeded on attempt 2 (addr 1 of 1)
+000034.335|copy |3|00|'ftp://ftpuser:****@172.16.110.50/0004f225648d.cfg' from '172.16.110.50'
+000034.445|copy |3|00|Download of '0004f225648d.cfg' succeeded on attempt 1 (addr 1 of 1)
+000034.490|cfg  |*|00|Prov|Starting to update 2345-12200-001.sip.ld
+000034.510|copy |3|00|'ftp://ftpuser:****@172.16.110.50/2345-12200-001.sip.ld' from '172.16.110.50'
+000034.620|cfg  |3|00|Image 2345-12200-001.sip.ld has not changed
+000034.620|copy |3|00|buffered_write: transfer terminated
+000034.625|copy |3|00|Download of '2345-12200-001.sip.ld' succeeded on attempt 1 (addr 1 of 1)
+000034.635|cfg  |3|00|Prov|Provisioning succeeded
+000034.640|app1 |3|00|Application, load: Type=SIP, Version=3.3.3.0069 02-Nov-11 13:03
+000037.905|app1 |4|00|Loaded application sip.ld from local system successfully.
+000037.905|app1 |6|00|Uploading boot log, time is MON JAN 01 00:00:37 2007
+
+000038.165|copy |3|00|'ftp://ftpuser:****@172.16.110.50/0004f225648d-boot.log' to '172.16.110.50'
+000038.290|copy |3|00|Upload of '0004f225648d-boot.log' succeeded on attempt 1 (addr 1 of 1)
+000000.230|so   |*|00|---------- Initial log entry ----------
+000000.230|so   |*|00|+++ Note that bootrom log times are in GMT +++
+000000.230|copy |*|00|Initial log entry. Current logging level 3
+000000.230|utilm|*|00|Initial log entry. Current logging level 4
+000000.230|hw   |*|00|Initial log entry. Current logging level 4
+000000.230|ethf |*|00|Initial log entry. Current logging level 4
+000000.230|dns  |*|00|Initial log entry. Current logging level 3
+000000.230|curl |*|00|Initial log entry. Current logging level 3
+000000.240|wdog |*|00|Initial log entry. Current logging level 4
+000000.240|lldp |*|00|Initial log entry. Current logging level 3
+000000.240|lldp |3|00|LLDP is DISABLED.
+000000.240|cdp  |*|00|Initial log entry. Current logging level 3
+000000.240|cdp  |3|00|CDP is DISABLED.
+000000.240|key  |*|00|Initial log entry. Current logging level 4
+000000.250|so   |3|00|Platform: Model=SoundPoint IP 330, Assembly=2345-12200-001 Rev=M Region=
+000000.250|so   |3|00|Platform: Board=2345-12200-001 1 0
+000000.250|so   |3|00|Platform: MAC=0004f225648d, IP=172.16.110.41, Subnet Mask=255.255.255.0
+000000.250|so   |3|00|Platform: BootBlock=2.7.0 (12200_001) 06-Oct-06 15:40
+000000.250|so   |3|00|Application, main: Label=BOOT, Version=Muscovite 4.3.1.0440 30-Jun-11 11:58
+000000.250|so   |3|00|Application, main: P/N=3150-11069-431
+000000.255|app1 |*|00|Initial log entry. Current logging level 3
+000000.275|cfg  |*|00|Initial log entry. Current logging level 2
+000001.235|so   |3|00|Link status is Net down, PC down.
+000002.235|so   |3|00|Link status is Net up Speed 100 full Duplex, PC down.
+000009.215|lldp |3|00|LLDP received a response from a switch. LLDP enabled.
+000009.215|lldp |*|00|Native VLAN Id is 110
+000009.215|lldp |*|00|No Auxiliary VLAN found
+000009.215|lldp |*|00|LLDP power usage is 4.3 Watts.
+000009.215|app1 |4|00|Could not initialize resolver library with server 0.0.0.0 and domain .
+000009.220|app1 |3|00|Bootline: esw(3,0)bootHost:flash e=172.16.110.41:ffffff00 h=172.16.110.50 g=172.16.110.2 u=**** pw=**** tn=CircaIP
+000009.220|app1 |4|00|Could not load time from  (0.0.0.0).
+000011.335|copy |3|00|'ftp://ftpuser:****@172.16.110.50/2345-12200-001.bootrom.ld' from '172.16.110.50'
+000028.340|copy |3|00|Download of '2345-12200-001.bootrom.ld' FAILED on attempt 1 (addr 1 of 1)
+000028.340|copy |3|00|transport res: 28 respCode 0
+000028.340|copy |3|00|transport error: Error.
+000028.340|copy |3|00|transport error buffer: connect() timed out!.
+000028.340|copy |3|00|Making further download attempts for '2345-12200-001.bootrom.ld'
+000028.340|copy |3|00|'ftp://ftpuser:****@172.16.110.50/2345-12200-001.bootrom.ld' from '172.16.110.50'
+000034.250|cfg  |*|00|Prov|Starting to update 2345-12200-001.bootrom.ld
+000034.270|cfg  |3|00|Image 2345-12200-001.bootrom.ld has not changed
+000034.270|copy |3|00|buffered_write: transfer terminated
+000034.275|copy |3|00|Download of '2345-12200-001.bootrom.ld' succeeded on attempt 2 (addr 1 of 1)
+000034.340|copy |3|00|'ftp://ftpuser:****@172.16.110.50/0004f225648d.cfg' from '172.16.110.50'
+000034.435|copy |3|00|Download of '0004f225648d.cfg' succeeded on attempt 1 (addr 1 of 1)
+000034.480|cfg  |*|00|Prov|Starting to update 2345-12200-001.sip.ld
+000034.500|copy |3|00|'ftp://ftpuser:****@172.16.110.50/2345-12200-001.sip.ld' from '172.16.110.50'
+000034.610|cfg  |3|00|Image 2345-12200-001.sip.ld has not changed
+000034.610|copy |3|00|buffered_write: transfer terminated
+000034.615|copy |3|00|Download of '2345-12200-001.sip.ld' succeeded on attempt 1 (addr 1 of 1)
+000034.620|cfg  |3|00|Prov|Provisioning succeeded
+000034.630|app1 |3|00|Application, load: Type=SIP, Version=3.3.3.0069 02-Nov-11 13:03
+000037.890|app1 |4|00|Loaded application sip.ld from local system successfully.
+000037.890|app1 |6|00|Uploading boot log, time is MON JAN 01 00:00:37 2007
+
+000038.150|copy |3|00|'ftp://ftpuser:****@172.16.110.50/0004f225648d-boot.log' to '172.16.110.50'
+000038.275|copy |3|00|Upload of '0004f225648d-boot.log' succeeded on attempt 1 (addr 1 of 1)
+000000.230|so   |*|00|---------- Initial log entry ----------
+000000.230|so   |*|00|+++ Note that bootrom log times are in GMT +++
+000000.230|copy |*|00|Initial log entry. Current logging level 3
+000000.230|utilm|*|00|Initial log entry. Current logging level 4
+000000.230|hw   |*|00|Initial log entry. Current logging level 4
+000000.230|ethf |*|00|Initial log entry. Current logging level 4
+000000.230|dns  |*|00|Initial log entry. Current logging level 3
+000000.230|curl |*|00|Initial log entry. Current logging level 3
+000000.240|wdog |*|00|Initial log entry. Current logging level 4
+000000.240|lldp |*|00|Initial log entry. Current logging level 3
+000000.240|lldp |3|00|LLDP is DISABLED.
+000000.240|cdp  |*|00|Initial log entry. Current logging level 3
+000000.240|cdp  |3|00|CDP is DISABLED.
+000000.240|key  |*|00|Initial log entry. Current logging level 4
+000000.250|so   |3|00|Platform: Model=SoundPoint IP 330, Assembly=2345-12200-001 Rev=M Region=
+000000.250|so   |3|00|Platform: Board=2345-12200-001 1 0
+000000.250|so   |3|00|Platform: MAC=0004f225648d, IP=172.16.110.41, Subnet Mask=255.255.255.0
+000000.250|so   |3|00|Platform: BootBlock=2.7.0 (12200_001) 06-Oct-06 15:40
+000000.255|so   |3|00|Application, main: Label=BOOT, Version=Muscovite 4.3.1.0440 30-Jun-11 11:58
+000000.255|so   |3|00|Application, main: P/N=3150-11069-431
+000000.255|app1 |*|00|Initial log entry. Current logging level 3
+000000.275|cfg  |*|00|Initial log entry. Current logging level 2
+000001.235|so   |3|00|Link status is Net down, PC down.
+000002.235|so   |3|00|Link status is Net up Speed 100 full Duplex, PC down.
+000009.215|lldp |3|00|LLDP received a response from a switch. LLDP enabled.
+000009.215|lldp |*|00|Native VLAN Id is 110
+000009.215|lldp |*|00|No Auxiliary VLAN found
+000009.215|lldp |*|00|LLDP power usage is 4.3 Watts.
+000009.215|app1 |4|00|Could not initialize resolver library with server 0.0.0.0 and domain .
+000009.220|app1 |3|00|Bootline: esw(3,0)bootHost:flash e=172.16.110.41:ffffff00 h=172.16.110.50 g=172.16.110.2 u=**** pw=**** tn=CircaIP
+000009.220|app1 |4|00|Could not load time from  (0.0.0.0).
+000011.335|copy |3|00|'ftp://ftpuser:****@172.16.110.50/2345-12200-001.bootrom.ld' from '172.16.110.50'
+000028.340|copy |3|00|Download of '2345-12200-001.bootrom.ld' FAILED on attempt 1 (addr 1 of 1)
+000028.340|copy |3|00|transport res: 28 respCode 0
+000028.340|copy |3|00|transport error: Error.
+000028.340|copy |3|00|transport error buffer: connect() timed out!.
+000028.340|copy |3|00|Making further download attempts for '2345-12200-001.bootrom.ld'
+000028.340|copy |3|00|'ftp://ftpuser:****@172.16.110.50/2345-12200-001.bootrom.ld' from '172.16.110.50'
+000034.255|cfg  |*|00|Prov|Starting to update 2345-12200-001.bootrom.ld
+000034.270|cfg  |3|00|Image 2345-12200-001.bootrom.ld has not changed
+000034.270|copy |3|00|buffered_write: transfer terminated
+000034.275|copy |3|00|Download of '2345-12200-001.bootrom.ld' succeeded on attempt 2 (addr 1 of 1)
+000034.345|copy |3|00|'ftp://ftpuser:****@172.16.110.50/0004f225648d.cfg' from '172.16.110.50'
+000034.455|copy |3|00|Download of '0004f225648d.cfg' succeeded on attempt 1 (addr 1 of 1)
+000034.505|cfg  |*|00|Prov|Starting to update 2345-12200-001.sip.ld
+000034.525|copy |3|00|'ftp://ftpuser:****@172.16.110.50/2345-12200-001.sip.ld' from '172.16.110.50'
+000034.630|cfg  |3|00|Image 2345-12200-001.sip.ld has not changed
+000034.630|copy |3|00|buffered_write: transfer terminated
+000034.635|copy |3|00|Download of '2345-12200-001.sip.ld' succeeded on attempt 1 (addr 1 of 1)
+000034.645|cfg  |3|00|Prov|Provisioning succeeded
+000034.655|app1 |3|00|Application, load: Type=SIP, Version=3.3.3.0069 02-Nov-11 13:03
+000037.910|app1 |4|00|Loaded application sip.ld from local system successfully.
+000037.910|app1 |6|00|Uploading boot log, time is MON JAN 01 00:00:37 2007
+
+000038.170|copy |3|00|'ftp://ftpuser:****@172.16.110.50/0004f225648d-boot.log' to '172.16.110.50'
+000038.290|copy |3|00|Upload of '0004f225648d-boot.log' succeeded on attempt 1 (addr 1 of 1)
+000000.230|so   |*|00|---------- Initial log entry ----------
+000000.230|so   |*|00|+++ Note that bootrom log times are in GMT +++
+000000.235|copy |*|00|Initial log entry. Current logging level 3
+000000.235|utilm|*|00|Initial log entry. Current logging level 4
+000000.235|hw   |*|00|Initial log entry. Current logging level 4
+000000.235|ethf |*|00|Initial log entry. Current logging level 4
+000000.235|dns  |*|00|Initial log entry. Current logging level 3
+000000.235|curl |*|00|Initial log entry. Current logging level 3
+000000.240|wdog |*|00|Initial log entry. Current logging level 4
+000000.240|lldp |*|00|Initial log entry. Current logging level 3
+000000.240|lldp |3|00|LLDP is DISABLED.
+000000.240|cdp  |*|00|Initial log entry. Current logging level 3
+000000.240|cdp  |3|00|CDP is DISABLED.
+000000.240|key  |*|00|Initial log entry. Current logging level 4
+000000.255|so   |3|00|Platform: Model=SoundPoint IP 330, Assembly=2345-12200-001 Rev=M Region=
+000000.255|so   |3|00|Platform: Board=2345-12200-001 1 0
+000000.255|so   |3|00|Platform: MAC=0004f225648d, IP=172.16.110.41, Subnet Mask=255.255.255.0
+000000.255|so   |3|00|Platform: BootBlock=2.7.0 (12200_001) 06-Oct-06 15:40
+000000.255|so   |3|00|Application, main: Label=BOOT, Version=Muscovite 4.3.1.0440 30-Jun-11 11:58
+000000.255|so   |3|00|Application, main: P/N=3150-11069-431
+000000.255|app1 |*|00|Initial log entry. Current logging level 3
+000000.275|cfg  |*|00|Initial log entry. Current logging level 2
+000001.240|so   |3|00|Link status is Net down, PC down.
+000002.240|so   |3|00|Link status is Net up Speed 100 full Duplex, PC down.
+000009.215|lldp |3|00|LLDP received a response from a switch. LLDP enabled.
+000009.215|lldp |*|00|Native VLAN Id is 110
+000009.215|lldp |*|00|No Auxiliary VLAN found
+000009.215|lldp |*|00|LLDP power usage is 4.3 Watts.
+000009.215|app1 |4|00|Could not initialize resolver library with server 0.0.0.0 and domain .
+000009.220|app1 |3|00|Bootline: esw(3,0)bootHost:flash e=172.16.110.41:ffffff00 h=172.16.110.50 g=172.16.110.2 u=**** pw=**** tn=CircaIP
+000009.220|app1 |4|00|Could not load time from  (0.0.0.0).
+000011.335|copy |3|00|'ftp://ftpuser:****@172.16.110.50/2345-12200-001.bootrom.ld' from '172.16.110.50'
+000028.340|copy |3|00|Download of '2345-12200-001.bootrom.ld' FAILED on attempt 1 (addr 1 of 1)
+000028.340|copy |3|00|transport res: 28 respCode 0
+000028.340|copy |3|00|transport error: Error.
+000028.340|copy |3|00|transport error buffer: connect() timed out!.
+000028.340|copy |3|00|Making further download attempts for '2345-12200-001.bootrom.ld'
+000028.340|copy |3|00|'ftp://ftpuser:****@172.16.110.50/2345-12200-001.bootrom.ld' from '172.16.110.50'
+000034.235|cfg  |*|00|Prov|Starting to update 2345-12200-001.bootrom.ld
+000034.255|cfg  |3|00|Image 2345-12200-001.bootrom.ld has not changed
+000034.255|copy |3|00|buffered_write: transfer terminated
+000034.260|copy |3|00|Download of '2345-12200-001.bootrom.ld' succeeded on attempt 2 (addr 1 of 1)
+000034.325|copy |3|00|'ftp://ftpuser:****@172.16.110.50/0004f225648d.cfg' from '172.16.110.50'
+000034.435|copy |3|00|Download of '0004f225648d.cfg' succeeded on attempt 1 (addr 1 of 1)
+000034.470|cfg  |*|00|Prov|Starting to update 2345-12200-001.sip.ld
+000034.490|copy |3|00|'ftp://ftpuser:****@172.16.110.50/2345-12200-001.sip.ld' from '172.16.110.50'
+000034.600|cfg  |3|00|Image 2345-12200-001.sip.ld has not changed
+000034.600|copy |3|00|buffered_write: transfer terminated
+000034.605|copy |3|00|Download of '2345-12200-001.sip.ld' succeeded on attempt 1 (addr 1 of 1)
+000034.615|cfg  |3|00|Prov|Provisioning succeeded
+000034.620|app1 |3|00|Application, load: Type=SIP, Version=3.3.3.0069 02-Nov-11 13:03
+000037.880|app1 |4|00|Loaded application sip.ld from local system successfully.
+000037.880|app1 |6|00|Uploading boot log, time is MON JAN 01 00:00:37 2007
+
