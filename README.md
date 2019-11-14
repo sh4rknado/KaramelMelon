@@ -56,3 +56,5 @@ https://www.youtube.com/watch?v=n__WkoHhTeM ==> Vidéo pour les conférences
 
 https://tsrit.com/2014/07/19/configuration-de-base-de-voicemail-sur-asterisk-2/ ==> Services Voice Mail 
 http://denisrosenkranz.com/tutomise-en-place-des-boites-vocales-dans-asterisk-et-configuration-de-lenvoi-de-mail/ ==> Service Voicemail 
+
+https://support.polycom.com/content/dam/polycom-support/products/voice/soundstation-ip-series/user/en/spip-ssip-vvx-admin-guide-sip-3-2-2-eng.pdf ==> Contact commun
