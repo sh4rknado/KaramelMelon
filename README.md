@@ -53,3 +53,6 @@ https://wiki.mdl29.net/lib/exe/fetch.php?media=braveo:01_tp_asterisk_base.pdf ==
 https://wiki.asterisk.org/wiki/display/AST/SMS ==> SMS 
 
 https://www.youtube.com/watch?v=n__WkoHhTeM ==> Vidéo pour les conférences
+
+https://tsrit.com/2014/07/19/configuration-de-base-de-voicemail-sur-asterisk-2/ ==> Services Voice Mail 
+http://denisrosenkranz.com/tutomise-en-place-des-boites-vocales-dans-asterisk-et-configuration-de-lenvoi-de-mail/ ==> Service Voicemail 
