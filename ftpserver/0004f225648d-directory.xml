@@ -19,14 +19,14 @@
 			<sd>3</sd>
 		</item>
 		<item>
-			<fn>Student3</fn>
-			<ct>6003</ct>
-			<sd>3</sd>
-		</item>
-		<item>
 			<fn>Conference</fn>
 			<ct>300</ct>
-			<sd>0</sd>
+			<sd>4</sd>
+		</item>
+		<item>
+			<fn>Messagerie</fn>
+			<ct>600</ct>
+			<sd>5</sd>
 		</item>
 	</item_list>
 </directory>
