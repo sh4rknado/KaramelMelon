@@ -51,3 +51,5 @@ https://support.avaya.com/downloads/downloads-landing.action?product_id=P0599&pr
 
 https://wiki.mdl29.net/lib/exe/fetch.php?media=braveo:01_tp_asterisk_base.pdf ==> Groupe d'appel, Redirection. 
 https://wiki.asterisk.org/wiki/display/AST/SMS ==> SMS 
+
+https://www.youtube.com/watch?v=n__WkoHhTeM ==> Vidéo pour les conférences
