@@ -43,6 +43,10 @@ https://downloads.avaya.com/css/P8/documents/100152910
 
 https://www.tek-tips.com/viewthread.cfm?qid=1696295
 
+#### Téléchargements Avaya (firmware, ...)
+
+https://support.avaya.com/downloads/downloads-landing.action?product_id=P0599&product_name=1100%20Series%20IP%20Deskphones&release_number=releaseId&contentType=Solutions
+
 ### Fonctionnalités Doc 
 
 https://wiki.mdl29.net/lib/exe/fetch.php?media=braveo:01_tp_asterisk_base.pdf ==> Groupe d'appel, Redirection. 
