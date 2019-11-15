@@ -91,3 +91,4 @@ utilisée](https://support.avaya.com/downloads/download-details.action?contentId
 [Service Voicemail 2](http://denisrosenkranz.com/tutomise-en-place-des-boites-vocales-dans-asterisk-et-configuration-de-lenvoi-de-mail/)
 
 [Contact commun](https://support.polycom.com/content/dam/polycom-support/products/voice/soundstation-ip-series/user/en/spip-ssip-vvx-admin-guide-sip-3-2-2-eng.pdf)
+[Ring Group] https://www.networklab.fr/ring-group/
