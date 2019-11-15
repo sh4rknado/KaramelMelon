@@ -4,5 +4,8 @@ ADMIN_PASSWORD_EXPIRY 0
 
 # Enable SSH
 SSH YES
+SFTP YES
+SFTP_READ_PATTERNS .cfg,.re1,.re2,.re3,.dat,.wav,.jpg
+SFTP_WRITE_PATTERNS .cfg,.re1,.re2,.re3,.dat,.wav,.jpg
 SSHID admin
 SSHPWD Ch0c0lat
