@@ -9,3 +9,9 @@ SFTP_READ_PATTERNS .cfg,.re1,.re2,.re3,.dat,.wav,.jpg
 SFTP_WRITE_PATTERNS .cfg,.re1,.re2,.re3,.dat,.wav,.jpg
 SSHID admin
 SSHPWD Ch0c0lat
+
+# Time Zone
+TIMEZONE_OFFSET 3600
+
+# Langue
+DEF_LANG French
