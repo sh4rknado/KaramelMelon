@@ -1,0 +1,1918 @@
+login as: admin
+     ┌────────────────────────────────────────────────────────────────────┐
+     │                        • MobaXterm 12.3 •                          │
+     │            (SSH client, X-server and networking tools)             │
+     │                                                                    │
+     │ ➤ SSH session to admin@172.16.110.16                               │
+     │   • SSH compression : ✘  (disabled or not supported by server)     │
+     │   • SSH-browser     : ✔                                            │
+     │   • X11-forwarding  : ✘  (disabled or not supported by server)     │
+     │   • DISPLAY         : 172.29.85.97:0.0                             │
+     │                                                                    │
+     │ ➤ For more info, ctrl+click on help or visit our website           │
+     └────────────────────────────────────────────────────────────────────┘
+
+
+
+Welcome to Avaya problem determination tool.
+
+You are connected to IP Phone 1140E.
+HW ID     : 183CB15B52998E6625
+RAM size  : 64 MB
+HW version: 2
+FW version: 04.04.33.00
+MAC Address = 3CB15B52998E
+IP  Address = 172.16.110.16
+Type "bye" to exit current shell.
+PDT>
+PDT> ?
+
+pdtHelp                                      Print PDT shell help
+?                                            Print this help
+setLogLevel           <loglevel>             Set LogLevel, Critical:1, Major:2, Minor:3, Info:4
+setRecoveryLevel      <recovery level>       Set RecoveryLevel, Critical:1, Major:2, Minor:3
+setAutoRecoveryFlag   <flag>                 Set auto recovery flag, turn on:1, turn off:0
+printLogLevel                                Print current logLevel, Critical:1, Major:2, Minor:3, Info:4
+printRecoveryLevel                           Print current recoveryLevel, Critical:1, Major:2, Minor:3
+printAutoRecoveryFlag                        Print auto recovery flag
+printUptime                                  Print set uptime
+printLogFile                                 Print error log file
+clearLogFile                                 Clear content of error log file
+taskMonShow                                  Show task monitor list
+taskMonAddTask        <taskName | task id>   Add a task to task monitor
+taskMonRemoveTask     <taskName | task id>   Remove a task from task monitor
+setCpuSamplingPeriod  <value>                Set CPU sampling period, range: 180-360s, step 10s
+i                                            Print all task Info
+ti                    <taskName | task id>   Complete info on TCB for task
+tt                    <taskName | task id>   Task Trace
+memShow               [level]                Show system memory partition blocks and statistics
+checkStack            <taskName | task id>   Print a task's stack usage
+setmode               <taskName | task id>   Set output to PDT for task
+pctl                                         Print list of tasks, which output was changed
+clearmode             <all | taskName | task id> Return output to STD for task or for all (changed) tasks
+prtcfg                                       Print config file
+ls                    [dirname] [-f]         List contents of directory, -f: include details
+lsr                   [dirname]              Recursive list of directory contents
+cd                    [dirname]              Set current working path
+usbFsShow                                    Display MSDOS volume configuration data of USB memory stick
+usbls                 [dirname] [-f]         List contents of USB directory, -f: include details
+usblsr                [dirname]              Recursive list of USB directory contents
+usbcd                 [dirname]              Set current USB working path
+pwd                                          Print the current default directory
+ping                  <host ip> [# of pings] Test that a remote host is reachable
+tracert               <host ip> [max hops]   traceroute to any host
+netinfo                                      Print common network info
+routeshow                                    Display host and network routing tables and stats
+showloc                                      Display location information
+arpShow                                      Display entries in the system ARP table
+listcerts                                    List all trusted certificates
+printcert             <index>                Print a trusted certificate in detail
+deletecert            <index>                Delete a trusted certificate and it's issued CRLs
+listcrls                                     Print a detailed list of CRLs
+deletecrls                                   Delete all CRLs
+listctlcerts                                 Print all CTL certificates
+deletectl                                    Delete the CTL
+listdevcerts                                 Print all device certificates
+deletedevcert         <index>                Delete a device certificate
+listsecuritylogs                             List all events logged through the security interface
+securitypolicy                               Print the current Security Policy values
+ifShow                                       Display the attached network interfaces
+v6ParmsShow                                  Display IPv6-related parameters
+routePrint                                   Display IPv6 host and network routing tables
+ip6statShow                                  Display IPv6 statistics
+printSetInfo                                 Print HardwareID, FirmwareID and MAC address
+disablescrsvr                                Disable the screensaver and clear the password
+vxshell                                      Switch to vxShell
+dbgshell                                     Display debug information, bye to return to pdt
+bye                                          Exit current shell
+reportWindowData                             Show windows hierarchy
+turnOnScreenScrape                           Turn Screen Scrape feature on
+turnOffScreenScrape                          Turn Screen Scrape feature off
+setScreenScrapeDelay  <delay>                Set delay for the Screen Scrape process
+sendKey               <code> <state>         Emulate key with a code "code". State 0/1/2 = Key Down Message/Key Up Message/Key combination down followed by up.
+reset2factory                                Reset to factory settings
+prtlog                <log type>             Print log specified in parameters list: 0-ECRlog, 1-SIPlog
+clearlog              <log type>             Clear log specified in parameters list: 0-ECRlog, 1-SIPlog
+removelog             <log type>             Remove log specified in parameters list: 0-ECRlog, 1-SIPlog
+fipsInfo                                     Display Fips Infomation
+fipsTests                                    Run Fips Tests
+prtHostsFile                                 Print content of host file
+prtLicense                                   Print License Information
+lldpinfo                                     Print LLDP Information
+lldpLastRcvdPacket                           Print most recently data recieved from the switch via LLDP
+prtEeprom                                    Print a content of EEPROM
+reboot                                       Reboot the set
+PDT> printLogFile
+
+
+ ***** ERROR LOG FILE *****
+
+
+ === Record #000 ===
+INFORMATION     SET     Logged 11/14/2019 16:53:16.280  FW: SIP1140e04.04.33.00
+File: h:/fw/build/../util/dconfig_utils/dconfig.cpp Line #3948 Error #0
+Description:
+Error-dconfig.cpp::validateRtpPorts(16384,32764)
+
+
+ === Record #001 ===
+INFORMATION     SET     Logged 11/14/2019 16:53:12.710  FW: SIP1140e04.04.33.00
+File: h:/fw/build/../mcu/i200x/app/etherset.cpp Line #6187 Error #0
+Description: Reboot occurred: reason = 3, mask=0x0
+
+
+ === Record #002 ===
+INFORMATION     SET     Logged 11/14/2019 16:50:26.110  FW: SIP1140e04.04.33.00
+File: h:/fw/build/../util/dconfig_utils/dconfig.cpp Line #3948 Error #0
+Description:
+Error-dconfig.cpp::validateRtpPorts(16384,32764)
+
+
+ === Record #003 ===
+INFORMATION     SET     Logged 11/14/2019 16:50:22.530  FW: SIP1140e04.04.33.00
+File: h:/fw/build/../mcu/i200x/app/etherset.cpp Line #6187 Error #0
+Description: Reboot occurred: reason = 0, mask=0x0
+
+
+ === Record #004 ===
+INFORMATION     SET     Logged 11/14/2019 16:49:40.170  FW: 04.04.33.00
+File: h:/fw/build/../util/ecr/ecr.c Line #559 Error #0
+Description: ==DebugInfo==
+
+>>>Last sysExcMsg:
+▒
+>>>End of sysExcMsg
+
+
+>>>Console message before last reset:
+(56) : (instance) >>
+SMC-0008] 16:50:28.390 ENTRY] Net/sigma/Network.cpp(327) : (EvMessageServiceMgrAwaken) >>
+SMC-0008] 16:50:28.390 ENTRY] Net/sigma/media/MediaManager.cpp(149) : (setMediaParameters) >>
+SMC-0008] 16:50:28.390 ENTRY] Net/sigma/EtherStreamer.cpp(550) : (setCodecPrefs) >>
+SMC-0006] 16:50:28.390 ENTRY] SMCe/SMCePrefs.cpp(854) : (loadLanguages) >>
+SMC-0006] 16:50:28.390 ENTRY] SMCe/SMCePrefs.cpp(1385) : (resetLanguages) >>
+SMC-0006] 16:50:28.390 MSG] SMCe/SMCePrefs.cpp(1134) : (loadSystemConfig) >> SMCePrefs callWaitingTone_ set To = 0.
+SMC-0006] 16:50:28.390 MSG] SMCe/SMCePrefs.cpp(1147) : (loadSystemConfig) >> SMCePrefs::commonSystemConfig: adjusting verbosity level: 0
+ReadFileHandler(/flash0/dialingplan.dplan)::Entering...
+ReadFileHandler():: cannot get file size of /flash0/dialingplan.dplan
+ReadLanguageFileHandler(1):: Entering...
+*INFO* activateLanguage(): create and parse lang table for "English"
+Read /flash0/langmap
+SetLanguageFont finished setting up fonts for eng
+[StartSIPApp]: add the Transport thread task to the task monitor list
+[StartSIPApp]: add the UA thread task to the task monitor list
+[StartSIPApp]: add the DNS thread task to the task monitor list
+[StartSIPApp]: add the smce_app_thread task to the task monitor list
+[StartSIPApp]: add the SMC::TimerScheduler task to the task monitor list
+SSHS_launch done
+[Receive] EVT_IMG_BCKGRNDSET
+*DBG* CScreenSaverManager::Stop()
+*INFO* displayBackGround():: "" assigned
+SMC-0006] 16:50:28.510 ERROR] Net/Unistim/UnistimDriver.cpp(4357) : (createUserRecord) >> unknown domain: AutoLoginInfo #0: <6003@cyber:6003> on key 0
+[Receive] EVT_IMG_BCKGRNDSET
+*DBG* CScreenSaverManager::Stop()
+*INFO* displayBackGround():: "" assigned
+[Receive] EVT_IMG_BCKGRNDSET
+*DBG* CScreenSaverManager::Stop()
+*INFO* displayBackGround():: "" assigned
+CERT_STORE_addGenericIdentity: [0,0]
+CERT_STORE_addGenericIdentity: [0,0] - added to front of list
+mocCheckDevCertConfig: Invalid Dev Cert Config data members
+GEM Connect
+acsory_number = 1
+[CacheBitmapDownload]
+[KEMCacheBitmaps]
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGveyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[KEMInitDisplay]
+acsory_number = 2
+[CacheBitmapDownload]
+[KEMCacheBitmaps]
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[KEMInitDisplay]
+Create Query Sanity Task OK
+viewSend::Receive(ACTION_MENU_CREATE), menuID=0
+CSkinCommonMenuApp::CreateMenu(0)
+CSkinDialog::Create Creating 6 widgets / 0 controls
+C[kinDialog::Create Creating 6 widgets / 0 controls
+*INFO* CreateWindow(): Ack=EVT_MENU_UPDATE
+Ci200xWinIDLE::OnDeactivate()
+*semGive*: Receive():ACTION_MENU_CREATE(0)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  8
+CWindow::OnKeyboard() = 0xE008 ), (0x10010000)
+BaseMsgHandler(): key =  8
+*INFO* CCommonMnuDlg::OnKeyboard(DOWN): key=0xe008, modify=0x10010000, keypad=1
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  8
+CWindow::OnKeyboard() = 0xE008 ), (0x10000000)
+BaseMsgHandler(): key =  8
+*INFO* CCommonMnuDlg::OnKeyboard(UP): key=0xe008, modify=0x10000000, keypad=1
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  8
+CWindow::OnKeyboard() = 0xE008 ), (0x10010000)
+BaseMsgHandler(): key =  8
+*INFO* CCommonMnuDlg::OnKeyboard(DOWN): key=0xe008, modify=0x10010000, keypad=1
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  8
+CWindow::OnKeyboard() = 0xE008 ), (0x10000000)
+BaseMsgHandler(): key =  8
+*INFO* CCommonMnuDlg::OnKeyboard(UP): key=0xe008, modify=0x10000000, keypad=1
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  8
+CWindow::OnKeyboard() = 0xE008 ), (0x10010000)
+BaseMsgHandler(): key =  8
+*INFO* CCommonMnuDlg::OnKeyboard(DOWN): key=0xe008, modify=0x10010000, keypad=1
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  8
+CWindow::OnKeyboard() = 0xE008 ), (0x10000000)
+BaseMsgHandler(): key =  8
+*INFO* CCommonMnuDlg::OnKeyboard(UP): key=0xe008, modify=0x10000000, keypad=1
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  8
+CWindow::OnKeyboard() = 0xE008 ), (0x10010000)
+BaseMsgHandler(): key =  8
+*INFO* CCommonMnuDlg::OnKeyboard(DOWN): key=0xe008, modify=0x10010000, keypad=1
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  8
+CWindow::OnKeyboard() = 0xE008 ), (0x10000000)
+BaseMsgHandler(): key =  8
+*INFO* CCommonMnuDlg::OnKeyboard(UP): key=0xe008, modify=0x10000000, keypad=1
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  8
+CWindow::OnKeyboard() = 0xE008 ), (0x10010000)
+BaseMsgHandler(): key =  8
+*INFO* CCommonMnuDlg::OnKeyboard(DOWN): key=0xe008, modify=0x10010000, keypad=1
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  8
+CWindow::OnKeyboard() = 0xE008 ), (0x10000000)
+BaseMsgHandler(): key =  8
+*INFO* CCommonMnuDlg::OnKeyboard(UP): key=0xe008, modify=0x10000000, keypad=1
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  20
+CWindow::OnKeyboard() = 0xEF14 (), (0x10010000)
+BaseMsgHandler(): key =  20
+*INFO* CCommonMnuDlg::OnKeyboard(DOWN): key=0xef14, modify=0x10010000, keypad=1
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  20
+CWindow::OnKeyboard() = 0xEF14 (), (0x10000000)
+[Receive] EVT_IMG_BCKGRNDSET
+*DBG* CScreenSaverManager::Stop()
+*INFO* displayBackGround():: "" assigned
+viewSend::Receive(EVT_MENU_CANCEL), menuID=0
+Ci200xWinIDLE::OnActivate()
+*INFO* CancelMenu(): Ack=EVT_MENU_CANCEL
+CSkinCommonMenuApp::CancelMenu(0) - done
+*semGive* CSkinCommonMenuApp:CancelMenu
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  19
+Ci200xWinIDLE::OnKeyboard(): - EF13, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x16 (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  19
+Ci200xWinIDLE::OnKeyboard(): - EF13, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x16 (0)
+viewSend::Receive(ACTION_MENU_CREATE), menuID=1
+CSkinCommonMenuApp::CreateMenu(1)
+CSkinDialog::Create Creating 6 widgets / 0 controls
+CSkinDialog::Create Creating 5 widgets / 0 controls
+*INFO* CreateWindow(): Ack=EVT_MENU_UPDATE
+Ci200xWinIDLE::OnDeactivate()
+*semGive*: Receive():ACTION_MENU_CREATE(1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  20
+CWindow::OnKeyboard() = 0xEF14 (), (0x10010000)
+BaseMsgHandler(): key =  20
+*INFO* CCommonMnuDlg::OnKeyboard(DOWN): key=0xef14, modify=0x10010000, keypad=1
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  20
+CWindow::OnKeyboard() = 0xEF14 (), (0x10000000)
+*INFO*(h:/fw/build/../util/dconfig_utils/rwSysConfig.cpp:2861):: start writing
+*INFO* CopySSHData:: Default SSH UserId () and Password (***)
+*INFO* CopyEAPData:: Default EAP UserId1 (), EAP UserId2 () and Password (***)
+*INFO* CopyCAData:: Default CA (), CA Domain (), Host () and Cert DN ()
+spawn a task for non-block write flash: tID=0x83bcbe70
+*INFO*(h:/fw/build/../util/dconfig_utils/rwSysConfig.cpp:2902):: end writing
+[Receive] EVT_IMG_BCKGRNDSET
+*DBG* CScreenSaverManager::Stop()
+*INFO* displayBackGround():: "" assigned
+writeFileThread:: start writing to FFS: file=/flash0/SystemConfig.dat, size=12065, tDI=0x83bcbe70
+writeFileThread:: end writing to FFS: file=/flash0/SystemConfig.dat, size=12065, tID=0x83bcbe70
+viewSend::Receive(EVT_MENU_CANCEL), menuID=1
+Ci200xWinIDLE::OnActivate()
+*INFO* CancelMenu(): Ack=EVT_MENU_CANCEL
+CSkinCommonMenuApp::CancelMenu(1) - done
+*semGive* CSkinCommonMenuApp:CancelMenu
+>>>End of console message
+
+
+
+ === Record #005 ===
+INFORMATION     SET     Logged 11/14/2019 16:50:16.780  FW: SIP1140e04.04.33.00
+File: h:/fw/build/../util/dconfig_utils/dconfig.cpp Line #3948 Error #0
+Description:
+Error-dconfig.cpp::validateRtpPorts(16384,32764)
+
+
+ === Record #006 ===
+INFORMATION     SET     Logged 11/14/2019 16:50:12.710  FW: SIP1140e04.04.33.00
+File: h:/fw/build/../mcu/i200x/app/etherset.cpp Line #6187 Error #0
+Description: Reboot occurred: reason = 0, mask=0x0
+
+
+ === Record #007 ===
+INFORMATION     SET     Logged 11/14/2019 16:49:40.130  FW: 04.04.33.00
+File: h:/fw/build/../util/ecr/ecr.c Line #559 Error #0
+Description: ==DebugInfo==
+
+>>>Last sysExcMsg:
+▒
+>>>End of sysExcMsg
+
+
+>>>Console message before last reset:
+E
+*semGive* h:/fw/build/../mcu/win/skinCommonMenu.cpp::UpdateMenu(): menuID=17
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  20
+CWindow::OnKeyboard() = 0xEF14 (), (0x10010000)
+BaseMsgHandler(): key =  20
+*INFO* CCommonMnuDlg::OnKeyboard(DOWN): key=0xef14, modify=0x10010000, keypad=1
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  20
+CWindow::OnKeyboard() = 0xEF14 (), (0x10000000)
+[Receive] EVT_IMG_BCKGRNDSET
+*DBG* CScreenSaverManager::Stop()
+*INFO* displayBackGround():: "" assigned
+viewSend::Receive(EVT_MENU_CANCEL), menuID=17
+Ci200xWinIDLE::OnActivate()
+*INFO* CancelMenu(): Ack=EVT_MENU_CANCEL
+CSkinCommonMenuApp::CancelMenu(17) - done
+*semGive* CSkinCommonMenuApp:CancelMenu
+viewSend::Receive(ACTION_MENU_CREATE), menuID=18
+CSkinCommonMenuApp::CreateMenu(18)
+CSkinDialog::Create Creating 6 widgets / 0 controls
+CSkinDialog::Create Creating 6 widgets / 0 controls
+*INFO* CreateWindow(): Ack=EVT_MENU_UPDATE
+Ci200xWinIDLE::OnDeactivate()
+*semGive*: Receive():ACTION_MENU_CREATE(18)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  8
+CWindow::OnKeyboard() = 0xE008 ), (0x10010000)
+BaseMsgHandler(): key =  8
+*INFO* CCommonMnuDlg::OnKeyboard(DOWN): key=0xe008, modify=0x10010000, keypad=1
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  8
+CWindow::OnKeyboard() = 0xE008 ), (0x10000000)
+BaseMsgHandler(): key =  8
+*INFO* CCommonMnuDlg::OnKeyboard(UP): key=0xe008, modify=0x10000000, keypad=1
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  8
+CWindow::OnKeyboard() = 0xE008 ), (0x10010000)
+BaseMsgHandler(): key =  8
+*INFO* CCommonMnuDlg::OnKeyboard(DOWN): key=0xe008, modify=0x10010000, keypad=1
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  8
+CWindow::OnKeyboard() = 0xE008 ), (0x10000000)
+BaseMsgHandler(): key =  8
+*INFO* CCommonMnuDlg::OnKeyboard(UP): key=0xe008, modify=0x10000000, keypad=1
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  17
+CWindow::OnKeyboard() = 0xEF11 (), (0x10010000)
+BaseMsgHandler(): key =  17
+*INFO* CCommonMnuDlg::OnKeyboard(DOWN): key=0xef11, modify=0x10010000, keypad=1
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  17
+CWindow::OnKeyboard() = 0xEF11 (), (0x10000000)
+[Receive] EVT_IMG_BCKGRNDSET
+*DBG* CScreenSaverManager::Stop()
+*INFO* displayBackGround():: "" assigned
+viewSend::Receive(EVT_MENU_CANCEL), menuID=18
+Ci200xWinIDLE::OnActivate()
+*INFO* CancelMenu(): Ack=EVT_MENU_CANCEL
+CSkinCommonMenuApp::CancelMenu(18) - done
+*semGive* CSkinCommonMenuApp:CancelMenu
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  53
+Ci200xWinIDLE::OnKeyboard(): - 35, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x05 (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  53
+Ci200xWinIDLE::OnKeyboard(): - 35, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x05 (0)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  53
+Ci200xWinIDLE::OnKeyboard(): - 35, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x05 (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  53
+Ci200xWinIDLE::OnKeyboard(): - 35, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x05 (0)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  42
+Ci200xWinIDLE::OnKeyboard(): - 2A, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x0A (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  42
+Ci200xWinIDLE::OnKeyboard(): - 2A, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x0A (0)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  53
+Ci200xWinIDLE::OnKeyboard(): - 35, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x05 (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  53
+Ci200xWinIDLE::OnKeyboard(): - 35, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x05 (0)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  53
+Ci200xWinIDLE::OnKeyboard(): - 35, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x05 (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  53
+Ci200xWinIDLE::OnKeyboard(): - 35, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x05 (0)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  17
+Ci200xWinIDLE::OnKeyboard(): - EF11, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x14 (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  17
+Ci200xWinIDLE::OnKeyboard(): - EF11, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x14 (0)
+viewSend::Receive(ACTION_MENU_CREATE), menuID=19
+CSkinCommonMenuApp::CreateMenu(19)
+CSkinDialog::Create Creating 6 widgets / 0 controls
+CSkinDialog::Create Creating 6 widgets / 0 controls
+*INFO* CreateWindow(): Ack=EVT_MENU_UPDATE
+Ci200xWinIDLE::OnDeactivate()
+*semGive*: Receive():ACTION_MENU_CREATE(19)
+viewSend::Receive(ACTION_MENU_UPDATE), menuID=19, map=0x0
+*INFO* h:/fw/build/../mcu/win/skinCommonMenu.cpp::UpdateMenu: menuID=19, map=0xFF
+CSkinDialog::Create Creating 7 widgets / 0 controls
+*INFO* UpdateMenu(): Ack=EVT_MENU_UPDATE
+*semGive* h:/fw/build/../mcu/win/skinCommonMenu.cpp::UpdateMenu(): menuID=19
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  17
+CWindow::OnKeyboard() = 0xEF11 (), (0x10010000)
+BaseMsgHandler(): key =  17
+*INFO* CCommonMnuDlg::OnKeyboard(DOWN): key=0xef11, modify=0x10010000, keypad=1
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  17
+CWindow::OnKeyboard() = 0xEF11 (), (0x10000000)
+[Receive] EVT_IMG_BCKGRNDSET
+*DBG* CScreenSaverManager::Stop()
+*INFO* displayBackGround():: "" assigned
+viewSend::Receive(EVT_MENU_CANCEL), menuID=19
+*INFO* activateCoreUI(): activate dialog = 0xE000A
+MSG_WIDGET_MENU_ACTION in MainWindow = 77
+CSkinDialogRoot(): ctor
+CDHCPDialog ctor
+CSkinDialog::Create Creating 1 widgets / 1 controls
+*INFO* CancelMenu(): Ack=EVT_MENU_CANCEL
+CSkinCommonMenuApp::CancelMenu(19) - done
+*semGive* CSkinCommonMenuApp:CancelMenu
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  8
+CWindow::OnKeyboard() = 0xE008 ), (0x10010000)
+BaseMsgHandler(): key =  8
+BaseMsgHandler(): key =  8
+CWindow::OnKeyboard() = 0xE008 ), (0x10010000)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  8
+CWindow::OnKeyboard() = 0xE008 ), (0x10000000)
+BaseMsgHandler(): key =  8
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  8
+CWindow::OnKeyboard() = 0xE008 ), (0x10010000)
+BaseMsgHandler(): key =  8
+BaseMsgHandler(): key =  8
+CWindow::OnKeyboard() = 0xE008 ), (0x10010000)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  8
+CWindow::OnKeyboard() = 0xE008 ), (0x10000000)
+BaseMsgHandler(): key =  8
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  8
+CWindow::OnKeyboard() = 0xE008 ), (0x10010000)
+BaseMsgHandler(): key =  8
+BaseMsgHandler(): key =  8
+CWindow::OnKeyboard() = 0xE008 ), (0x10010000)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  8
+CWindow::OnKeyboard() = 0xE008 ), (0x10000000)
+BaseMsgHandler(): key =  8
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  8
+CWindow::OnKeyboard() = 0xE008 ), (0x10010000)
+BaseMsgHandler(): key =  8
+BaseMsgHandler(): key =  8
+CWindow::OnKeyboard() = 0xE008 ), (0x10010000)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  8
+CWindow::OnKeyboard() = 0xE008 ), (0x10000000)
+BaseMsgHandler(): key =  8
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  8
+CWindow::OnKeyboard() = 0xE008 ), (0x10010000)
+BaseMsgHandler(): key =  8
+BaseMsgHandler(): key =  8
+CWindow::OnKeyboard() = 0xE008 ), (0x10010000)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  8
+CWindow::OnKeyboard() = 0xE008 ), (0x10000000)
+BaseMsgHandler(): key =  8
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  8
+CWindow::OnKeyboard() = 0xE008 ), (0x10010000)
+BaseMsgHandler(): key =  8
+BaseMsgHandler(): key =  8
+CWindow::OnKeyboard() = 0xE008 ), (0x10010000)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  8
+CWindow::OnKeyboard() = 0xE008 ), (0x10000000)
+BaseMsgHandler(): key =  8
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  8
+CWindow::OnKeyboard() = 0xE008 ), (0x10010000)
+BaseMsgHandler(): key =  8
+BaseMsgHandler(): key =  8
+CWindow::OnKeyboard() = 0xE008 ), (0x10010000)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  8
+CWindow::OnKeyboard() = 0xE008 ), (0x10000000)
+BaseMsgHandler(): key =  8
+SSH is Enabled
+Enabling ECR watchdog
+
+ECR Watchdog kicked, 30000 (ticks)
+
+GEM Disconnect
+
+
+Resetting...
+
+GEM Connect
+acsory_number = 1
+[CacheBitmapDownload]
+[KEMCacheBitmaps]
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+Unmounting tffs drives
+
+Issuing chip reset
+>>>End of console message
+
+
+
+ === Record #008 ===
+INFORMATION     SET     Logged 11/14/2019 16:09:22.740  FW: SIP1140e04.04.33.00
+File: h:/fw/build/../util/dconfig_utils/dconfig.cpp Line #3948 Error #0
+Description:
+Error-dconfig.cpp::validateRtpPorts(16384,32764)
+
+
+ === Record #009 ===
+INFORMATION     SET     Logged 11/14/2019 16:09:21.070  FW: SIP1140e04.04.33.00
+File: h:/fw/build/../util/dconfig_utils/dconfig.cpp Line #1640 Error #0
+Description: *ERROR* parseSysConfig: comand is incorrect:
+        "SERVER_RETRIES1        3"
+
+
+ === Record #010 ===
+INFORMATION     SET     Logged 11/14/2019 16:09:17.740  FW: SIP1140e04.04.33.00
+File: h:/fw/build/../mcu/i200x/app/etherset.cpp Line #6187 Error #0
+Description: Reboot occurred: reason = 0, mask=0x0
+
+
+ === Record #011 ===
+INFORMATION     SET     Logged 11/14/2019 16:08:50.130  FW: 04.04.33.00
+File: h:/fw/build/../util/ecr/ecr.c Line #559 Error #0
+Description: ==DebugInfo==
+
+>>>Last sysExcMsg:
+▒
+>>>End of sysExcMsg
+
+
+>>>Console message before last reset:
+
+>>>End of console message
+
+
+
+ === Record #012 ===
+INFORMATION     SET     Logged 11/14/2019 16:08:50.130  FW: 04.04.33.00
+File: h:/fw/build/../util/ecr/ecr.c Line #559 Error #0
+Description: ==DebugInfo==
+
+>>>Last sysExcMsg:
+▒
+>>>End of sysExcMsg
+
+
+>>>Console message before last reset:
+
+>>>End of console message
+
+
+
+ === Record #013 ===
+INFORMATION     SET     Logged 11/14/2019 16:09:22.830  FW: SIP1140e04.04.33.00
+File: h:/fw/build/../util/dconfig_utils/dconfig.cpp Line #3948 Error #0
+Description:
+Error-dconfig.cpp::validateRtpPorts(16384,32764)
+
+
+ === Record #014 ===
+INFORMATION     SET     Logged 11/14/2019 16:09:21.070  FW: SIP1140e04.04.33.00
+File: h:/fw/build/../util/dconfig_utils/dconfig.cpp Line #1640 Error #0
+Description: *ERROR* parseSysConfig: comand is incorrect:
+        "SERVER_RETRIES1        3"
+
+
+ === Record #015 ===
+INFORMATION     SET     Logged 11/14/2019 16:09:17.700  FW: SIP1140e04.04.33.00
+File: h:/fw/build/../mcu/i200x/app/etherset.cpp Line #6187 Error #0
+Description: Reboot occurred: reason = 0, mask=0x0
+
+
+ === Record #016 ===
+INFORMATION     SET     Logged 11/14/2019 16:08:50.120  FW: 04.04.33.00
+File: h:/fw/build/../util/ecr/ecr.c Line #559 Error #0
+Description: ==DebugInfo==
+
+>>>Last sysExcMsg:
+▒
+>>>End of sysExcMsg
+
+
+>>>Console message before last reset:
+EVT_IMG_BCKGRNDSET
+*DBG* CScreenSaverManager::Stop()
+*INFO* displayBackGround():: "" assigned
+viewSend::Receive(EVT_MENU_CANCEL), menuID=0
+Ci200xWinIDLE::OnActivate()
+*INFO* CancelMenu(): Ack=EVT_MENU_CANCEL
+CSkinCommonMenuApp::CancelMenu(0) - done
+*semGive* CSkinCommonMenuApp:CancelMenu
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  53
+Ci200xWinIDLE::OnKeyboard(): - 35, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x05 (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  53
+Ci200xWinIDLE::OnKeyboard(): - 35, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x05 (0)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  53
+Ci200xWinIDLE::OnKeyboard(): - 35, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x05 (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  53
+Ci200xWinIDLE::OnKeyboard(): - 35, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x05 (0)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  42
+Ci200xWinIDLE::OnKeyboard(): - 2A, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x0A (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  42
+Ci200xWinIDLE::OnKeyboard(): - 2A, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x0A (0)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  53
+Ci200xWinIDLE::OnKeyboard(): - 35, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x05 (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  53
+Ci200xWinIDLE::OnKeyboard(): - 35, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x05 (0)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  53
+Ci200xWinIDLE::OnKeyboard(): - 35, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x05 (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  53
+Ci200xWinIDLE::OnKeyboard(): - 35, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x05 (0)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  17
+Ci200xWinIDLE::OnKeyboard(): - EF11, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x14 (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  17
+Ci200xWinIDLE::OnKeyboard(): - EF11, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x14 (0)
+viewSend::Receive(ACTION_MENU_CREATE), menuID=1
+CSkinCommonMenuApp::CreateMenu(1)
+CSkinDialog::Create Creating 6 widgets / 0 controls
+CSkinDialog::Create Creating 6 widgets / 0 controls
+*INFO* CreateWindow(): Ack=EVT_MENU_UPDATE
+Ci200xWinIDLE::OnDeactivate()
+*semGive*: Receive():ACTION_MENU_CREATE(1)
+[Receive] EVT_IMG_BCKGRNDSET
+*DBG* CScreenSaverManager::Stop()
+*INFO* displayBackGround():: "" assigned
+viewSend::Receive(EVT_MENU_CANCEL), menuID=1
+*INFO* activateCoreUI(): activate dialog = 0xE0005
+MSG_WIDGET_MENU_ACTION in MainWindow = 70
+*INFO* checkPasswordOnDialog(): validate password (0), state=0
+CAutoPRVDialog ctor
+CSkinDialog::Create Creating 5 widgets / 0 controls
+CAutoPRVSubDialog ctor
+CSkinDialog::Create Creating 1 widgets / 60 controls
+CNetworkDialog ctor
+CSkinDialog::Create Creating 5 widgets / 0 controls
+CNetworkSubDialog ctor
+CSkinDialog::Create Creating 61 widgets / 67 controls
+*DBG* InitField() entering
+*DBG* ipv6InitField() entering
+EEPROM value for DNS is 208.91.112.53
+EEPROM value for DNS is 208.91.112.52
+        IDC_PROVISION_VALUE
+End ipv6InitField()
+        IDC_8021X_MODE_VALUE
+        IDC_8021X_ID1_VAL
+        IDC_8021X_ID2_VAL
+        IDC_8021X_PWD_VAL
+        IDC_DHCP_VALUE
+        IDC_BTMENU_VALUE
+        IDC_VOICEVLAN_VALUE
+        IDC_DATAVLAN_VALUE
+        IDC_CTRLBITS_VALUE
+        IDC_MEDIABITS_VALUE
+        IDC_DATABITS_VALUE
+        IDC_NISPEED_VALUE
+        IDC_NIDUPLEX_VALUE
+        IDC_PCSPEED_VALUE
+        IDC_PCDUPLEX_VALUE
+        IDC_PROV_PROT_VALUE
+  Added TFTP
+  Added FTP
+  Added HTTP
+  Added HTTPS
+        IDC_PROV_ID_VALUE
+        IDC_PROV_PSWD_VALUE
+        IDC_NAT_SIGNAL_VALUE
+        IDC_NAT_MEDIA_VALUE
+        IDC_SRTP_MODE_VALUE
+        IDC_SRTP_CIPHER1_VALUE
+        IDC_SRTP_CIPHER2_VALUE
+        IDC_SFTP_ENABLED_VALUE
+        IDC_SSH_ENABLED_VALUE
+        IDC_SSH_USERID_VALUE
+        IDC_SSH_PWD_VALUE
+        IDC_FIPS_ENABLED_VALUE
+End InitField()
+CNetworkSubDialog::UpdateScreen()
+        IDC_CACHED_IP_VALUE: NetOpts = 255
+        IDC_VOICEVLAN_VALUE: selection = 2
+        IDC_DATAVLAN_VALUE: dataVLAN=0 selection=1
+        IDC_PC_VLANSTRIPPING
+IDC_8021X_MODE_VALUE OnChange: EAP_MODE_DISABLED
+        IDC_PROVISION_VALUE
+        IDC_PROV_PROT_VALUE
+[dhcp66optParse] Protocol: 0
+[dhcp66optParse] Server:   172.16.110.50
+        NAT_TRAVERSAL: start
+           STUN values: start
+        SRTP SETTINGS: start
+select 0
+End CNetworkSubDialog::UpdateScreen()
+*INFO* RecoverSoftKey():: rejected (0)
+*MMM* CAutoPRVDialog::OnActivate(), bAutoPRVActive=1
+*INFO* CancelMenu(): Ack=EVT_MENU_CANCEL
+CSkinCommonMenuApp::CancelMenu(1) - done
+*semGive* CSkinCommonMenuApp:CancelMenu
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  20
+*DBG*CSkinEditControl::OnKeyboard(): 0xef14  0x10010000
+BaseMsgHandler(): key =  20
+CNetworkSubDialog::OnKeyboard() 0xEF14  0x10010000
+BaseMsgHandler(): key =  20
+BaseMsgHandler(): key =  20
+CWindow::OnKeyboard() = 0xEF14 (), (0x10010000)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  20
+*DBG*CSkinEditControl::OnKeyboard(): 0xef14  0x10000000
+BaseMsgHandler(): key =  20
+CNetworkSubDialog::OnKeyboard() 0xEF14  0x10000000
+CNetworkDialog::OnWidgetButtonUp() - 0x83c0882c
+*INFO* RecoverSoftKey():: rejected (0)
+*MMM* CAutoPRVDialog::OnActivate(), bAutoPRVActive=0
+*WARN* closeCoreUI(): close dialog 0xE0005 (curr=0xE0005)
+SMC-000B] 16:02:33.030 ERROR] sigma/unistim/SigmaModem.cpp(859) : (onFirmwareEvent) >> unexpected event: 0x800E0002 p1=0x000E0005 p2=0x00000000 p3=0x00000000
+viewSend::Receive(ACTION_MENU_CREATE), menuID=2
+CSkinCommonMenuApp::CreateMenu(2)
+*WARN* closeCoreUI(): close dialog 0xE0005 (curr=0x800E0007)
+*WARN* CCoreUIManager::Receive(): EVT_CORE_UI_CLOSEDIALOG ignored
+SMC-000B] 16:02:33.140 ERROR] sigma/unistim/SigmaModem.cpp(859) : (onFirmwareEvent) >> unexpected event: 0x800E0002 p1=0x000E0005 p2=0x00000000 p3=0x00000000
+CSkinDialog::Create Creating 6 widgets / 0 controls
+CSkinDialog::Create Creating 6 widgets / 0 controls
+Ci200xWinIDLE::OnActivate()
+*WARN* closeCoreUI(): close dialog 0xE0005 (curr=0x800E0007)
+*WARN* CCoreUIManager::Receive(): EVT_CORE_UI_CLOSEDIALOG ignored
+SMC-000B] 16:02:33.140 ERROR] sigma/unistim/SigmaModem.cpp(859) : (onFirmwareEvent) >> unexpected event: 0x800E0002 p1=0x000E0005 p2=0x00000000 p3=0x00000000
+CSkinApp::OnAppDestroy(skinnetwork) - 0x83c08c90
+CNetworkDialog ctor
+CNetworkSubDialog dtor
+CSkinApp::OnAppDestroy(skinautoPRV) - 0x83becec0
+CMainWindow::DestroyApp() 0x83c08c90
+CMainWindow::DestroyApp() 0x83becec0
+*INFO* CreateWindow(): Ack=EVT_MENU_UPDATE
+Ci200xWinIDLE::OnDeactivate()
+*semGive*: Receive():ACTION_MENU_CREATE(2)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  20
+CWindow::OnKeyboard() = 0xEF14 (), (0x10010000)
+BaseMsgHandler(): key =  20
+*INFO* CCommonMnuDlg::OnKeyboard(DOWN): key=0xef14, modify=0x10010000, keypad=1
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  20
+CWindow::OnKeyboard() = 0xEF14 (), (0x10000000)
+[Receive] EVT_IMG_BCKGRNDSET
+*DBG* CScreenSaverManager::Stop()
+*INFO* displayBackGround():: "" assigned
+viewSend::Receive(EVT_MENU_CANCEL), menuID=2
+Ci200xWinIDLE::OnActivate()
+*INFO* CancelMenu(): Ack=EVT_MENU_CANCEL
+CSkinCommonMenuApp::CancelMenu(2) - done
+*semGive* CSkinCommonMenuApp:CancelMenu
+[Receive] EVT_IMG_BCKGRNDSET
+*DBG* CScreenSaverManager::Stop()
+*INFO* displayBackGround():: "" assigned
+[Receive] EVT_IMG_BCKGRNDSET
+*DBG* CScreenSaverManager::Stop()
+*INFO* displayBackGround():: "" assigned
+[Receive] EVT_IMG_BCKGRNDSET
+*DBG* CScreenSaverManager::Stop()
+*INFO* displayBackGround():: "" assigned
+[Receive] EVT_IMG_BCKGRNDSET
+*DBG* CScreenSaverManager::Stop()
+*INFO* displayBackGround():: "" assigned
+[Receive] EVT_IMG_BCKGRNDSET
+*DBG* CScreenSaverManager::Stop()
+*INFO* displayBackGround():: "" assigned
+[Receive] EVT_IMG_BCKGRNDSET
+*DBG* CScreenSaverManager::Stop()
+*INFO* displayBackGround():: "" assigned
+[Receive] EVT_IMG_BCKGRNDSET
+*DBG* CScreenSaverManager::Stop()
+*INFO* displayBackGround():: "" assigned
+[Receive] EVT_IMG_BCKGRNDSET
+*DBG* CScreenSaverManager::Stop()
+*INFO* displayBackGround():: "" assigned
+[Receive] EVT_IMG_BCKGRNDSET
+*DBG* CScreenSaverManager::Stop()
+*INFO* displayBackGround():: "" assigned
+[Receive] EVT_IMG_BCKGRNDSET
+*DBG* CScreenSaverManager::Stop()
+*INFO* displayBackGround():: "" assigned
+[Receive] EVT_IMG_BCKGRNDSET
+*DBG* CScreenSaverManager::Stop()
+*INFO* displayBackGround():: "" assigned
+[Receive] EVT_IMG_BCKGRNDSET
+*DBG* CScreenSaverManager::Stop()
+*INFO* displayBackGround():: "" assigned
+SSH is Enabled
+Enabling ECR watchdog
+
+ECR Watchdog kicked, 30000 (ticks)
+
+GEM Disconnect
+
+
+Resetting...
+
+GEM Connect
+acsory_number = 1
+[CacheBitmapDownload]
+[KEMCacheBitmaps]
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+Unmounting tffs drives
+
+Issuing chip reset
+>>>End of console message
+
+
+
+ === Record #017 ===
+INFORMATION     SET     Logged 11/14/2019 15:55:26.290  FW: SIP1140e04.04.33.00
+File: h:/fw/build/../util/dconfig_utils/dconfig.cpp Line #3948 Error #0
+Description:
+Error-dconfig.cpp::validateRtpPorts(16384,32764)
+
+
+ === Record #018 ===
+INFORMATION     SET     Logged 11/14/2019 15:55:24.610  FW: SIP1140e04.04.33.00
+File: h:/fw/build/../util/dconfig_utils/dconfig.cpp Line #1640 Error #0
+Description: *ERROR* parseSysConfig: comand is incorrect:
+        "DEF_USER1      Student3"
+
+
+ === Record #019 ===
+INFORMATION     SET     Logged 11/14/2019 15:55:23.530  FW: SIP1140e04.04.33.00
+File: h:/fw/build/../util/dconfig_utils/dconfig.cpp Line #1640 Error #0
+Description: *ERROR* parseSysConfig: comand is incorrect:
+        "SERVER_RETRIES1        3"
+
+
+ === Record #020 ===
+INFORMATION     SET     Logged 11/14/2019 15:55:19.710  FW: SIP1140e04.04.33.00
+File: h:/fw/build/../mcu/i200x/app/etherset.cpp Line #6187 Error #0
+Description: Reboot occurred: reason = 0, mask=0x0
+
+
+ === Record #021 ===
+INFORMATION     SET     Logged 11/14/2019 15:54:52.120  FW: 04.04.33.00
+File: h:/fw/build/../util/ecr/ecr.c Line #559 Error #0
+Description: ==DebugInfo==
+
+>>>Last sysExcMsg:
+▒
+>>>End of sysExcMsg
+
+
+>>>Console message before last reset:
+)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  54
+Ci200xWinIDLE::OnKeyboard(): - 36, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x06 (0)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  56
+Ci200xWinIDLE::OnKeyboard(): - 38, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x08 (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  56
+Ci200xWinIDLE::OnKeyboard(): - 38, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x08 (0)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  18
+Ci200xWinIDLE::OnKeyboard(): - EF12, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x15 (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  18
+Ci200xWinIDLE::OnKeyboard(): - EF12, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x15 (0)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  51
+Ci200xWinIDLE::OnKeyboard(): - 33, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x03 (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  51
+Ci200xWinIDLE::OnKeyboard(): - 33, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x03 (0)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  17
+Ci200xWinIDLE::OnKeyboard(): - EF11, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x14 (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  17
+Ci200xWinIDLE::OnKeyboard(): - EF11, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x14 (0)
+[Receive] EVT_IMG_BCKGRNDSET
+*DBG* CScreenSaverManager::Stop()
+*INFO* displayBackGround():: "" assigned
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  18
+Ci200xWinIDLE::OnKeyboard(): - EF12, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x15 (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  18
+Ci200xWinIDLE::OnKeyboard(): - EF12, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x15 (0)
+[Receive] EVT_IMG_BCKGRNDSET
+*DBG* CScreenSaverManager::Stop()
+*INFO* displayBackGround():: "" assigned
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  18
+Ci200xWinIDLE::OnKeyboard(): - EF12, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x15 (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  18
+Ci200xWinIDLE::OnKeyboard(): - EF12, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x15 (0)
+[Receive] EVT_IMG_BCKGRNDSET
+*DBG* CScreenSaverManager::Stop()
+*INFO* displayBackGround():: "" assigned
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  17
+Ci200xWinIDLE::OnKeyboard(): - EF11, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x14 (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  17
+Ci200xWinIDLE::OnKeyboard(): - EF11, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x14 (0)
+[Receive] EVT_IMG_BCKGRNDSET
+*DBG* CScreenSaverManager::Stop()
+*INFO* displayBackGround():: "" assigned
+h:/fw/build/../util/upmanager/ProfileManager.cpp:1836 >>> loading INI file /flash0/profiles/userprefs.txt
+ERROR: h:/fw/build/../util/upmanager/ProfileManager.cpp:1816 >>> no-value for key::<cfwd>
+ERROR: h:/fw/build/../util/upmanager/ProfileManager.cpp:1816 >>> no-value for key::<vmailid>
+ Entering GetSystemConfigCBHandler...
+        "French" - added
+GetLanguageFileList(): list of languages was collected successfully (total: 1)
+*NOTE*UserAgentString="Avaya IP Phone 1140E (SIP1140e.04.04.33.00)"
+Random Seed: 1532139918
+ dest->autoUpdateTime 44, sysConfigFile.autoUpdateTime 0
+*WARN*readSysConfigFile: sys config file was read already
+CB handler - Srtp Cipher[0]  AES_CM_128_HMAC_SHA1_80.
+CB handler - Srtp Cipher[1]  AES_CM_128_HMAC_SHA1_32.
+CB handler - Srtp Enabled 0.
+CB handler - Srtp Mode 1.
+ReadFileHandler(/flash0/dialingplan.dplan)::Entering...
+ReadFileHandler():: cannot get file size of /flash0/dialingplan.dplan
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  27
+Ci200xWinIDLE::OnKeyboard(): - 1B, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x10 (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  27
+Ci200xWinIDLE::OnKeyboard(): - 1B, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x10 (0)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  27
+Ci200xWinIDLE::OnKeyboard(): - 1B, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x10 (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  27
+Ci200xWinIDLE::OnKeyboard(): - 1B, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x10 (0)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  13
+Ci200xWinIDLE::OnKeyboard(): - 0D, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x41 (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  13
+Ci200xWinIDLE::OnKeyboard(): - 0D, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x41 (0)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  6
+Ci200xWinIDLE::OnKeyboard(): - E006, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x0E (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  6
+Ci200xWinIDLE::OnKeyboard(): - E006, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x0E (0)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  17
+Ci200xWinIDLE::OnKeyboard(): - EF11, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x14 (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  17
+Ci200xWinIDLE::OnKeyboard(): - EF11, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x14 (0)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  17
+Ci200xWinIDLE::OnKeyboard(): - EF11, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x14 (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  17
+Ci200xWinIDLE::OnKeyboard(): - EF11, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x14 (0)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  18
+Ci200xWinIDLE::OnKeyboard(): - EF12, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x15 (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  18
+Ci200xWinIDLE::OnKeyboard(): - EF12, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x15 (0)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  5
+Ci200xWinIDLE::OnKeyboard(): - E005, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x0F (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  5
+Ci200xWinIDLE::OnKeyboard(): - E005, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x0F (0)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  5
+Ci200xWinIDLE::OnKeyboard(): - E005, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x0F (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  5
+Ci200xWinIDLE::OnKeyboard(): - E005, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x0F (0)
+[Receive] EVT_IMG_BCKGRNDSET
+*DBG* CScreenSaverManager::Stop()
+*INFO* displayBackGround():: "" assigned
+viewSend::Receive(ACTION_MENU_CREATE), menuID=19
+CSkinCommonMenuApp::CreateMenu(19)
+CSkinDialog::Create Creating 6 widgets / 0 controls
+CSkinDialog::Create Creating 6 widgets / 0 controls
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  6
+Ci200xWinIDLE::OnKeyboard(): - EF06, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x11 (1)
+*INFO* CreateWindow(): Ack=EVT_MENU_UPDATE
+Ci200xWinIDLE::OnDeactivate()
+*semGive*: Receive():ACTION_MENU_CREATE(19)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  6
+CWindow::OnKeyboard() = 0xEF06 (), (0x10000000)
+BaseMsgHandler(): key =  6
+*INFO* CCommonMnuDlg::OnKeyboard(UP): key=0xef06, modify=0x10000000, keypad=1
+viewSend::Receive(ACTION_MENU_UPDATE), menuID=19, map=0x0
+*INFO* h:/fw/build/../mcu/win/skinCommonMenu.cpp::UpdateMenu: menuID=19, map=0xFF
+CSkinDialog::Create Creating 6 widgets / 0 controls
+*INFO* UpdateMenu(): Ack=EVT_MENU_UPDATE
+*semGive* h:/fw/build/../mcu/win/skinCommonMenu.cpp::UpdateMenu(): menuID=19
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  20
+CWindow::OnKeyboard() = 0xEF14 (), (0x10010000)
+BaseMsgHandler(): key =  20
+*INFO* CCommonMnuDlg::OnKeyboard(DOWN): key=0xef14, modify=0x10010000, keypad=1
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  20
+CWindow::OnKeyboard() = 0xEF14 (), (0x10000000)
+[Receive] EVT_IMG_BCKGRNDSET
+*DBG* CScreenSaverManager::Stop()
+*INFO* displayBackGround():: "" assigned
+viewSend::Receive(EVT_MENU_CANCEL), menuID=19
+Ci200xWinIDLE::OnActivate()
+*INFO* CancelMenu(): Ack=EVT_MENU_CANCEL
+CSkinCommonMenuApp::CancelMenu(19) - done
+*semGive* CSkinCommonMenuApp:CancelMenu
+Enabling ECR watchdog
+
+ECR Watchdog kicked, 30000 (ticks)
+
+GEM Disconnect
+
+
+Resetting...
+
+GEM Connect
+acsory_number = 1
+[CacheBitmapDownload]
+[KEMCacheBitmaps]
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+[CopyToGEMGreyscale] Yahoo
+Unmounting tffs drives
+
+Issuing chip reset
+>>>End of console message
+
+
+
+ === Record #022 ===
+INFORMATION     SET     Logged 11/14/2019 15:39:00.730  FW: SIP1140e04.04.33.00
+File: h:/fw/build/../util/dconfig_utils/dconfig.cpp Line #3948 Error #0
+Description:
+Error-dconfig.cpp::validateRtpPorts(16384,32764)
+
+
+ === Record #023 ===
+INFORMATION     SET     Logged 11/14/2019 15:38:59.530  FW: SIP1140e04.04.33.00
+File: h:/fw/build/../util/dconfig_utils/dconfig.cpp Line #1640 Error #0
+Description: *ERROR* parseSysConfig: comand is incorrect:
+        "DEF_USER1      Student3"
+
+
+ === Record #024 ===
+INFORMATION     SET     Logged 11/14/2019 15:38:58.490  FW: SIP1140e04.04.33.00
+File: h:/fw/build/../util/dconfig_utils/dconfig.cpp Line #1640 Error #0
+Description: *ERROR* parseSysConfig: comand is incorrect:
+        "SERVER_RETRIES1        3"
+
+
+ === Record #025 ===
+INFORMATION     SET     Logged 11/14/2019 15:38:54.710  FW: SIP1140e04.04.33.00
+File: h:/fw/build/../mcu/i200x/app/etherset.cpp Line #6187 Error #0
+Description: Reboot occurred: reason = 0, mask=0x0
+
+
+ === Record #026 ===
+INFORMATION     SET     Logged 11/14/2019 15:38:27.130  FW: 04.04.33.00
+File: h:/fw/build/../util/ecr/ecr.c Line #559 Error #0
+Description: ==DebugInfo==
+
+>>>Last sysExcMsg:
+▒
+>>>End of sysExcMsg
+
+
+>>>Console message before last reset:
+Ci200xWinIDLE::OnKeyboard(): - 38, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x08 (0)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  56
+Ci200xWinIDLE::OnKeyboard(): - 38, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x08 (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  56
+Ci200xWinIDLE::OnKeyboard(): - 38, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x08 (0)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  56
+Ci200xWinIDLE::OnKeyboard(): - 38, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x08 (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  56
+Ci200xWinIDLE::OnKeyboard(): - 38, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x08 (0)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  51
+Ci200xWinIDLE::OnKeyboard(): - 33, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x03 (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  51
+Ci200xWinIDLE::OnKeyboard(): - 33, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x03 (0)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  51
+Ci200xWinIDLE::OnKeyboard(): - 33, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x03 (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  51
+Ci200xWinIDLE::OnKeyboard(): - 33, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x03 (0)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  51
+Ci200xWinIDLE::OnKeyboard(): - 33, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x03 (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  51
+Ci200xWinIDLE::OnKeyboard(): - 33, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x03 (0)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  54
+Ci200xWinIDLE::OnKeyboard(): - 36, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x06 (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  54
+Ci200xWinIDLE::OnKeyboard(): - 36, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x06 (0)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  54
+Ci200xWinIDLE::OnKeyboard(): - 36, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x06 (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  54
+Ci200xWinIDLE::OnKeyboard(): - 36, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x06 (0)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  56
+Ci200xWinIDLE::OnKeyboard(): - 38, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x08 (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  56
+Ci200xWinIDLE::OnKeyboard(): - 38, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x08 (0)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  18
+Ci200xWinIDLE::OnKeyboard(): - EF12, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x15 (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  18
+Ci200xWinIDLE::OnKeyboard(): - EF12, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x15 (0)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  18
+Ci200xWinIDLE::OnKeyboard(): - EF12, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x15 (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  18
+Ci200xWinIDLE::OnKeyboard(): - EF12, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x15 (0)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  51
+Ci200xWinIDLE::OnKeyboard(): - 33, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x03 (1)
+Calling tyIRd...
+eglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  51
+Ci200xWinIDLE::OnKeyboard(): - 33, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x03 (0)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  7
+Ci200xWinIDLE::OnKeyboard(): - E007, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x0C (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  7
+Ci200xWinIDLE::OnKeyboard(): - E007, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x0C (0)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  18
+Ci200xWinIDLE::OnKeyboard(): - EF12, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x15 (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  18
+Ci200xWinIDLE::OnKeyboard(): - EF12, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x15 (0)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  51
+Ci200xWinIDLE::OnKey`oard(): - 33, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x03 (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  51
+Ci200xWinIDLE::OnKeyboard(): - 33, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x03 (0)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  17
+Ci200xWinIDLE:2OnKeyboard(): - EF11, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x14 (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  17
+Ci200xWinIDLE::OnKeyboard(): - EF11, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x14 (0)
+[Receive] EVT_IMG_BCKGRNDSET
+*DBG* CScreenSaverManager::Stop()
+*INFO* displayBackGround():: "" assigned
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  17
+Ci200xWinIDLE::OnKeyboard(): - EF11, keypad=1, state=1
+==  Ci200xWinIDLE:OnKeyboard(): 0x14 (1)
+Calling tyIRd...
+uglNtKbdControl ICR_READ
+BaseMsgHandler(): key =  17
+Ci200xWinIDLE::OnKeyboard(): - EF11, keypad=1, state=0
+==  Ci200xWinIDLE:OnKeyboard(): 0x14 (0)
+[Receive] EVT_IMG_BCKGRNDSET
+*DBG* CScreenSaverManager::Stop()
+*INFO* displayBackGround():: "" assigned
+h:/fw/build/../util/upmanager/ProfileManager.cpp:1836 >>> loading INI file /flash0/profiles/userprefs.txt
+ERROR: h:/fw/build/../util/upmanager/ProfileManager.cpp:1816 >>> no-value for key::<cfwd>
+ERROR: h:/fw/build/../util/upmanager/ProfileManager.cpp:1816 >>> no-value for key::<vmailid>
+ Entering GetSystemConfigABHandler...
+        "French" - added
+GetLanguageFileList(): list of languages was collected successfully (total: 1)
+*NOTE*UserAgentString="Avaya IP Phone 1140E (SIP1140e.04.04.33.00)"
+Random Seed: 1532139918
+ dest->autoUpdateTime 44, sysConfigFile.autoUpdateTime 0
+*WARN*reedSysConfigFile: sys config file was read already
+CB handler - Srtp Cipher[0]  AES_CM_128_HMAC_SHA1_80.
+CB handler - Srtp Cipher[1]  AES_CM_128_HMAC_SHA1_32.
+CB handler - Srtp Enabled 0.
+CB handler - Srtp Mode 1.
+ReadFileHandler(/flash0/dialingplan.dplan)::Entering...
+ReadFileHandler():: cannot get file size of /flash0/dialingplan.dplan
+SMC-0008] 15:48:55.650 ERROR] Net/sigma/RegistrationManager.cpp(300) : (EvFailure) >> Failed (un)registration, code=408 state=1 phrase=Request Timeout
+SMC-0008] 15:48:55.650 ERROR] Net/sigma/ProxyMonitor.cpp(15079 : (EvFailure) >> request failed in state [Monitoring] [UDP] response=408
+SMC-0008] 15:48:55.650 ERROR] Net/sigma/ProxyMonitor.cpp(1554) : (onSipTimeout) >> Request 0 of 3 timed out to 172.16.110.50, state=Monitoring [UDP]
+[Receive] EVT_IMG_BCKGRNDSET
+*DBG* CScreenSaverManager::Stop()
+*INFO* displayBackGround():: "" assigned
+SMC-0008] 15:49:27.650 ERROR] Net/sigma/ProxyMonitor.cpp(1507) : (EvFailure) >> request failed io state [Monitoring] [UDP] response=408
+SMC-0008] 15:49:27.650 ERROR] Net/sigma/ProxyMonitor.cpp(1554) : (onSipTimeout) >> Request 1 of 3 timed out to 172.16.110.50, state=Monitoring [UDP]
+SMC-0008] 15:49:59.650 ERROR] Net/sigma/ProxyMonitor.cpp(1507) : (EvFailure) >> request failed in state [Monitoring] [UDP] response=408
+SMC-0008] 15:49:59.650 ERROR] Net/sigma/ProxyMonitor.cpp(1554) : (onSipTimeout) >> Request 2 of 3 timed out to 172.16.110.50, state=Monitoring [UDP]
+ Entering GetSystemConfigCBHandler...
+        "French" - added
+GetLanguageFileList(): list of languages was collected successfully (total: 1)
+*NOTE*UserAgentString="Avaya IP Phone 1140E (SIP1140e.04.04.33.00)"
+Random Seed: 1532139918
+ dest->autoUpdateTime 44, sysConfigFile.autoUpdateTime 0
+*WARN*readSysConfigFile: sys config file was read already
+CB handler - Srtp Cipher[0]  AES_CM_128_HMAC_SHA1_80.
+CB handler - Srtp Cipher[1]  AES_CM_128_HMAC_SHA1_32.
+CB handler - Srtp Enabled 0.
+CB handler - Srtp Mode 1.
+ReadFileHandler(/flash0/dialingplan.dplan)::Entering...
+ReadFileHandler():: cannot get file size of /flash0/dialingplan.dtlan
+SMC-0008] 15:51:08.690 ERROR] Net/sigma/RegistrationManager.cpp(300) : (EvFailure) >> Failed (un)registration, code=408 state=1 phrase=Request Timeout
+SMC-0008] 15:51:08.700 ERROR] Net/sigma/ProxyMonitor.cpp(1507) : (EvFailure) >> request failed in state [Monitoring] [UDP] response=408
+SMC-0008] 15:51:08.700 ERROR] Net/sigma/ProxyMonitor.cpp(1554) : (onSipTimeout)`>> Request 0 of 3 timed out to 172.16.110.50, state=Monitoring [UDP]
+[Receive] EVT_IMG_BCKGRNDSET
+*DBG* CScreenSaverManager::Stop()
+*INFO* displayBackGround():: "" assigned
+"Entering GetSystemConfigCBHandler...
+        "French" - added
+GetLanguageFileList(): list of languages was collected successfully (total: 1)
+*NOTE*UserAgentString="Avaya IP Phone 1140E (SIP1140e.04.04.33.00)"
+Random Seed: 1532139918
+ dest->autoUpdateTime 44, sysConfigFile.autoUpdateTime 0
+*WARN*readSysConfigFile: sys config file was read already
+CB handler - Srtp Cipher[0]  AES_CM_128_HMAC_SHA1_80.
+CB handler - Srtp Cipher[1]  AES_CM_128_HMAC_SHA1_32.
+CB handler - Srtp Enabled 0.
+CB handler - Srtp Mode 1.
+ReadFileHandler(/flash0/dialingplan.dplan):▒Entering...
+ReadFileHandler():: cannot get file size of /flash0/dialingplan.dplan
+SMC-0008] 15:51:40.700 ERROR] Net/sigma/ProxyMonitor.cpp(1507) : (EvFailure) >> request failed in state [Monitoring] [UDP] response=408
+SMC-0008] 15:51:40.700 ERROR] Net/sigma/ProxyMonitor.cpp(1554) : (onSipTimeout) >> Request 1 of 3 timed out to 172.16.110.50, state=Monitoring [UDP]
+SMC-0008] 15:51:41.730 ERROR] Net/sigma/RegistrationManager.cpp(300) : (EvFailure) >> Failed (un)registration, code=408 state=1 phrase=Request Timeout
+[Receive] EVT_IMG_BCKGRNDSET
+*DBG* CScreenSaverManager::Stop()
+*INFO* displayBackGround():: "" assigned
+SMC-0008] 15:52:12.700 ERROR] Net/sigma/ProxyMonitor.cpp(1507) : (EvFailure) >> request failed in state [Monitoring] [UDP] response=408
+SMC-0008] 15:52:12.700 ERROR] Net/sigma/ProxyMonitor.cpp(1554) : (onSipTimeout) >> Request 2 of 3 timed out to 172.16.110.50, state=Monitoring [UDP]
+>>>End of console message
+
+
+
+ === Record #027 ===
+INFORMATION     SET     Logged 11/14/2019 15:38:55.130  FW: SIP1140e04.04.33.00
+File: h:/fw/build/../mcu/i200x/app/etherset.cpp Line #6187 Error #0
+Description: Reboot occurred: reason = 139, mask=0x8014
+
+
+ === Record #028 ===
+INFORMATION     SET     Logged 11/14/2019 15:38:07.630  FW: SIP1140e04.04.33.00
+File: h:/fw/build/../util/dconfig_utils/dconfig.cpp Line #3948 Error #0
+Description:
+Error-dconfig.cpp::validateRtpPorts(16384,32764)
+
+
+ === Record #029 ===
+INFORMATION     SET     Logged 11/14/2019 15:38:06.800  FW: SIP1140e04.04.33.00
+File: h:/fw/build/../util/dconfig_utils/dconfig.cpp Line #1640 Error #0
+Description: *ERROR* parseSysConfig: comand is incorrect:
+        "DEF_USER1      Student3"
+
+
+ === Record #030 ===
+INFORMATION     SET     Logged 11/14/2019 15:38:06.180  FW: SIP1140e04.04.33.00
+File: h:/fw/build/../util/dconfig_utils/dconfig.cpp Line #1640 Error #0
+Description: *ERROR* parseSysConfig: comand is incorrect:
+        "SERVER_RETRIES1        3"
+
+
+ === Record #031 ===
+INFORMATION     SET     Logged 11/14/2019 15:38:03.230  FW: SIP1140e04.04.33.00
+File: h:/fw/build/../mcu/i200x/app/etherset.cpp Line #6192 Error #0
+Description: Updating system configuration occurred
+
+
+ === Record #032 ===
+INFORMATION     SET     Logged 11/14/2019 12:25:41.990  FW: SIP1140e04.04.33.00
+File: h:/fw/build/../mcu/i200x/app/etherset.cpp Line #6187 Error #0
+Description: Reboot occurred: reason = 0, mask=0x0
+
+
+ === Record #033 ===
+INFORMATION     SET     Logged 11/14/2019 12:25:14.110  FW: 04.04.33.00
+File: h:/fw/build/../util/ecr/ecr.c Line #559 Error #0
+Description: ==DebugInfo==
+
+>>>Last sysExcMsg:
+▒
+>>>End of sysExcMsg
+
+
+>>>Console message before last reset:
+EtherTask: add the EtherSet task to the task mon)tor list
+EtherTask: add the EVTPROC task to the task monitor list
+EtherTask: add the HOOK task to the task monitor list
+EtherTask: can't add the KTSK task to the task monitor list
+EtherTask: add thE tNetTask task to the task monitor list
+EtherTask: !dd the NIRX task to the task monitor list
+EtherTask: add the hwtk task to the task monitor list
+PKI_MGMT_Initialize():Random Acq Status [0]
+PKI_LGMT_Initialize():MocanaInit Status [0]
+PKI_CERT_PROFILE_read: Failed to open profile [0.prf]
+PKI_MGMT_CreapeMgmtData: Error in loading Device Certificate Profile 0
+PKI_CERT_PROFILE_read: Failed to open profile [1.prf]
+PKI_MGMT_CreateMgmtData: Error in loading Device Certificate Profile 1
+PKI_CERT_PROFILE_read: Failed to open profile [2.prf]
+PKI_MGMT_CreateMgmtData: Error in loading Device Certificate Profile 2
+[Nortel][www.nortel.com]
+    Expires : SUN APR 07 16:15:19 2031 - (Valid)
+    Serial  : 0x4873BEC2
+[Nortel][www.nortel.com]
+    Expires : SUN APR 07 16:15:19 2031 - (Valid)
+    Serial  : 0x4873BEC2
+[NOrtel][www.nortel.com]
+    Expires : SUN APR 07 16:15:19 2031 - (Valid)
+    Serial  : 0x4873BEC2
+restopeSavedTime(): time in SFS is out mf date
+No stored security policy
+
+########## Testing Callback addresses ###########
+SSL_sslSettings()-6funcPtrClientOpenStateUpcall     = 0x80af32dc
+SSL_sslSettings()->funcPtrClientReceiveUpcall       = 0x80af3410
+SSL_sslSettings()->funcPtrClientStartTimer          = 0x0
+SSL_sslSettings()->funcPtrCertificateLeafTest       = 0x80af3520
+SSL_sslSettings()->funcPtrCertificateStoreLookup    = 0x80af3578
+SSL_sslSettings()->funcPtrCertificateStoreRele`se   = 0x80af35d0
+SSL_sslSettings()->funcPtrCertificateSto2eVerify    = 0x80af361c
+SSL_sslSettings()->funcPtrMutualAuthGetCertificate  = 0x0
+SSL_sslSettings()->funcPtrM5tualAuthFreeCertificate = 0x0
+SSL_sslSettings()->funcPtrFreeServerCertificate  = 0x80af3684
+SSL_sslSettings()->funcPtrGetServerCertificate  = 0x80af36dc
+SSL_sslSettings()->funcPtrOpenStateUpcall  = 0x80af3744
+SSL_sslSettings()->funcPtrReceiveUpcall  = 0x0af3790
+SSL_sslSettings()->funcPtrStartTimer  = 0x0
+SSL_ssLSettings()->funcPtrAlertCallback  = 0x80af37e8
+################################
+TIME: THU NOV 14 12:25:32 2019
+
+Nortel Certificate Count: 3
+Customer Certificate CouNt: 0
+0) [Avaya Inc.][SIP Product Certificate Authority]
+    Expires : SUN AUG 17 05:19:39
+>>>End of console message
+
+
+
+ === Record #034 ===
+INFORMATION     SET     Logged 11/14/2019 12:25:42.920  FW: SIP1140e04.04.33.00
+File: h:/fw/build/../mcu/i200x/app/etherset.cpp Line #6187 Error #0
+Description: Reboot occurred: reason = 0, mask=0x0
+
+PDT>
