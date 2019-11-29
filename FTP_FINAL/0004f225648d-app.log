@@ -1,0 +1,833 @@
+000027.812|cmp  |*|00|Initial log entry. Current logging level 4
+000027.812|wmgr |*|00|Initial log entry. Current logging level 4
+000027.844|slog |*|00|Initial log entry. Current logging level 4
+000027.846|so   |4|00|Could not find IP address for SNTP server.
+000028.014|app1 |*|00|Initial log entry. Current logging level 4
+000028.016|app1 |4|00|Default StatusBar is disabled
+000028.018|app1 |4|00|mb.main.home parameter is empty
+000028.020|mb   |*|00|Initial log entry. Current logging level 4
+000028.032|app1 |*|00|”¶X is out of range, using 3600
+000028.032|app1 |*|00|”¶X is out of range, using 3600
+000028.032|app1 |*|00|”¶X is out of range, using 3600
+000028.032|app1 |*|00|”¶X is out of range, using 3600
+000028.108|ldap |*|00|Initial log entry. Current logging level 4
+000028.108|ldap |4|00|ldap: Not Enabled
+000028.110|ldap |4|00|cDynamicData::cDynamicData:cDynamicData:Failed
+000028.126|efk  |*|00|Initial log entry. Current logging level 4
+000028.138|so   |*|00|User registration (6002) [0-6002]
+031309.626|net  |4|00|rtosNetwork: netwTask() - Can't find associated CCB.
+041734.964|so   |4|00|[SoNcasC]: Icon(7)Set - State 37 - OOR !!
+041821.210|so   |4|00|[SoNcasC]: Icon(7)Set - State 37 - OOR !!
+042335.084|so   |4|00|[SoNcasC]: Icon(7)Set - State 37 - OOR !!
+043108.920|so   |4|00|[SoNcasC]: Icon(7)Set - State 37 - OOR !!
+043638.726|so   |4|00|[SoNcasC]: Icon(7)Set - State 37 - OOR !!
+052111.608|res  |4|00|[ResFinderC]: Download - Failed to download file SoundPointIPLocalization/French_France/SoundPointIP-dictionary.xml, errno 0x380003.
+052111.612|so   |4|00|[SoLangC]: Failed to load new language - Rolling back to default language
+000000.220|log  |*|00|Log render level set to 3
+000000.220|log  |*|00|All logs set to level 3
+000000.220|log  |*|00|Log render level set to 3
+000000.220|log  |*|00|All logs set to level 3
+000000.220|log  |*|00|Log render level set to 3
+000000.220|log  |*|00|All logs set to level 3
+000012.962|log  |*|00|---------- Initial log entry ----------
+000012.990|so   |*|00|Platform: Model=SoundPoint IP 330, Assembly=2345-12200-001 Rev=M Region=
+000012.992|so   |*|00|Platform: MAC=0004f225648d, IP=192.168.0.170, Subnet Mask=255.255.255.0
+000012.992|so   |*|00|Platform: BootBlock=2.7.0 (12200_001) 06-Oct-06 15:40
+000012.992|so   |*|00|Platform: Bootrom=4.3.1.0440 30-Jun-11 11:58
+000012.992|so   |*|00|Application, main: Label=SIP, Version=Wolverine 3.3.3.0069 02-Nov-11 13:03
+000012.992|so   |*|00|Application, main: P/N=3150-11530-333
+000012.992|pmt  |*|00|Initial log entry. Current logging level 4
+000012.994|wdog |*|00|Initial log entry. Current logging level 4
+000012.994|ethf |*|00|Initial log entry. Current logging level 4
+000012.994|hw   |*|00|Initial log entry. Current logging level 4
+000012.994|so   |5|00|utilCertificateInit failed.
+000012.994|cert |*|00|Initial log entry. Current logging level 4
+000012.994|cert |*|00|Using default and custom CA certificates
+000013.004|cert |*|00|No custom CA certificate in flash
+000013.004|cert |4|00|Custom CA certificate selected, but unable to read the certificate from flash
+000013.006|cert |*|00|Polycom device certificate is not present
+000013.010|cert |*|00|Custom device certificate is not present
+000013.010|cert |*|00|Polycom device certificate selected but is not available
+000013.010|so   |*|00|Mutual TLS authentication is not supported
+000013.010|ares |*|00|Initial log entry. Current logging level 4
+000013.010|dns  |*|00|Initial log entry. Current logging level 4
+000013.010|cfg  |*|00|Initial log entry. Current logging level 4
+000013.012|dns  |*|00|DNS resolver servers are '192.168.0.1' '0.0.0.0'
+000013.012|dns  |*|00|DNS resolver search domain is 'lan'
+000013.084|lic  |*|00|Initial log entry. Current logging level 4
+000013.084|lic  |4|00|cfgCfsFlashKeyScratchLoad: key is blank
+000013.126|curl |*|00|Initial log entry. Current logging level 4
+000013.126|utilm|*|00|Initial log entry. Current logging level 4
+000013.126|copy |*|00|Initial log entry. Current logging level 4
+000013.126|rtos |*|00|Initial log entry. Current logging level 4
+000013.128|sec  |*|00|Initial log entry. Current logging level 4
+000048.062|cfg  |*|00|Prov|Starting to update 2345-12200-001.bootrom.ld
+000123.062|cfg  |*|00|Prov|Starting to update bootrom.ld
+000151.646|cfg  |4|00|Prov|Download of master configuration file failed
+000151.646|cfg  |4|00|Prov|Trying to boot from existing configuration
+000151.652|so   |*|00|Configuration files: Polycom/Polycom_id/0004f225648d-basic.cfg, Polycom/Polycom_config/phone-sip.cfg
+000151.652|so   |*|00|Configuration file "Polycom/Polycom_id/0004f225648d-basic.cfg" SHA1 digest: 33E253BE34651BB4F34F62647576A28C083A43C3
+000151.652|so   |*|00|Configuration file "Polycom/Polycom_config/phone-sip.cfg" SHA1 digest: A1EF5190D68EE7B89AF6DC4723F8E59DDF9A5B96
+000151.654|rdisk|*|00|Initial log entry. Current logging level 4
+000151.654|rdisk|5|00|Only 3227136 bytes free memory available, using minimum sized RAM disk. (51200 bytes)
+000151.654|rdisk|4|00|Parameters make RAM disk too big, resizing to maximum size (51200)
+000151.654|rdisk|*|00|RAM disk created and mounted at "/rfs0"
+000151.654|rdisk|*|00|RAM disk created, size: 51,200 bytes
+000151.654|rdisk|*|00|RAM disk size adjusted from 2,097,152 bytes due to limits
+000154.680|so   |4|00|SNTP: initial soMain sync failed with server 172.16.110.1.
+000154.680|log  |*|00|Log render level set to 1
+000304.648|srtp |*|00|Initial log entry. Current logging level 4
+000304.650|res  |*|00|Initial log entry. Current logging level 4
+000304.652|httpa|*|00|Initial log entry. Current logging level 4
+000304.652|lldp |*|00|Initial log entry. Current logging level 4
+000304.652|lldp |*|00|No Native VLAN found
+000304.652|lldp |*|00|No Auxiliary VLAN found
+000304.652|lldp |*|00|LLDP power usage is 4.3 Watts.
+000304.652|cdp  |*|00|Initial log entry. Current logging level 4
+000304.652|pcd  |*|00|Initial log entry. Current logging level 4
+000304.654|sys  |*|00|Initial log entry. Current logging level 4
+000339.660|ssps |*|00|Initial log entry. Current logging level 4
+000342.090|dbuf |*|00|Initial log entry. Current logging level 4
+000342.094|ssps |*|00|Application, comp. 1: Label=PolyDSP Titan Mem1 FS4, Version=5.1.2.0003 12-Nov-10 15:12
+000342.094|ssps |*|00|Application, comp. 1: P/N=3150-11580-512.
+000342.094|so   |*|00|System Info Reports:
+000342.094|so   |*|00|    CPU is TNETV1055/C55x, rev 2 running at 125.000MHz with memory at 125.000MHz.
+000342.094|so   |*|00|    Board is identified as PolycomSoundPointIP-SPIP_330.
+000342.094|so   |*|00|    DRAM_LO: 0x94000000.  DRAM_SIZE: 16 MB
+000342.094|so   |*|00|    Clocks are VBUSP: 125.000MHz, VBUS: 62.500MHz, USB: 25.000MHz, LCD: 125.000MHz, DSP: 100.000MHz.
+000342.094|so   |*|00|  NOR flash detected is 8
+000342.094|key  |*|00|Initial log entry. Current logging level 4
+000342.100|httpd|*|00|Initial log entry. Current logging level 4
+000342.102|poll |*|00|Initial log entry. Current logging level 4
+000342.102|push |*|00|Initial log entry. Current logging level 4
+000342.102|poll |*|00|Initial log entry. Current logging level 4
+000342.102|poll |*|00|Initial log entry. Current logging level 4
+000343.232|pps  |*|00|Initial log entry. Current logging level 4
+000343.232|sip  |*|00|Initial log entry. Current logging level 4
+000343.440|so   |*|00|Using TCP IP Media Port, configured initial RTP port 2222
+000343.470|cmp  |*|00|Initial log entry. Current logging level 4
+000343.470|wmgr |*|00|Initial log entry. Current logging level 4
+000343.502|slog |*|00|Initial log entry. Current logging level 4
+000343.672|app1 |*|00|Initial log entry. Current logging level 4
+000343.672|app1 |4|00|Default StatusBar is disabled
+000343.676|app1 |4|00|mb.main.home parameter is empty
+000343.678|mb   |*|00|Initial log entry. Current logging level 4
+000343.690|app1 |*|00|”¶©0”bFp”¶ªP is out of range, using 3600
+000343.690|app1 |*|00|”¶©0”bFp”¶ªP is out of range, using 3600
+000343.690|app1 |*|00|”¶©0”bFp”¶ªP is out of range, using 3600
+000343.690|app1 |*|00|”¶©0”bFp”¶ªP is out of range, using 3600
+000343.766|ldap |*|00|Initial log entry. Current logging level 4
+000343.768|ldap |4|00|ldap: Not Enabled
+000343.768|ldap |4|00|cDynamicData::cDynamicData:cDynamicData:Failed
+000343.784|efk  |*|00|Initial log entry. Current logging level 4
+000343.796|so   |*|00|User registration (6002) [0-6002]
+000415.970|sip  |4|00|Registration failed User: 6002, Error Code:480 Temporarily not available
+000452.148|log  |4|00|UtilLogC::uploadLog: upload error. protocol 0 result = -1
+000521.652|res  |4|00|[ResFinderC]: Download - Failed to download file SoundPointIPLocalization/French_France/SoundPointIP-dictionary.xml, errno 0x380003.
+000521.652|so   |4|00|[SoLangC]: Failed to load new language - Rolling back to default language
+000551.148|log  |4|00|UtilLogC::uploadLog: upload error. protocol 0 result = -1
+002447.942|cfg  |5|00|RT|Changing DNS server or domain requires reboot.
+002448.008|app1 |6|00|Manual Restart
+000000.220|log  |*|00|Log render level set to 3
+000000.220|log  |*|00|All logs set to level 3
+000000.220|log  |*|00|Log render level set to 3
+000000.220|log  |*|00|All logs set to level 3
+000021.660|log  |*|00|---------- Initial log entry ----------
+000021.690|so   |*|00|Platform: Model=SoundPoint IP 330, Assembly=2345-12200-001 Rev=M Region=
+000021.692|so   |*|00|Platform: MAC=0004f225648d, IP=192.168.0.170, Subnet Mask=255.255.255.0
+000021.692|so   |*|00|Platform: BootBlock=2.7.0 (12200_001) 06-Oct-06 15:40
+000021.692|so   |*|00|Platform: Bootrom=4.3.1.0440 30-Jun-11 11:58
+000021.692|so   |*|00|Application, main: Label=SIP, Version=Wolverine 3.3.3.0069 02-Nov-11 13:03
+000021.692|so   |*|00|Application, main: P/N=3150-11530-333
+000021.692|pmt  |*|00|Initial log entry. Current logging level 4
+000021.694|wdog |*|00|Initial log entry. Current logging level 4
+000021.694|ethf |*|00|Initial log entry. Current logging level 4
+000021.694|hw   |*|00|Initial log entry. Current logging level 4
+000021.694|so   |5|00|utilCertificateInit failed.
+000021.694|cert |*|00|Initial log entry. Current logging level 4
+000021.694|cert |*|00|Using default and custom CA certificates
+000021.704|cert |*|00|No custom CA certificate in flash
+000021.704|cert |4|00|Custom CA certificate selected, but unable to read the certificate from flash
+000021.706|cert |*|00|Polycom device certificate is not present
+000021.710|cert |*|00|Custom device certificate is not present
+000021.710|cert |*|00|Polycom device certificate selected but is not available
+000021.710|so   |*|00|Mutual TLS authentication is not supported
+000021.710|ares |*|00|Initial log entry. Current logging level 4
+000021.710|dns  |*|00|Initial log entry. Current logging level 4
+000021.710|cfg  |*|00|Initial log entry. Current logging level 4
+000021.712|dns  |*|00|DNS resolver servers are '192.168.0.1' '1.1.1.1'
+000021.712|dns  |*|00|DNS resolver search domain is 'lan'
+000021.784|lic  |*|00|Initial log entry. Current logging level 4
+000021.784|lic  |4|00|cfgCfsFlashKeyScratchLoad: key is blank
+000021.826|curl |*|00|Initial log entry. Current logging level 4
+000021.826|utilm|*|00|Initial log entry. Current logging level 4
+000021.826|copy |*|00|Initial log entry. Current logging level 4
+000021.826|rtos |*|00|Initial log entry. Current logging level 4
+000021.828|sec  |*|00|Initial log entry. Current logging level 4
+000022.002|cfg  |*|00|Prov|Starting to update 2345-12200-001.bootrom.ld
+000022.314|cfg  |*|00|Prov|Starting to update Polycom/Polycom_app/2345-12200-001.sip.ld
+000024.526|cfg  |4|00|Prov|Could not copy file to /ffs0/ConfigNew/SoundPointIPWelcome_wav.zzz
+000027.680|copy |4|00|Error ending zlib (-3)
+000027.680|copy |4|00|Error updating '/ffs0/ConfigNew/SoundPointIPWelcome_wav.zzz', this file has now been removed
+000027.706|copy |4|00|URL or filename not set. Refusing to guess what file we should fetch
+000027.706|copy |4|00|Configuration of URL failed
+000027.710|cfg  |4|00|Prov|Some configuration files could not be obtained, reverting to previous config
+1118080336|utilm|4|00|uBLFCompressed: File /ffs0/Config/Local/phoneWeb.cfg does not exist or is empty
+1118080336|cfg  |5|00|Prm|Error when decompressing configuration file /ffs0/Config/Local/phoneWeb.cfg
+1118080336|so   |*|00|Configuration files: Polycom/Polycom_id/0004f225648d-basic.cfg, Polycom/Polycom_config/phone-sip.cfg
+1118080336|so   |*|00|Configuration file "Polycom/Polycom_id/0004f225648d-basic.cfg" SHA1 digest: 33E253BE34651BB4F34F62647576A28C083A43C3
+1118080336|so   |*|00|Configuration file "Polycom/Polycom_config/phone-sip.cfg" SHA1 digest: A1EF5190D68EE7B89AF6DC4723F8E59DDF9A5B96
+1118080336|rdisk|*|00|Initial log entry. Current logging level 4
+1118080336|rdisk|5|00|Only 3215408 bytes free memory available, using minimum sized RAM disk. (51200 bytes)
+1118080336|rdisk|4|00|Parameters make RAM disk too big, resizing to maximum size (51200)
+1118080336|rdisk|*|00|RAM disk created and mounted at "/rfs0"
+1118080336|rdisk|*|00|RAM disk created, size: 51,200 bytes
+1118080336|rdisk|*|00|RAM disk size adjusted from 2,097,152 bytes due to limits
+1118090349|log  |*|00|Log render level set to 1
+1118090349|srtp |*|00|Initial log entry. Current logging level 4
+1118090349|res  |*|00|Initial log entry. Current logging level 4
+1118090349|httpa|*|00|Initial log entry. Current logging level 4
+1118090349|lldp |*|00|Initial log entry. Current logging level 4
+1118090349|cdp  |*|00|Initial log entry. Current logging level 4
+1118090349|pcd  |*|00|Initial log entry. Current logging level 4
+1118090349|sys  |*|00|Initial log entry. Current logging level 4
+1118090349|ssps |*|00|Initial log entry. Current logging level 4
+1118090349|dbuf |*|00|Initial log entry. Current logging level 4
+1118090349|ssps |*|00|Application, comp. 1: Label=PolyDSP Titan Mem1 FS4, Version=5.1.2.0003 12-Nov-10 15:12
+1118090349|ssps |*|00|Application, comp. 1: P/N=3150-11580-512.
+1118090349|so   |*|00|System Info Reports:
+1118090349|so   |*|00|    CPU is TNETV1055/C55x, rev 2 running at 125.000MHz with memory at 125.000MHz.
+1118090349|so   |*|00|    Board is identified as PolycomSoundPointIP-SPIP_330.
+1118090349|so   |*|00|    DRAM_LO: 0x94000000.  DRAM_SIZE: 16 MB
+1118090349|so   |*|00|    Clocks are VBUSP: 125.000MHz, VBUS: 62.500MHz, USB: 25.000MHz, LCD: 125.000MHz, DSP: 100.000MHz.
+1118090349|so   |*|00|  NOR flash detected is 8
+1118090349|key  |*|00|Initial log entry. Current logging level 4
+1118090349|httpd|*|00|Initial log entry. Current logging level 4
+1118090349|poll |*|00|Initial log entry. Current logging level 4
+1118090349|push |*|00|Initial log entry. Current logging level 4
+1118090349|poll |*|00|Initial log entry. Current logging level 4
+1118090349|poll |*|00|Initial log entry. Current logging level 4
+1118090349|pps  |*|00|Initial log entry. Current logging level 4
+1118090349|sip  |*|00|Initial log entry. Current logging level 4
+1118090349|so   |*|00|Using TCP IP Media Port, configured initial RTP port 2222
+1118090349|cmp  |*|00|Initial log entry. Current logging level 4
+1118090349|wmgr |*|00|Initial log entry. Current logging level 4
+1118090349|slog |*|00|Initial log entry. Current logging level 4
+1118090353|app1 |*|00|Initial log entry. Current logging level 4
+1118090353|app1 |4|00|Default StatusBar is disabled
+1118090353|app1 |4|00|mb.main.home parameter is empty
+1118090353|mb   |*|00|Initial log entry. Current logging level 4
+1118090353|app1 |*|00|”¶w ”bFp”¶xÀ is out of range, using 3600
+1118090353|app1 |*|00|”¶w ”bFp”¶xÀ is out of range, using 3600
+1118090353|app1 |*|00|”¶w ”bFp”¶xÀ is out of range, using 3600
+1118090353|app1 |*|00|”¶w ”bFp”¶xÀ is out of range, using 3600
+1118090353|ldap |*|00|Initial log entry. Current logging level 4
+1118090353|ldap |4|00|ldap: Not Enabled
+1118090353|ldap |4|00|cDynamicData::cDynamicData:cDynamicData:Failed
+1118090353|efk  |*|00|Initial log entry. Current logging level 4
+1118090353|so   |*|00|User registration (6002) [0-6002]
+1118090353|res  |4|00|[ResFinderC]: Download - Failed to download file SoundPointIPLocalization/French_France/SoundPointIP-dictionary.xml, errno 0x380003.
+1118090353|so   |4|00|[SoLangC]: Failed to load new language - Rolling back to default language
+1118090424|sip  |4|00|Registration failed User: 6002, Error Code:480 Temporarily not available
+1118091129|app1 |*|00|Manual Reboot
+1118091130|so   |*|00|SoNcasC: Client service shutdown complete
+1118091130|wdog |*|00|Watchdog Expired: tSupObjs
+000000.220|log  |*|00|Log render level set to 3
+000000.220|log  |*|00|All logs set to level 3
+000013.056|log  |*|00|---------- Initial log entry ----------
+000013.086|so   |*|00|Platform: Model=SoundPoint IP 330, Assembly=2345-12200-001 Rev=M Region=
+000013.086|so   |*|00|Platform: MAC=0004f225648d, IP=192.168.0.170, Subnet Mask=255.255.255.0
+000013.088|so   |*|00|Platform: BootBlock=2.7.0 (12200_001) 06-Oct-06 15:40
+000013.088|so   |*|00|Platform: Bootrom=4.3.1.0440 30-Jun-11 11:58
+000013.088|so   |*|00|Application, main: Label=SIP, Version=Wolverine 3.3.3.0069 02-Nov-11 13:03
+000013.088|so   |*|00|Application, main: P/N=3150-11530-333
+000013.088|pmt  |*|00|Initial log entry. Current logging level 4
+000013.090|wdog |*|00|Initial log entry. Current logging level 4
+000013.090|ethf |*|00|Initial log entry. Current logging level 4
+000013.090|hw   |*|00|Initial log entry. Current logging level 4
+000013.090|so   |5|00|utilCertificateInit failed.
+000013.090|cert |*|00|Initial log entry. Current logging level 4
+000013.090|cert |*|00|Using default and custom CA certificates
+000013.098|cert |*|00|No custom CA certificate in flash
+000013.098|cert |4|00|Custom CA certificate selected, but unable to read the certificate from flash
+000013.102|cert |*|00|Polycom device certificate is not present
+000013.106|cert |*|00|Custom device certificate is not present
+000013.106|cert |*|00|Polycom device certificate selected but is not available
+000013.106|so   |*|00|Mutual TLS authentication is not supported
+000013.106|ares |*|00|Initial log entry. Current logging level 4
+000013.106|dns  |*|00|Initial log entry. Current logging level 4
+000013.106|cfg  |*|00|Initial log entry. Current logging level 4
+000013.106|dns  |*|00|DNS resolver servers are '192.168.0.1' '1.1.1.1'
+000013.106|dns  |*|00|DNS resolver search domain is 'lan'
+000013.178|lic  |*|00|Initial log entry. Current logging level 4
+000013.178|lic  |4|00|cfgCfsFlashKeyScratchLoad: key is blank
+000013.220|curl |*|00|Initial log entry. Current logging level 4
+000013.220|utilm|*|00|Initial log entry. Current logging level 4
+000013.220|copy |*|00|Initial log entry. Current logging level 4
+000013.220|rtos |*|00|Initial log entry. Current logging level 4
+000013.222|sec  |*|00|Initial log entry. Current logging level 4
+000013.410|cfg  |*|00|Prov|Starting to update 2345-12200-001.bootrom.ld
+000014.490|cfg  |*|00|Prov|Starting to update Polycom/Polycom_app/2345-12200-001.sip.ld
+000016.684|cfg  |4|00|Prov|Could not copy file to /ffs0/ConfigNew/SoundPointIPWelcome_wav.zzz
+000019.012|copy |4|00|Error ending zlib (-3)
+000019.012|copy |4|00|Error updating '/ffs0/ConfigNew/SoundPointIPWelcome_wav.zzz', this file has now been removed
+000019.036|copy |4|00|URL or filename not set. Refusing to guess what file we should fetch
+000019.036|copy |4|00|Configuration of URL failed
+000019.040|cfg  |4|00|Prov|Some configuration files could not be obtained, reverting to previous config
+1118081221|utilm|4|00|uBLFCompressed: File /ffs0/Config/Local/phoneWeb.cfg does not exist or is empty
+1118081221|cfg  |5|00|Prm|Error when decompressing configuration file /ffs0/Config/Local/phoneWeb.cfg
+1118081221|so   |*|00|Configuration files: Polycom/Polycom_id/0004f225648d-basic.cfg, Polycom/Polycom_config/phone-sip.cfg
+1118081221|so   |*|00|Configuration file "Polycom/Polycom_id/0004f225648d-basic.cfg" SHA1 digest: 33E253BE34651BB4F34F62647576A28C083A43C3
+1118081221|so   |*|00|Configuration file "Polycom/Polycom_config/phone-sip.cfg" SHA1 digest: A1EF5190D68EE7B89AF6DC4723F8E59DDF9A5B96
+1118081221|rdisk|*|00|Initial log entry. Current logging level 4
+1118081221|rdisk|5|00|Only 3206768 bytes free memory available, using minimum sized RAM disk. (51200 bytes)
+1118081221|rdisk|4|00|Parameters make RAM disk too big, resizing to maximum size (51200)
+1118081221|rdisk|*|00|RAM disk created and mounted at "/rfs0"
+1118081221|rdisk|*|00|RAM disk created, size: 51,200 bytes
+1118081221|rdisk|*|00|RAM disk size adjusted from 2,097,152 bytes due to limits
+1118091234|log  |*|00|Log render level set to 1
+1118091234|srtp |*|00|Initial log entry. Current logging level 4
+1118091234|res  |*|00|Initial log entry. Current logging level 4
+1118091234|httpa|*|00|Initial log entry. Current logging level 4
+1118091234|lldp |*|00|Initial log entry. Current logging level 4
+1118091234|lldp |*|00|No Native VLAN found
+1118091234|lldp |*|00|No Auxiliary VLAN found
+1118091234|lldp |*|00|LLDP power usage is 4.3 Watts.
+1118091234|cdp  |*|00|Initial log entry. Current logging level 4
+1118091234|pcd  |*|00|Initial log entry. Current logging level 4
+1118091234|sys  |*|00|Initial log entry. Current logging level 4
+1118091234|ssps |*|00|Initial log entry. Current logging level 4
+1118091234|dbuf |*|00|Initial log entry. Current logging level 4
+1118091234|ssps |*|00|Application, comp. 1: Label=PolyDSP Titan Mem1 FS4, Version=5.1.2.0003 12-Nov-10 15:12
+1118091234|ssps |*|00|Application, comp. 1: P/N=3150-11580-512.
+1118091234|so   |*|00|System Info Reports:
+1118091234|so   |*|00|    CPU is TNETV1055/C55x, rev 2 running at 125.000MHz with memory at 125.000MHz.
+1118091234|so   |*|00|    Board is identified as PolycomSoundPointIP-SPIP_330.
+1118091234|so   |*|00|    DRAM_LO: 0x94000000.  DRAM_SIZE: 16 MB
+1118091234|so   |*|00|    Clocks are VBUSP: 125.000MHz, VBUS: 62.500MHz, USB: 25.000MHz, LCD: 125.000MHz, DSP: 100.000MHz.
+1118091234|so   |*|00|  NOR flash detected is 8
+1118091234|key  |*|00|Initial log entry. Current logging level 4
+1118091234|httpd|*|00|Initial log entry. Current logging level 4
+1118091234|poll |*|00|Initial log entry. Current logging level 4
+1118091234|push |*|00|Initial log entry. Current logging level 4
+1118091234|poll |*|00|Initial log entry. Current logging level 4
+1118091234|poll |*|00|Initial log entry. Current logging level 4
+1118091234|pps  |*|00|Initial log entry. Current logging level 4
+1118091234|sip  |*|00|Initial log entry. Current logging level 4
+1118091234|so   |*|00|Using TCP IP Media Port, configured initial RTP port 2222
+1118091234|cmp  |*|00|Initial log entry. Current logging level 4
+1118091234|wmgr |*|00|Initial log entry. Current logging level 4
+1118091234|slog |*|00|Initial log entry. Current logging level 4
+1118091238|app1 |*|00|Initial log entry. Current logging level 4
+1118091238|app1 |4|00|Default StatusBar is disabled
+1118091238|app1 |4|00|mb.main.home parameter is empty
+1118091238|mb   |*|00|Initial log entry. Current logging level 4
+1118091238|app1 |*|00|”¶Uà”bFp”¶W is out of range, using 3600
+1118091238|app1 |*|00|”¶Uà”bFp”¶W is out of range, using 3600
+1118091238|app1 |*|00|”¶Uà”bFp”¶W is out of range, using 3600
+1118091238|app1 |*|00|”¶Uà”bFp”¶W is out of range, using 3600
+1118091238|ldap |*|00|Initial log entry. Current logging level 4
+1118091238|ldap |4|00|ldap: Not Enabled
+1118091238|ldap |4|00|cDynamicData::cDynamicData:cDynamicData:Failed
+1118091238|efk  |*|00|Initial log entry. Current logging level 4
+1118091238|so   |*|00|User registration (6002) [0-6002]
+1118091309|sip  |4|00|Registration failed User: 6002, Error Code:480 Temporarily not available
+1118092705|cfg  |5|00|Prm|Parameter voIpProt.SIP.useRFC2543hold requested type 2 but is of type 6
+1118092705|sip  |*|00|SipUserRemove 0
+1118092705|app1 |*|00| is out of range, using 3600
+1118092705|app1 |*|00| is out of range, using 3600
+1118092705|app1 |*|00| is out of range, using 3600
+1118092705|app1 |*|00| is out of range, using 3600
+1118092705|so   |*|00|User registration (6002) [0-6002]
+1118092710|sip  |*|00|User removed
+1118092733|app1 |6|00|Manual Restart
+1118092734|so   |*|00|SoNcasC: Client service shutdown complete
+1118092734|wdog |*|00|Watchdog Expired: tSupObjs
+000012.280|log  |*|00|---------- Initial log entry ----------
+000012.308|so   |*|00|Platform: Model=SoundPoint IP 330, Assembly=2345-12200-001 Rev=M Region=
+000012.310|so   |*|00|Platform: MAC=0004f225648d, IP=192.168.0.170, Subnet Mask=255.255.255.0
+000012.310|so   |*|00|Platform: BootBlock=2.7.0 (12200_001) 06-Oct-06 15:40
+000012.310|so   |*|00|Platform: Bootrom=4.3.1.0440 30-Jun-11 11:58
+000012.310|so   |*|00|Application, main: Label=SIP, Version=Wolverine 3.3.3.0069 02-Nov-11 13:03
+000012.310|so   |*|00|Application, main: P/N=3150-11530-333
+000012.310|pmt  |*|00|Initial log entry. Current logging level 4
+000012.312|wdog |*|00|Initial log entry. Current logging level 4
+000012.312|ethf |*|00|Initial log entry. Current logging level 4
+000012.312|hw   |*|00|Initial log entry. Current logging level 4
+000012.312|so   |5|00|utilCertificateInit failed.
+000012.312|cert |*|00|Initial log entry. Current logging level 4
+000012.312|cert |*|00|Using default and custom CA certificates
+000012.322|cert |*|00|No custom CA certificate in flash
+000012.322|cert |4|00|Custom CA certificate selected, but unable to read the certificate from flash
+000012.324|cert |*|00|Polycom device certificate is not present
+000012.328|cert |*|00|Custom device certificate is not present
+000012.328|cert |*|00|Polycom device certificate selected but is not available
+000012.328|so   |*|00|Mutual TLS authentication is not supported
+000012.328|ares |*|00|Initial log entry. Current logging level 4
+000012.328|dns  |*|00|Initial log entry. Current logging level 4
+000012.328|cfg  |*|00|Initial log entry. Current logging level 4
+000012.330|dns  |*|00|DNS resolver servers are '192.168.0.1' '1.1.1.1'
+000012.330|dns  |*|00|DNS resolver search domain is 'lan'
+000012.402|lic  |*|00|Initial log entry. Current logging level 4
+000012.402|lic  |4|00|cfgCfsFlashKeyScratchLoad: key is blank
+000012.444|curl |*|00|Initial log entry. Current logging level 4
+000012.444|utilm|*|00|Initial log entry. Current logging level 4
+000012.444|copy |*|00|Initial log entry. Current logging level 4
+000012.444|rtos |*|00|Initial log entry. Current logging level 4
+000012.446|sec  |*|00|Initial log entry. Current logging level 4
+000012.604|cfg  |*|00|Prov|Starting to update 2345-12200-001.bootrom.ld
+000013.644|cfg  |*|00|Prov|Starting to update Polycom/Polycom_app/2345-12200-001.sip.ld
+000015.888|cfg  |4|00|Prov|Could not copy file to /ffs0/ConfigNew/SoundPointIPWelcome_wav.zzz
+000019.044|copy |4|00|Error ending zlib (-3)
+000019.044|copy |4|00|Error updating '/ffs0/ConfigNew/SoundPointIPWelcome_wav.zzz', this file has now been removed
+000019.072|copy |4|00|URL or filename not set. Refusing to guess what file we should fetch
+000019.072|copy |4|00|Configuration of URL failed
+000019.074|cfg  |4|00|Prov|Some configuration files could not be obtained, reverting to previous config
+1118081248|utilm|4|00|uBLFCompressed: File /ffs0/Config/Local/phoneWeb.cfg does not exist or is empty
+1118081248|cfg  |5|00|Prm|Error when decompressing configuration file /ffs0/Config/Local/phoneWeb.cfg
+1118081248|so   |*|00|Configuration files: Polycom/Polycom_id/0004f225648d-basic.cfg, Polycom/Polycom_config/phone-sip.cfg
+1118081248|so   |*|00|Configuration file "Polycom/Polycom_id/0004f225648d-basic.cfg" SHA1 digest: 33E253BE34651BB4F34F62647576A28C083A43C3
+1118081248|so   |*|00|Configuration file "Polycom/Polycom_config/phone-sip.cfg" SHA1 digest: A1EF5190D68EE7B89AF6DC4723F8E59DDF9A5B96
+1118081248|rdisk|*|00|Initial log entry. Current logging level 4
+1118081248|rdisk|5|00|Only 3206704 bytes free memory available, using minimum sized RAM disk. (51200 bytes)
+1118081248|rdisk|4|00|Parameters make RAM disk too big, resizing to maximum size (51200)
+1118081248|rdisk|*|00|RAM disk created and mounted at "/rfs0"
+1118081248|rdisk|*|00|RAM disk created, size: 51,200 bytes
+1118081248|rdisk|*|00|RAM disk size adjusted from 2,097,152 bytes due to limits
+1118092816|log  |*|00|Log render level set to 1
+1118092816|srtp |*|00|Initial log entry. Current logging level 4
+1118092816|res  |*|00|Initial log entry. Current logging level 4
+1118092816|httpa|*|00|Initial log entry. Current logging level 4
+1118092816|lldp |*|00|Initial log entry. Current logging level 4
+1118092816|lldp |*|00|No Native VLAN found
+1118092816|lldp |*|00|No Auxiliary VLAN found
+1118092816|lldp |*|00|LLDP power usage is 4.3 Watts.
+1118092816|cdp  |*|00|Initial log entry. Current logging level 4
+1118092816|pcd  |*|00|Initial log entry. Current logging level 4
+1118092816|sys  |*|00|Initial log entry. Current logging level 4
+1118092816|ssps |*|00|Initial log entry. Current logging level 4
+1118092816|dbuf |*|00|Initial log entry. Current logging level 4
+1118092816|ssps |*|00|Application, comp. 1: Label=PolyDSP Titan Mem1 FS4, Version=5.1.2.0003 12-Nov-10 15:12
+1118092816|ssps |*|00|Application, comp. 1: P/N=3150-11580-512.
+1118092816|so   |*|00|System Info Reports:
+1118092816|so   |*|00|    CPU is TNETV1055/C55x, rev 2 running at 125.000MHz with memory at 125.000MHz.
+1118092816|so   |*|00|    Board is identified as PolycomSoundPointIP-SPIP_330.
+1118092816|so   |*|00|    DRAM_LO: 0x94000000.  DRAM_SIZE: 16 MB
+1118092816|so   |*|00|    Clocks are VBUSP: 125.000MHz, VBUS: 62.500MHz, USB: 25.000MHz, LCD: 125.000MHz, DSP: 100.000MHz.
+1118092816|so   |*|00|  NOR flash detected is 8
+1118092816|key  |*|00|Initial log entry. Current logging level 4
+1118092816|httpd|*|00|Initial log entry. Current logging level 4
+1118092816|poll |*|00|Initial log entry. Current logging level 4
+1118092816|push |*|00|Initial log entry. Current logging level 4
+1118092816|poll |*|00|Initial log entry. Current logging level 4
+1118092816|poll |*|00|Initial log entry. Current logging level 4
+1118092816|pps  |*|00|Initial log entry. Current logging level 4
+1118092816|sip  |*|00|Initial log entry. Current logging level 4
+1118092816|so   |*|00|Using TCP IP Media Port, configured initial RTP port 2222
+1118092816|cmp  |*|00|Initial log entry. Current logging level 4
+1118092816|wmgr |*|00|Initial log entry. Current logging level 4
+1118092816|slog |*|00|Initial log entry. Current logging level 4
+1118092821|app1 |*|00|Initial log entry. Current logging level 4
+1118092821|app1 |4|00|Default StatusBar is disabled
+1118092821|app1 |4|00|mb.main.home parameter is empty
+1118092821|mb   |*|00|Initial log entry. Current logging level 4
+1118092821|app1 |*|00|”¶U ”bFp”¶VÀ is out of range, using 3600
+1118092821|app1 |*|00|”¶U ”bFp”¶VÀ is out of range, using 3600
+1118092821|app1 |*|00|”¶U ”bFp”¶VÀ is out of range, using 3600
+1118092821|app1 |*|00|”¶U ”bFp”¶VÀ is out of range, using 3600
+1118092821|ldap |*|00|Initial log entry. Current logging level 4
+1118092821|ldap |4|00|ldap: Not Enabled
+1118092821|ldap |4|00|cDynamicData::cDynamicData:cDynamicData:Failed
+1118092821|efk  |*|00|Initial log entry. Current logging level 4
+1118092821|so   |*|00|User registration (6002) [0-6002]
+1118093114|net  |4|00|rtosNetwork: netwTask() - Can't find associated CCB.
+1118100718|so   |4|00|[SoNcasC]: Icon(7)Set - State 37 - OOR !!
+1118100802|so   |4|00|[SoNcasC]: Icon(7)Set - State 37 - OOR !!
+1118102841|so   |4|00|[SoNcasC]: Icon(7)Set - State 37 - OOR !!
+1118104508|so   |4|00|[SoNcasC]: Icon(7)Set - State 37 - OOR !!
+1118104614|so   |4|00|[SoNcasC]: Icon(7)Set - State 37 - OOR !!
+1118104655|so   |4|00|[SoNcasC]: Icon(7)Set - State 37 - OOR !!
+1118111025|so   |4|00|[SoNcasC]: Icon(7)Set - State 37 - OOR !!
+1118111625|so   |4|00|[SoNcasC]: Icon(7)Set - State 37 - OOR !!
+1118112327|so   |4|00|[SoNcasC]: Icon(7)Set - State 37 - OOR !!
+1118113136|so   |4|00|[SoNcasC]: Icon(7)Set - State 37 - OOR !!
+1118113423|so   |4|00|[SoNcasC]: Icon(7)Set - State 37 - OOR !!
+1118115029|so   |4|00|[SoNcasC]: Icon(7)Set - State 37 - OOR !!
+1118115134|so   |4|00|[SoNcasC]: Icon(7)Set - State 37 - OOR !!
+1118122130|so   |4|00|[SoNcasC]: Icon(7)Set - State 37 - OOR !!
+1118122736|so   |4|00|[SoNcasC]: Icon(7)Set - State 37 - OOR !!
+1118125411|so   |4|00|[SoNcasC]: Icon(7)Set - State 37 - OOR !!
+1118130751|app1 |6|00|Manual Restart
+1118130751|so   |*|00|SoNcasC: Client service shutdown complete
+1118130751|wdog |*|00|Watchdog Expired: tSupObjs
+000013.060|log  |*|00|---------- Initial log entry ----------
+000013.088|so   |*|00|Platform: Model=SoundPoint IP 330, Assembly=2345-12200-001 Rev=M Region=
+000013.090|so   |*|00|Platform: MAC=0004f225648d, IP=192.168.0.170, Subnet Mask=255.255.255.0
+000013.090|so   |*|00|Platform: BootBlock=2.7.0 (12200_001) 06-Oct-06 15:40
+000013.090|so   |*|00|Platform: Bootrom=4.3.1.0440 30-Jun-11 11:58
+000013.090|so   |*|00|Application, main: Label=SIP, Version=Wolverine 3.3.3.0069 02-Nov-11 13:03
+000013.090|so   |*|00|Application, main: P/N=3150-11530-333
+000013.090|pmt  |*|00|Initial log entry. Current logging level 4
+000013.092|wdog |*|00|Initial log entry. Current logging level 4
+000013.092|ethf |*|00|Initial log entry. Current logging level 4
+000013.092|hw   |*|00|Initial log entry. Current logging level 4
+000013.092|so   |5|00|utilCertificateInit failed.
+000013.092|cert |*|00|Initial log entry. Current logging level 4
+000013.092|cert |*|00|Using default and custom CA certificates
+000013.102|cert |*|00|No custom CA certificate in flash
+000013.102|cert |4|00|Custom CA certificate selected, but unable to read the certificate from flash
+000013.104|cert |*|00|Polycom device certificate is not present
+000013.108|cert |*|00|Custom device certificate is not present
+000013.108|cert |*|00|Polycom device certificate selected but is not available
+000013.108|so   |*|00|Mutual TLS authentication is not supported
+000013.108|ares |*|00|Initial log entry. Current logging level 4
+000013.108|dns  |*|00|Initial log entry. Current logging level 4
+000013.108|cfg  |*|00|Initial log entry. Current logging level 4
+000013.110|dns  |*|00|DNS resolver servers are '192.168.0.1' '1.1.1.1'
+000013.110|dns  |*|00|DNS resolver search domain is 'lan'
+000013.180|lic  |*|00|Initial log entry. Current logging level 4
+000013.180|lic  |4|00|cfgCfsFlashKeyScratchLoad: key is blank
+000013.222|curl |*|00|Initial log entry. Current logging level 4
+000013.222|utilm|*|00|Initial log entry. Current logging level 4
+000013.222|copy |*|00|Initial log entry. Current logging level 4
+000013.222|rtos |*|00|Initial log entry. Current logging level 4
+000013.224|sec  |*|00|Initial log entry. Current logging level 4
+000013.374|cfg  |*|00|Prov|Starting to update 2345-12200-001.bootrom.ld
+000013.680|cfg  |*|00|Prov|Starting to update Polycom/Polycom_app/2345-12200-001.sip.ld
+000015.834|cfg  |4|00|Prov|Could not copy file to /ffs0/ConfigNew/SoundPointIPWelcome_wav.zzz
+000019.002|copy |4|00|Error ending zlib (-3)
+000019.002|copy |4|00|Error updating '/ffs0/ConfigNew/SoundPointIPWelcome_wav.zzz', this file has now been removed
+000019.026|copy |4|00|URL or filename not set. Refusing to guess what file we should fetch
+000019.026|copy |4|00|Configuration of URL failed
+000019.030|cfg  |4|00|Prov|Some configuration files could not be obtained, reverting to previous config
+1118082831|utilm|4|00|uBLFCompressed: File /ffs0/Config/Local/phoneWeb.cfg does not exist or is empty
+1118082831|cfg  |5|00|Prm|Error when decompressing configuration file /ffs0/Config/Local/phoneWeb.cfg
+1118082831|so   |*|00|Configuration files: Polycom/Polycom_id/0004f225648d-basic.cfg, Polycom/Polycom_config/phone-sip.cfg
+1118082831|so   |*|00|Configuration file "Polycom/Polycom_id/0004f225648d-basic.cfg" SHA1 digest: 33E253BE34651BB4F34F62647576A28C083A43C3
+1118082831|so   |*|00|Configuration file "Polycom/Polycom_config/phone-sip.cfg" SHA1 digest: A1EF5190D68EE7B89AF6DC4723F8E59DDF9A5B96
+1118082831|rdisk|*|00|Initial log entry. Current logging level 4
+1118082831|rdisk|5|00|Only 3206768 bytes free memory available, using minimum sized RAM disk. (51200 bytes)
+1118082831|rdisk|4|00|Parameters make RAM disk too big, resizing to maximum size (51200)
+1118082831|rdisk|*|00|RAM disk created and mounted at "/rfs0"
+1118082831|rdisk|*|00|RAM disk created, size: 51,200 bytes
+1118082831|rdisk|*|00|RAM disk size adjusted from 2,097,152 bytes due to limits
+1118130833|log  |*|00|Log render level set to 1
+1118130833|srtp |*|00|Initial log entry. Current logging level 4
+1118130833|res  |*|00|Initial log entry. Current logging level 4
+1118130833|httpa|*|00|Initial log entry. Current logging level 4
+1118130833|lldp |*|00|Initial log entry. Current logging level 4
+1118130833|lldp |*|00|No Native VLAN found
+1118130833|lldp |*|00|No Auxiliary VLAN found
+1118130833|lldp |*|00|LLDP power usage is 4.3 Watts.
+1118130833|cdp  |*|00|Initial log entry. Current logging level 4
+1118130833|pcd  |*|00|Initial log entry. Current logging level 4
+1118130833|sys  |*|00|Initial log entry. Current logging level 4
+1118130833|ssps |*|00|Initial log entry. Current logging level 4
+1118130833|dbuf |*|00|Initial log entry. Current logging level 4
+1118130833|ssps |*|00|Application, comp. 1: Label=PolyDSP Titan Mem1 FS4, Version=5.1.2.0003 12-Nov-10 15:12
+1118130833|ssps |*|00|Application, comp. 1: P/N=3150-11580-512.
+1118130833|so   |*|00|System Info Reports:
+1118130833|so   |*|00|    CPU is TNETV1055/C55x, rev 2 running at 125.000MHz with memory at 125.000MHz.
+1118130833|so   |*|00|    Board is identified as PolycomSoundPointIP-SPIP_330.
+1118130833|so   |*|00|    DRAM_LO: 0x94000000.  DRAM_SIZE: 16 MB
+1118130833|so   |*|00|    Clocks are VBUSP: 125.000MHz, VBUS: 62.500MHz, USB: 25.000MHz, LCD: 125.000MHz, DSP: 100.000MHz.
+1118130833|so   |*|00|  NOR flash detected is 8
+1118130833|key  |*|00|Initial log entry. Current logging level 4
+1118130833|httpd|*|00|Initial log entry. Current logging level 4
+1118130833|poll |*|00|Initial log entry. Current logging level 4
+1118130833|push |*|00|Initial log entry. Current logging level 4
+1118130833|poll |*|00|Initial log entry. Current logging level 4
+1118130833|poll |*|00|Initial log entry. Current logging level 4
+1118130833|pps  |*|00|Initial log entry. Current logging level 4
+1118130833|sip  |*|00|Initial log entry. Current logging level 4
+1118130833|so   |*|00|Using TCP IP Media Port, configured initial RTP port 2222
+1118130833|cmp  |*|00|Initial log entry. Current logging level 4
+1118130833|wmgr |*|00|Initial log entry. Current logging level 4
+1118130833|slog |*|00|Initial log entry. Current logging level 4
+1118130837|app1 |*|00|Initial log entry. Current logging level 4
+1118130837|app1 |4|00|Default StatusBar is disabled
+1118130837|app1 |4|00|mb.main.home parameter is empty
+1118130837|mb   |*|00|Initial log entry. Current logging level 4
+1118130837|app1 |*|00|”¶Uà”bFp”¶W is out of range, using 3600
+1118130837|app1 |*|00|”¶Uà”bFp”¶W is out of range, using 3600
+1118130837|app1 |*|00|”¶Uà”bFp”¶W is out of range, using 3600
+1118130837|app1 |*|00|”¶Uà”bFp”¶W is out of range, using 3600
+1118130837|ldap |*|00|Initial log entry. Current logging level 4
+1118130837|ldap |4|00|ldap: Not Enabled
+1118130837|ldap |4|00|cDynamicData::cDynamicData:cDynamicData:Failed
+1118130837|efk  |*|00|Initial log entry. Current logging level 4
+1118130837|so   |*|00|User registration (6002) [0-6002]
+1118130908|sip  |4|00|Registration failed User: 6002, Error Code:480 Temporarily not available
+1118130935|app1 |*|00|Manual Reboot
+1118130936|so   |*|00|SoNcasC: Client service shutdown complete
+1118130936|wdog |*|00|Watchdog Expired: tSupObjs
+000000.220|log  |*|00|Log render level set to 3
+000000.220|log  |*|00|All logs set to level 3
+000021.748|log  |*|00|---------- Initial log entry ----------
+000021.778|so   |*|00|Platform: Model=SoundPoint IP 330, Assembly=2345-12200-001 Rev=M Region=
+000021.778|so   |*|00|Platform: MAC=0004f225648d, IP=192.168.0.170, Subnet Mask=255.255.255.0
+000021.778|so   |*|00|Platform: BootBlock=2.7.0 (12200_001) 06-Oct-06 15:40
+000021.778|so   |*|00|Platform: Bootrom=4.3.1.0440 30-Jun-11 11:58
+000021.778|so   |*|00|Application, main: Label=SIP, Version=Wolverine 3.3.3.0069 02-Nov-11 13:03
+000021.780|so   |*|00|Application, main: P/N=3150-11530-333
+000021.780|pmt  |*|00|Initial log entry. Current logging level 4
+000021.782|wdog |*|00|Initial log entry. Current logging level 4
+000021.782|ethf |*|00|Initial log entry. Current logging level 4
+000021.782|hw   |*|00|Initial log entry. Current logging level 4
+000021.782|so   |5|00|utilCertificateInit failed.
+000021.782|cert |*|00|Initial log entry. Current logging level 4
+000021.782|cert |*|00|Using default and custom CA certificates
+000021.790|cert |*|00|No custom CA certificate in flash
+000021.790|cert |4|00|Custom CA certificate selected, but unable to read the certificate from flash
+000021.794|cert |*|00|Polycom device certificate is not present
+000021.796|cert |*|00|Custom device certificate is not present
+000021.796|cert |*|00|Polycom device certificate selected but is not available
+000021.796|so   |*|00|Mutual TLS authentication is not supported
+000021.796|ares |*|00|Initial log entry. Current logging level 4
+000021.796|dns  |*|00|Initial log entry. Current logging level 4
+000021.796|cfg  |*|00|Initial log entry. Current logging level 4
+000021.798|dns  |*|00|DNS resolver servers are '192.168.0.1' '1.1.1.1'
+000021.798|dns  |*|00|DNS resolver search domain is 'lan'
+000021.870|lic  |*|00|Initial log entry. Current logging level 4
+000021.870|lic  |4|00|cfgCfsFlashKeyScratchLoad: key is blank
+000021.912|curl |*|00|Initial log entry. Current logging level 4
+000021.912|utilm|*|00|Initial log entry. Current logging level 4
+000021.912|copy |*|00|Initial log entry. Current logging level 4
+000021.912|rtos |*|00|Initial log entry. Current logging level 4
+000021.914|sec  |*|00|Initial log entry. Current logging level 4
+000022.078|cfg  |*|00|Prov|Starting to update 2345-12200-001.bootrom.ld
+000023.208|cfg  |*|00|Prov|Starting to update Polycom/Polycom_app/2345-12200-001.2345-12200-001.sip.ld
+000023.342|cfg  |*|00|Prov|Starting to update Polycom/Polycom_app/2345-12200-001.sip.ld
+000025.524|cfg  |4|00|Prov|Could not copy file to /ffs0/ConfigNew/SoundPointIPWelcome_wav.zzz
+000027.848|copy |4|00|Error ending zlib (-3)
+000027.848|copy |4|00|Error updating '/ffs0/ConfigNew/SoundPointIPWelcome_wav.zzz', this file has now been removed
+000027.876|copy |4|00|URL or filename not set. Refusing to guess what file we should fetch
+000027.876|copy |4|00|Configuration of URL failed
+000027.878|cfg  |4|00|Prov|Some configuration files could not be obtained, reverting to previous config
+1118121049|utilm|4|00|uBLFCompressed: File /ffs0/Config/Local/phoneWeb.cfg does not exist or is empty
+1118121049|cfg  |5|00|Prm|Error when decompressing configuration file /ffs0/Config/Local/phoneWeb.cfg
+1118121049|so   |*|00|Configuration files: Polycom/Polycom_id/0004f225648d-basic.cfg, Polycom/Polycom_config/phone-sip.cfg
+1118121049|so   |*|00|Configuration file "Polycom/Polycom_id/0004f225648d-basic.cfg" SHA1 digest: 33E253BE34651BB4F34F62647576A28C083A43C3
+1118121049|so   |*|00|Configuration file "Polycom/Polycom_config/phone-sip.cfg" SHA1 digest: A1EF5190D68EE7B89AF6DC4723F8E59DDF9A5B96
+1118121049|rdisk|*|00|Initial log entry. Current logging level 4
+1118121049|rdisk|5|00|Only 3215248 bytes free memory available, using minimum sized RAM disk. (51200 bytes)
+1118121049|rdisk|4|00|Parameters make RAM disk too big, resizing to maximum size (51200)
+1118121049|rdisk|*|00|RAM disk created and mounted at "/rfs0"
+1118121049|rdisk|*|00|RAM disk created, size: 51,200 bytes
+1118121049|rdisk|*|00|RAM disk size adjusted from 2,097,152 bytes due to limits
+1118131103|log  |*|00|Log render level set to 1
+1118131103|srtp |*|00|Initial log entry. Current logging level 4
+1118131103|res  |*|00|Initial log entry. Current logging level 4
+1118131103|httpa|*|00|Initial log entry. Current logging level 4
+1118131103|lldp |*|00|Initial log entry. Current logging level 4
+1118131103|cdp  |*|00|Initial log entry. Current logging level 4
+1118131103|pcd  |*|00|Initial log entry. Current logging level 4
+1118131103|sys  |*|00|Initial log entry. Current logging level 4
+1118131103|ssps |*|00|Initial log entry. Current logging level 4
+1118131103|dbuf |*|00|Initial log entry. Current logging level 4
+1118131103|ssps |*|00|Application, comp. 1: Label=PolyDSP Titan Mem1 FS4, Version=5.1.2.0003 12-Nov-10 15:12
+1118131103|ssps |*|00|Application, comp. 1: P/N=3150-11580-512.
+1118131103|so   |*|00|System Info Reports:
+1118131103|so   |*|00|    CPU is TNETV1055/C55x, rev 2 running at 125.000MHz with memory at 125.000MHz.
+1118131103|so   |*|00|    Board is identified as PolycomSoundPointIP-SPIP_330.
+1118131103|so   |*|00|    DRAM_LO: 0x94000000.  DRAM_SIZE: 16 MB
+1118131103|so   |*|00|    Clocks are VBUSP: 125.000MHz, VBUS: 62.500MHz, USB: 25.000MHz, LCD: 125.000MHz, DSP: 100.000MHz.
+1118131103|so   |*|00|  NOR flash detected is 8
+1118131103|key  |*|00|Initial log entry. Current logging level 4
+1118131103|httpd|*|00|Initial log entry. Current logging level 4
+1118131103|poll |*|00|Initial log entry. Current logging level 4
+1118131103|push |*|00|Initial log entry. Current logging level 4
+1118131103|poll |*|00|Initial log entry. Current logging level 4
+1118131103|poll |*|00|Initial log entry. Current logging level 4
+1118131103|pps  |*|00|Initial log entry. Current logging level 4
+1118131103|sip  |*|00|Initial log entry. Current logging level 4
+1118131103|so   |*|00|Using TCP IP Media Port, configured initial RTP port 2222
+000000.220|log  |*|00|Log render level set to 3
+000000.220|log  |*|00|All logs set to level 3
+000013.068|log  |*|00|---------- Initial log entry ----------
+000013.096|so   |*|00|Platform: Model=SoundPoint IP 330, Assembly=2345-12200-001 Rev=M Region=
+000013.098|so   |*|00|Platform: MAC=0004f225648d, IP=192.168.0.170, Subnet Mask=255.255.255.0
+000013.098|so   |*|00|Platform: BootBlock=2.7.0 (12200_001) 06-Oct-06 15:40
+000013.098|so   |*|00|Platform: Bootrom=4.3.1.0440 30-Jun-11 11:58
+000013.098|so   |*|00|Application, main: Label=SIP, Version=Wolverine 3.3.3.0069 02-Nov-11 13:03
+000013.098|so   |*|00|Application, main: P/N=3150-11530-333
+000013.098|pmt  |*|00|Initial log entry. Current logging level 4
+000013.100|wdog |*|00|Initial log entry. Current logging level 4
+000013.100|ethf |*|00|Initial log entry. Current logging level 4
+000013.100|hw   |*|00|Initial log entry. Current logging level 4
+000013.100|so   |5|00|utilCertificateInit failed.
+000013.100|cert |*|00|Initial log entry. Current logging level 4
+000013.100|cert |*|00|Using default and custom CA certificates
+000013.110|cert |*|00|No custom CA certificate in flash
+000013.110|cert |4|00|Custom CA certificate selected, but unable to read the certificate from flash
+000013.112|cert |*|00|Polycom device certificate is not present
+000013.116|cert |*|00|Custom device certificate is not present
+000013.116|cert |*|00|Polycom device certificate selected but is not available
+000013.116|so   |*|00|Mutual TLS authentication is not supported
+000013.116|ares |*|00|Initial log entry. Current logging level 4
+000013.116|dns  |*|00|Initial log entry. Current logging level 4
+000013.116|cfg  |*|00|Initial log entry. Current logging level 4
+000013.118|dns  |*|00|DNS resolver servers are '192.168.0.1' '1.1.1.1'
+000013.118|dns  |*|00|DNS resolver search domain is 'lan'
+000013.188|lic  |*|00|Initial log entry. Current logging level 4
+000013.188|lic  |4|00|cfgCfsFlashKeyScratchLoad: key is blank
+000013.230|curl |*|00|Initial log entry. Current logging level 4
+000013.230|utilm|*|00|Initial log entry. Current logging level 4
+000013.230|copy |*|00|Initial log entry. Current logging level 4
+000013.230|rtos |*|00|Initial log entry. Current logging level 4
+000013.232|sec  |*|00|Initial log entry. Current logging level 4
+000013.372|cfg  |*|00|Prov|Starting to update 2345-12200-001.bootrom.ld
+000013.456|cfg  |*|00|Prov|Starting to update bootrom.ld
+000014.464|cfg  |*|00|Prov|Starting to update Polycom/Polycom_app/2345-12200-001.2345-12200-001.bootrom.ld
+000014.564|cfg  |*|00|Prov|Starting to update Polycom/Polycom_app/2345-12200-001.bootrom.ld
+000015.934|cfg  |4|00|Prov|Could not copy file to /ffs0/ConfigNew/SoundPointIPWelcome_wav.zzz
+000019.992|copy |4|00|Error ending zlib (-3)
+000019.992|copy |4|00|Error updating '/ffs0/ConfigNew/SoundPointIPWelcome_wav.zzz', this file has now been removed
+000020.016|copy |4|00|URL or filename not set. Refusing to guess what file we should fetch
+000020.016|copy |4|00|Configuration of URL failed
+000020.018|cfg  |4|00|Prov|Some configuration files could not be obtained, reverting to previous config
+1118122154|utilm|4|00|uBLFCompressed: File /ffs0/Config/Local/phoneWeb.cfg does not exist or is empty
+1118122154|cfg  |5|00|Prm|Error when decompressing configuration file /ffs0/Config/Local/phoneWeb.cfg
+1118122154|so   |*|00|Configuration files: Polycom/Polycom_id/0004f225648d-basic.cfg, Polycom/Polycom_config/phone-sip.cfg
+1118122154|so   |*|00|Configuration file "Polycom/Polycom_id/0004f225648d-basic.cfg" SHA1 digest: 33E253BE34651BB4F34F62647576A28C083A43C3
+1118122154|so   |*|00|Configuration file "Polycom/Polycom_config/phone-sip.cfg" SHA1 digest: A1EF5190D68EE7B89AF6DC4723F8E59DDF9A5B96
+1118122154|rdisk|*|00|Initial log entry. Current logging level 4
+1118122154|rdisk|5|00|Only 3206224 bytes free memory available, using minimum sized RAM disk. (51200 bytes)
+1118122154|rdisk|4|00|Parameters make RAM disk too big, resizing to maximum size (51200)
+1118122154|rdisk|*|00|RAM disk created and mounted at "/rfs0"
+1118122154|rdisk|*|00|RAM disk created, size: 51,200 bytes
+1118122154|rdisk|*|00|RAM disk size adjusted from 2,097,152 bytes due to limits
+1118132208|log  |*|00|Log render level set to 1
+1118132208|srtp |*|00|Initial log entry. Current logging level 4
+1118132208|res  |*|00|Initial log entry. Current logging level 4
+1118132208|httpa|*|00|Initial log entry. Current logging level 4
+1118132208|lldp |*|00|Initial log entry. Current logging level 4
+1118132208|lldp |*|00|No Native VLAN found
+1118132208|lldp |*|00|No Auxiliary VLAN found
+1118132208|lldp |*|00|LLDP power usage is 4.3 Watts.
+1118132208|cdp  |*|00|Initial log entry. Current logging level 4
+1118132208|pcd  |*|00|Initial log entry. Current logging level 4
+1118132208|sys  |*|00|Initial log entry. Current logging level 4
+1118132208|ssps |*|00|Initial log entry. Current logging level 4
+1118132208|dbuf |*|00|Initial log entry. Current logging level 4
+1118132208|ssps |*|00|Application, comp. 1: Label=PolyDSP Titan Mem1 FS4, Version=5.1.2.0003 12-Nov-10 15:12
+1118132208|ssps |*|00|Application, comp. 1: P/N=3150-11580-512.
+1118132208|so   |*|00|System Info Reports:
+1118132208|so   |*|00|    CPU is TNETV1055/C55x, rev 2 running at 125.000MHz with memory at 125.000MHz.
+1118132208|so   |*|00|    Board is identified as PolycomSoundPointIP-SPIP_330.
+1118132208|so   |*|00|    DRAM_LO: 0x94000000.  DRAM_SIZE: 16 MB
+1118132208|so   |*|00|    Clocks are VBUSP: 125.000MHz, VBUS: 62.500MHz, USB: 25.000MHz, LCD: 125.000MHz, DSP: 100.000MHz.
+1118132208|so   |*|00|  NOR flash detected is 8
+1118132208|key  |*|00|Initial log entry. Current logging level 4
+1118132208|httpd|*|00|Initial log entry. Current logging level 4
+1118132208|poll |*|00|Initial log entry. Current logging level 4
+1118132208|push |*|00|Initial log entry. Current logging level 4
+1118132208|poll |*|00|Initial log entry. Current logging level 4
+1118132208|poll |*|00|Initial log entry. Current logging level 4
+1118132208|pps  |*|00|Initial log entry. Current logging level 4
+1118132208|sip  |*|00|Initial log entry. Current logging level 4
+1118132208|so   |*|00|Using TCP IP Media Port, configured initial RTP port 2222
+1118132208|cmp  |*|00|Initial log entry. Current logging level 4
+1118132208|wmgr |*|00|Initial log entry. Current logging level 4
+1118132208|slog |*|00|Initial log entry. Current logging level 4
+1118132213|app1 |*|00|Initial log entry. Current logging level 4
+1118132213|app1 |4|00|Default StatusBar is disabled
+1118132213|app1 |4|00|mb.main.home parameter is empty
+1118132213|mb   |*|00|Initial log entry. Current logging level 4
+1118132213|app1 |*|00|”¶SÀ”bFp”¶Tà is out of range, using 3600
+1118132213|app1 |*|00|”¶SÀ”bFp”¶Tà is out of range, using 3600
+1118132213|app1 |*|00|”¶SÀ”bFp”¶Tà is out of range, using 3600
+1118132213|app1 |*|00|”¶SÀ”bFp”¶Tà is out of range, using 3600
+1118132213|ldap |*|00|Initial log entry. Current logging level 4
+1118132213|ldap |4|00|ldap: Not Enabled
+1118132213|ldap |4|00|cDynamicData::cDynamicData:cDynamicData:Failed
+1118132213|efk  |*|00|Initial log entry. Current logging level 4
+1118132213|so   |*|00|User registration (6002) [0-6002]
+1118132244|sip  |4|00|Registration failed User: 6002, Error Code:480 Temporarily not available
+1118133817|res  |4|00|[ResFinderC]: Download - Failed to download file SoundPointIPLocalization/French_France/SoundPointIP-dictionary.xml, errno 0x380003.
+1118133817|so   |4|00|[SoLangC]: Failed to load new language - Rolling back to default language
+1118134811|app1 |*|00|Manual Reboot
+1118134811|so   |*|00|SoNcasC: Client service shutdown complete
+1118134811|wdog |*|00|Watchdog Expired: tSupObjs
+000000.220|log  |*|00|Log render level set to 3
+000000.220|log  |*|00|All logs set to level 3
+000028.810|log  |*|00|---------- Initial log entry ----------
+000028.840|so   |*|00|Platform: Model=SoundPoint IP 330, Assembly=2345-12200-001 Rev=M Region=
+000028.840|so   |*|00|Platform: MAC=0004f225648d, IP=192.168.0.170, Subnet Mask=255.255.255.0
+000028.840|so   |*|00|Platform: BootBlock=2.7.0 (12200_001) 06-Oct-06 15:40
+000028.842|so   |*|00|Platform: Bootrom=4.3.1.0440 30-Jun-11 11:58
+000028.842|so   |*|00|Application, main: Label=SIP, Version=Wolverine 3.3.5.0247 11-Dec-12 02:24
+000028.842|so   |*|00|Application, main: P/N=3150-11530-335
+000028.842|pmt  |*|00|Initial log entry. Current logging level 4
+000028.844|wdog |*|00|Initial log entry. Current logging level 4
+000028.844|ethf |*|00|Initial log entry. Current logging level 4
+000028.844|hw   |*|00|Initial log entry. Current logging level 4
+000028.844|so   |5|00|utilCertificateInit failed.
+000028.844|cert |*|00|Initial log entry. Current logging level 4
+000028.844|cert |*|00|Using default and custom CA certificates
+000028.852|cert |*|00|No custom CA certificate in flash
+000028.852|cert |4|00|Custom CA certificate selected, but unable to read the certificate from flash
+000028.856|cert |*|00|Polycom device certificate is not present
+000028.858|cert |*|00|Custom device certificate is not present
+000028.860|cert |*|00|Polycom device certificate selected but is not available
+000028.860|so   |*|00|Mutual TLS authentication is not supported
+000028.860|ares |*|00|Initial log entry. Current logging level 4
+000028.860|dns  |*|00|Initial log entry. Current logging level 4
+000028.860|cfg  |*|00|Initial log entry. Current logging level 4
+000028.860|dns  |*|00|DNS resolver servers are '192.168.0.1' '1.1.1.1'
+000028.860|dns  |*|00|DNS resolver search domain is 'lan'
+000028.932|lic  |*|00|Initial log entry. Current logging level 4
+000028.932|lic  |4|00|cfgCfsFlashKeyScratchLoad: key is blank
+000028.974|curl |*|00|Initial log entry. Current logging level 4
+000028.974|utilm|*|00|Initial log entry. Current logging level 4
+000028.974|copy |*|00|Initial log entry. Current logging level 4
+000028.974|rtos |*|00|Initial log entry. Current logging level 4
+000028.976|sec  |*|00|Initial log entry. Current logging level 4
+000029.114|cfg  |*|00|Prov|Starting to update 2345-12200-001.bootrom.ld
+000029.232|cfg  |*|00|Prov|Starting to update bootrom.ld
+000030.418|cfg  |*|00|Prov|Starting to update Polycom/Polycom_app/2345-12200-001.2345-12200-004.sip.ld
+000030.524|cfg  |*|00|Prov|Starting to update Polycom/Polycom_app/2345-12200-004.sip.ld
+000034.704|cfg  |4|00|Prov|Could not copy file to /ffs0/ConfigNew/SoundPointIPWelcome_wav.zzz
+000038.758|copy |4|00|Error ending zlib (-3)
+000038.758|copy |4|00|Error updating '/ffs0/ConfigNew/SoundPointIPWelcome_wav.zzz', this file has now been removed
+000039.706|copy |4|00|URL or filename not set. Refusing to guess what file we should fetch
+000039.706|copy |4|00|Configuration of URL failed
+000039.710|cfg  |4|00|Prov|Some configuration files could not be obtained, reverting to previous config
+1118125023|utilm|4|00|uBLFCompressed: File /ffs0/Config/Local/phoneWeb.cfg does not exist or is empty
+1118125023|cfg  |5|00|Prm|Error when decompressing configuration file /ffs0/Config/Local/phoneWeb.cfg
+1118125023|so   |*|00|Configuration files: Polycom/Polycom_id/0004f225648d-basic.cfg, Polycom/Polycom_config/phone-sip.cfg
+1118125023|so   |*|00|Configuration file "Polycom/Polycom_id/0004f225648d-basic.cfg" SHA1 digest: 33E253BE34651BB4F34F62647576A28C083A43C3
+1118125023|so   |*|00|Configuration file "Polycom/Polycom_config/phone-sip.cfg" SHA1 digest: A1EF5190D68EE7B89AF6DC4723F8E59DDF9A5B96
+1118125023|rdisk|*|00|Initial log entry. Current logging level 4
+1118125023|rdisk|5|00|Only 3196160 bytes free memory available, using minimum sized RAM disk. (61440 bytes)
+1118125023|rdisk|4|00|Parameters make RAM disk too big, resizing to maximum size (61440)
+1118125023|rdisk|*|00|RAM disk created and mounted at "/rfs0"
+1118125023|rdisk|*|00|RAM disk created, size: 61,440 bytes
+1118125023|rdisk|*|00|RAM disk size adjusted from 2,097,152 bytes due to limits
+1118135044|log  |*|00|Log render level set to 1
+1118135044|srtp |*|00|Initial log entry. Current logging level 4
+1118135044|res  |*|00|Initial log entry. Current logging level 4
+1118135044|httpa|*|00|Initial log entry. Current logging level 4
+1118135044|lldp |*|00|Initial log entry. Current logging level 4
+1118135044|cdp  |*|00|Initial log entry. Current logging level 4
+1118135044|pcd  |*|00|Initial log entry. Current logging level 4
+1118135044|sys  |*|00|Initial log entry. Current logging level 4
+1118135044|ssps |*|00|Initial log entry. Current logging level 4
+1118135044|dbuf |*|00|Initial log entry. Current logging level 4
+1118135044|ssps |*|00|Application, comp. 1: Label=PolyDSP Titan Mem1 FS4, Version=5.1.2.0003 12-Nov-10 15:12
+1118135044|ssps |*|00|Application, comp. 1: P/N=3150-11580-512.
+1118135044|so   |*|00|System Info Reports:
+1118135044|so   |*|00|    CPU is TNETV1055/C55x, rev 2 running at 125.000MHz with memory at 125.000MHz.
+1118135044|so   |*|00|    Board is identified as PolycomSoundPointIP-SPIP_330.
+1118135044|so   |*|00|    DRAM_LO: 0x94000000.  DRAM_SIZE: 16 MB
+1118135044|so   |*|00|    Clocks are VBUSP: 125.000MHz, VBUS: 62.500MHz, USB: 25.000MHz, LCD: 125.000MHz, DSP: 100.000MHz.
+1118135044|so   |*|00|  NOR flash detected is 8
+1118135044|key  |*|00|Initial log entry. Current logging level 4
+1118135044|httpd|*|00|Initial log entry. Current logging level 4
+1118135044|poll |*|00|Initial log entry. Current logging level 4
+1118135044|push |*|00|Initial log entry. Current logging level 4
+1118135044|poll |*|00|Initial log entry. Current logging level 4
+1118135044|poll |*|00|Initial log entry. Current logging level 4
+1118135044|pps  |*|00|Initial log entry. Current logging level 4
+1118135044|sip  |*|00|Initial log entry. Current logging level 4
+1118135044|so   |*|00|Using TCP IP Media Port, configured initial RTP port 2222
