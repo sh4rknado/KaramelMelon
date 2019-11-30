@@ -1,6 +1,12 @@
 #!/bin/bash
 
 LIST_PACKAGES="net-tools vsftpd odbcinst odbc-postgresql odbc-mdbtools mariadb-server git-core subversion libjansson-dev sqlite autoconf automake libxml2-dev libncurses5-dev libtool git curl wget libnewt-dev libssl-dev libncurses5-dev subversion libsqlite3-dev build-essential libxml2-dev libjansson-dev uuid-dev zsh zsh-antigen zsh-common zsh-static zsh-syntax-highlighting"
+
+LISTS_APP="chan_mobile chan_ooh323 format_mp3 smsq binaural_rendering_in_bridge_softmix"
+MOH_SOUND="MOH-OPSOUND-ULAW MOH-OPSOUND-ALAW MOH-OPSOUND-GSM"
+LANG_PACK_FR="EXTRA-SOUNDS-FR-WAV EXTRA-SOUNDS-FR-ULAW EXTRA-SOUNDS-FR-ULAW EXTRA-SOUNDS-FR-GSM CORE-SOUNDS-FR-WAV CORE-SOUNDS-FR-ULAW CORE-SOUNDS-FR-ULAW CORE-SOUNDS-FR-GSM"
+LANG_PACK_EN="EXTRA-SOUNDS-EN-WAV EXTRA-SOUNDS-EN-ULAW EXTRA-SOUNDS-EN-ULAW EXTRA-SOUNDS-EN-GSM CORE-SOUNDS-EN-WAV CORE-SOUNDS-EN-ULAW CORE-SOUNDS-EN-ULAW CORE-SOUNDS-EN-GSM"
+
 DB_PASS="vagrant"
 DB_USER="vagrant"
 FTP_USER="ftpuser"
@@ -124,6 +130,39 @@ EOF
 
 #################################################### <  I N S T A L L   A S T E R I S K  > #############################################################
 
+function enable_menu {
+
+echo -e "\nEnable APP\n"
+for pack in $LISTS_APP
+do
+    echo "[ENABLE] $pack"
+    menuselect/menuselect --enable $pack
+done
+
+echo -e "\nEnable Holding Music Format\n"
+for pack in $MOH_SOUND
+do
+    echo "[ENABLE] $pack"
+    menuselect/menuselect --enable $pack
+done
+
+echo -e "\nEnable LANGUAGES FR\n"
+for pack in $LANG_PACK_FR
+do
+    echo "[ENABLE] $pack"
+    menuselect/menuselect --enable $pack
+done
+
+echo -e "\nEnable LANGUAGES EN\n"
+for pack in $LANG_PACK_EN
+do
+
+    echo "[ENABLE] $pack"
+    menuselect/menuselect --enable $pack
+done
+
+}
+
 function install_asterisk {
   clear
   echo -e "\n*-------------------------------------------*"
@@ -143,7 +182,9 @@ function install_asterisk {
   yes "y" | sudo ./contrib/scripts/install_prereq install
   update
   ./configure --with-jansson-bundled
-  make menuselect
+  
+  # Select the options
+  enable_menu
 
   echo -e "\nMake processing ...\n"
   make -j4
