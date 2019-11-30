@@ -2,10 +2,10 @@
 
 LIST_PACKAGES="net-tools vsftpd odbcinst odbc-postgresql odbc-mdbtools mariadb-server git-core subversion libjansson-dev sqlite autoconf automake libxml2-dev libncurses5-dev libtool git curl wget libnewt-dev libssl-dev libncurses5-dev subversion libsqlite3-dev build-essential libxml2-dev libjansson-dev uuid-dev zsh zsh-antigen zsh-common zsh-static zsh-syntax-highlighting"
 
-LISTS_APP="chan_mobile chan_ooh323 format_mp3 smsq binaural_rendering_in_bridge_softmix"
+LISTS_APP="chan_mobile chan_ooh323 format_mp3 smsq binaural_rendering_in_bridge_softmix conf_bridge_binaural_hrir_importer"
 MOH_SOUND="MOH-OPSOUND-ULAW MOH-OPSOUND-ALAW MOH-OPSOUND-GSM"
-LANG_PACK_FR="EXTRA-SOUNDS-FR-WAV EXTRA-SOUNDS-FR-ULAW EXTRA-SOUNDS-FR-ULAW EXTRA-SOUNDS-FR-GSM CORE-SOUNDS-FR-WAV CORE-SOUNDS-FR-ULAW CORE-SOUNDS-FR-ULAW CORE-SOUNDS-FR-GSM"
-LANG_PACK_EN="EXTRA-SOUNDS-EN-WAV EXTRA-SOUNDS-EN-ULAW EXTRA-SOUNDS-EN-ULAW EXTRA-SOUNDS-EN-GSM CORE-SOUNDS-EN-WAV CORE-SOUNDS-EN-ULAW CORE-SOUNDS-EN-ULAW CORE-SOUNDS-EN-GSM"
+LANG_PACK_FR="EXTRA-SOUNDS-FR-WAV EXTRA-SOUNDS-FR-ULAW EXTRA-SOUNDS-FR-ALAW EXTRA-SOUNDS-FR-GSM CORE-SOUNDS-FR-WAV CORE-SOUNDS-FR-ULAW CORE-SOUNDS-FR-ALAW CORE-SOUNDS-FR-GSM"
+LANG_PACK_EN="EXTRA-SOUNDS-EN-WAV EXTRA-SOUNDS-EN-ULAW EXTRA-SOUNDS-EN-ALAW EXTRA-SOUNDS-EN-GSM CORE-SOUNDS-EN-WAV CORE-SOUNDS-EN-ULAW CORE-SOUNDS-EN-ALAW CORE-SOUNDS-EN-GSM"
 
 DB_PASS="vagrant"
 DB_USER="vagrant"
