@@ -1,10 +1,15 @@
 #!/bin/bash
 
-LIST_PACKAGES="vsftpd odbcinst odbc-postgresql odbc-mdbtools mysql-server git-core subversion libjansson-dev sqlite autoconf automake libxml2-dev libncurses5-dev libtool git curl wget libnewt-dev libssl-dev libncurses5-dev subversion libsqlite3-dev build-essential libxml2-dev libjansson-dev uuid-dev zsh zsh-antigen zsh-common zsh-static zsh-syntax-highlighting"
+LIST_PACKAGES="net-tools vsftpd odbcinst odbc-postgresql odbc-mdbtools mariadb-server git-core subversion libjansson-dev sqlite autoconf automake libxml2-dev libncurses5-dev libtool git curl wget libnewt-dev libssl-dev libncurses5-dev subversion libsqlite3-dev build-essential libxml2-dev libjansson-dev uuid-dev zsh zsh-antigen zsh-common zsh-static zsh-syntax-highlighting"
 DB_PASS="vagrant"
 DB_USER="vagrant"
 FTP_USER="ftpuser"
 FTP_PASS="ftpuser"
+
+if (whoami != root)
+  then echo "Please run as root"
+  exit
+fi
 
 #################################################### <  I N S T A L L   D E P E N D A N C Y   > #############################################################
 
@@ -34,6 +39,19 @@ function install_dependancy {
 
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
   git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+  echo "export PATH=/sbin:$PATH" >> .zshrc
+
+
+echo "
+#!/bin/bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+echo "export PATH=/sbin:$PATH" >> /home/vagrant/.zshrc " >> install.sh
+
+   chmod +x install.sh
+   sudo -u vagrant "bash install.sh"
+   rm -rfv install.sh
+
 }
 
 function install_ftp {
@@ -90,7 +108,7 @@ y
 
 EOF
 
-	echo -e "\nActivation du Service MySQL\n"
+  echo -e "\nActivation du Service MySQL\n"
   sudo systemctl restart mysqld
   sudo systemctl enable mysqld
 
@@ -118,7 +136,7 @@ function install_asterisk {
   cd /opt
   curl -O http://downloads.asterisk.org/pub/telephony/asterisk/asterisk-16-current.tar.gz
   tar -xvf asterisk-16-current.tar.gz
-  cd /opt/asterisk-16.6.1
+  cd /opt/asterisk-16.6.2/
 
   # Compile asterisk
   sudo contrib/scripts/get_mp3_source.sh
@@ -164,10 +182,11 @@ echo "*----------------------------------------------------------------------*"
 echo "|   I N S T A L L   C O M P L E T E D   S U C E S S F U L L Y          |"
 echo "*----------------------------------------------------------------------*"
 
-# update
 update
 install_dependancy
 install_ftp
 config_database
 install_asterisk
-fix_bug
+# fix_bug
+
+
