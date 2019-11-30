@@ -9,8 +9,8 @@ LANG_PACK_EN="EXTRA-SOUNDS-EN-WAV EXTRA-SOUNDS-EN-ULAW EXTRA-SOUNDS-EN-ALAW EXTR
 
 DB_PASS="vagrant"
 DB_USER="vagrant"
-FTP_USER="ftpuser"
-FTP_PASS="ftpuser"
+FTP_USER="vagrant"
+FTP_PASS="vagrant"
 
 if (whoami != root)
   then echo "Please run as root"
