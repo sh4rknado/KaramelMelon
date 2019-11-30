@@ -136,29 +136,28 @@ echo -e "\nEnable APP\n"
 for pack in $LISTS_APP
 do
     echo "[ENABLE] $pack"
-    menuselect/menuselect --enable $pack
+    menuselect/menuselect --enable $pack menuselect.makeopts
 done
 
 echo -e "\nEnable Holding Music Format\n"
 for pack in $MOH_SOUND
 do
     echo "[ENABLE] $pack"
-    menuselect/menuselect --enable $pack
+    menuselect/menuselect --enable $pack menuselect.makeopts
 done
 
 echo -e "\nEnable LANGUAGES FR\n"
 for pack in $LANG_PACK_FR
 do
     echo "[ENABLE] $pack"
-    menuselect/menuselect --enable $pack
+    menuselect/menuselect --enable $pack menuselect.makeopts
 done
 
 echo -e "\nEnable LANGUAGES EN\n"
 for pack in $LANG_PACK_EN
 do
-
     echo "[ENABLE] $pack"
-    menuselect/menuselect --enable $pack
+    menuselect/menuselect --enable $pack menuselect.makeopts
 done
 
 }
