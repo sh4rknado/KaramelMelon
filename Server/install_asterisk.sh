@@ -12,9 +12,10 @@ DB_USER="vagrant"
 FTP_USER="vagrant"
 FTP_PASS="vagrant"
 
-if (whoami != root)
-  then echo "Please run as root"
-  exit
+
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root" 
+   exit 1
 fi
 
 #################################################### <  I N S T A L L   D E P E N D A N C Y   > #############################################################
@@ -55,7 +56,7 @@ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/theme
 echo "export PATH=/sbin:$PATH" >> /home/vagrant/.zshrc " >> install.sh
 
    chmod +x install.sh
-   sudo -u vagrant "bash install.sh"
+   sudo -u vagrant bash install.sh
    rm -rfv install.sh
 
 }
@@ -64,6 +65,7 @@ function install_ftp {
 
 echo "
 # [ General Section ]
+
 listen=YES
 anonymous_enable=NO
 local_enable=YES
@@ -78,7 +80,9 @@ pam_service_name=vsftpd
 rsa_cert_file=/etc/ssl/certs/ssl-cert-snakeoil.pem
 rsa_private_key_file=/etc/ssl/private/ssl-cert-snakeoil.key
 ssl_enable=NO
+
 # [ Chroot Section ]
+
 chroot_local_user=YES
 chroot_list_enable=YES
 chroot_list_file=/etc/vsftpd.chroot_list " > /etc/vsftpd.conf
@@ -130,35 +134,55 @@ EOF
 
 #################################################### <  I N S T A L L   A S T E R I S K  > #############################################################
 
+function compile_menu {
+
+	cd menuselect
+
+	echo -e "\nConfigure the menu select\n"
+	./configure
+
+	echo -e "\nCompile the menu select\n"
+	make -j 4
+
+	cd ..
+
+}
+
 function enable_menu {
 
-echo -e "\nEnable APP\n"
-for pack in $LISTS_APP
-do
-    echo "[ENABLE] $pack"
-    menuselect/menuselect --enable $pack menuselect.makeopts
-done
+	echo -e "\nGenerate Menu Entry\n"
+	make menuselect-tree
+	
+	menuselect/menuselect --check-deps menuselect.makeopts
+	menuselect/menuselect --check-deps menuselect.makeopts  
 
-echo -e "\nEnable Holding Music Format\n"
-for pack in $MOH_SOUND
-do
-    echo "[ENABLE] $pack"
-    menuselect/menuselect --enable $pack menuselect.makeopts
-done
+	echo -e "\nEnable APP\n"
+	for pack in $LISTS_APP
+	do
+		  echo "[ENABLE] $pack"
+		  menuselect/menuselect --enable $pack menuselect.makeopts
+	done
 
-echo -e "\nEnable LANGUAGES FR\n"
-for pack in $LANG_PACK_FR
-do
-    echo "[ENABLE] $pack"
-    menuselect/menuselect --enable $pack menuselect.makeopts
-done
+	echo -e "\nEnable Holding Music Format\n"
+	for pack in $MOH_SOUND
+	do
+		  echo "[ENABLE] $pack"
+		  menuselect/menuselect --enable $pack menuselect.makeopts
+	done
 
-echo -e "\nEnable LANGUAGES EN\n"
-for pack in $LANG_PACK_EN
-do
-    echo "[ENABLE] $pack"
-    menuselect/menuselect --enable $pack menuselect.makeopts
-done
+	echo -e "\nEnable LANGUAGES FR\n"
+	for pack in $LANG_PACK_FR
+	do
+		  echo "[ENABLE] $pack"
+		  menuselect/menuselect --enable $pack menuselect.makeopts
+	done
+
+	echo -e "\nEnable LANGUAGES EN\n"
+	for pack in $LANG_PACK_EN
+	do
+		  echo "[ENABLE] $pack"
+		  menuselect/menuselect --enable $pack menuselect.makeopts
+	done
 
 }
 
@@ -183,6 +207,7 @@ function install_asterisk {
   ./configure --with-jansson-bundled
   
   # Select the options
+  compile_menu
   enable_menu
 
   echo -e "\nMake processing ...\n"
@@ -227,6 +252,6 @@ install_dependancy
 install_ftp
 config_database
 install_asterisk
-# fix_bug
+fix_bug
 
 
