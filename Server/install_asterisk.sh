@@ -14,14 +14,23 @@ FTP_PASS="vagrant"
 
 
 if [[ $EUID -ne 0 ]]; then
-   echo "This script must be run as root" 
+   echo "This script must be run as root"
    exit 1
 fi
+
+function top {
+
+echo -e "*----------------------------------------------------------------------*"
+echo -e "|   I N S T A L L   A S T E R I S K    S E R V E R                     |"
+echo -e "*----------------------------------------------------------------------*\n"
+
+}
 
 #################################################### <  I N S T A L L   D E P E N D A N C Y   > #############################################################
 
 function update {
   clear
+  top
   echo -e "*-------------------------------------------*"
   echo -e "|   M I S E  A  J O U R   D E   L ' O S     |"
   echo -e "*-------------------------------------------*\n"
@@ -37,6 +46,7 @@ function install_dependancy {
   for pack in $LIST_PACKAGES
   do
     clear
+    top
     echo -e "\n*-------------------------------------------*"
     echo -e "|   I N S T A L L   D E P E N D A N C Y     |"
     echo -e "*-------------------------------------------*\n"
@@ -62,6 +72,10 @@ echo "export PATH=/sbin:$PATH" >> /home/vagrant/.zshrc " >> install.sh
 }
 
 function install_ftp {
+
+clear
+top
+echo -e "\nConfigure vsftpd Service\n"
 
 echo "
 # [ General Section ]
@@ -100,6 +114,7 @@ chroot_list_file=/etc/vsftpd.chroot_list " > /etc/vsftpd.conf
 
 function config_database {
   clear
+  top
   echo
   echo -e "\n*-------------------------------------------*"
   echo -e "|     I N I T   T H E   DA T A B A S  E     |"
@@ -150,11 +165,10 @@ function compile_menu {
 
 function enable_menu {
 
-	echo -e "\nGenerate Menu Entry\n"
+	echo -e "\Generate Menu Entry\n"
 	make menuselect-tree
-	
 	menuselect/menuselect --check-deps menuselect.makeopts
-	menuselect/menuselect --check-deps menuselect.makeopts  
+	menuselect/menuselect --check-deps menuselect.makeopts
 
 	echo -e "\nEnable APP\n"
 	for pack in $LISTS_APP
@@ -188,6 +202,7 @@ function enable_menu {
 
 function install_asterisk {
   clear
+  top
   echo -e "\n*-------------------------------------------*"
   echo -e "| C O M P I L E   T H E    S O U R C E S    |"
   echo -e "*-------------------------------------------*\n"
@@ -205,7 +220,7 @@ function install_asterisk {
   yes "y" | sudo ./contrib/scripts/install_prereq install
   update
   ./configure --with-jansson-bundled
-  
+
   # Select the options
   compile_menu
   enable_menu
@@ -233,6 +248,10 @@ function install_asterisk {
 }
 
 function fix_bug {
+    clear
+    top
+    echo -e "\nResolve Bug Radius\n"
+
     # Resoulution Radius Error
     sudo sed -i 's";\[radius\]"\[radius\]"g' /etc/asterisk/cdr.conf
     sudo sed -i 's";radiuscfg => /usr/local/etc/radiusclient-ng/radiusclient.conf"radiuscfg => /etc/radcli/radiusclient.conf"g' /etc/asterisk/cdr.conf
@@ -243,9 +262,6 @@ function fix_bug {
     sudo systemctl status asterisk.service
 }
 
-echo "*----------------------------------------------------------------------*"
-echo "|   I N S T A L L   C O M P L E T E D   S U C E S S F U L L Y          |"
-echo "*----------------------------------------------------------------------*"
 
 update
 install_dependancy
@@ -254,4 +270,16 @@ config_database
 install_asterisk
 fix_bug
 
-
+echo -e "*----------------------------------------------------------------------*"
+echo -e "|   I N S T A L L   C O M P L E T E D   S U C E S S F U L L Y          |"
+echo -e "*----------------------------------------------------------------------*\n"
+echo -e "[X] OS UPDATE\n"
+echo -e "[X] INSTALL DEPENDANCY\n"
+echo -e "[X] INSTALL FTP SERVER\n"
+echo -e "[X] INSTALL DATABASE MYSQL\n"
+echo -e "[X] INSTALL ASTERISK\n"
+echo -e "[X] FIX RADIUS\n"
+sudo systemctl status asterisk.service
+sudo systemctl status vsftpd.service
+sudo systemctl status mysqld.service
+echo -e "Thank's that use this script. Good Bye !"
