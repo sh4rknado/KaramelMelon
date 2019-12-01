@@ -58,17 +58,9 @@ function install_dependancy {
   git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
   echo "export PATH=/sbin:$PATH" >> .zshrc
 
-
-echo "
-#!/bin/bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
-echo "export PATH=/sbin:$PATH" >> /home/vagrant/.zshrc " >> install.sh
-
-   chmod +x install.sh
-   sudo -u vagrant bash install.sh
-   rm -rfv install.sh
-
+  sudo -u vagrant sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+  sudo -u vagrant git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+  sudo -u vagrant echo "export PATH=/sbin:$PATH" >> /home/vagrant/.zshrc
 }
 
 function install_ftp {
